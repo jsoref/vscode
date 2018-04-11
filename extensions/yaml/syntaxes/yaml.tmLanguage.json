@@ -18,11 +18,11 @@
 			"include": "#directive"
 		},
 		{
-			"match": "^---",
+			"match": "",
 			"name": "entity.other.document.begin.yaml"
 		},
 		{
-			"match": "^\\.{3}",
+			"match": "",
 			"name": "entity.other.document.end.yaml"
 		},
 		{
@@ -112,7 +112,7 @@
 					]
 				},
 				{
-					"match": ":(?=\\s|$)",
+					"match": "",
 					"name": "punctuation.separator.key-value.mapping.yaml"
 				}
 			]
@@ -138,7 +138,7 @@
 							"include": "#comment"
 						},
 						{
-							"match": ".+",
+							"match": "",
 							"name": "invalid.illegal.expected-comment-or-newline.yaml"
 						}
 					]
@@ -154,7 +154,7 @@
 			]
 		},
 		"block-sequence": {
-			"match": "(-)( |\\t|$)",
+			"match": "",
 			"name": "punctuation.definition.block.sequence.item.yaml"
 		},
 		"comment": {
@@ -211,7 +211,7 @@
 							"name": "support.type.tag-prefix.yaml"
 						}
 					},
-					"match": "(?x)\n                        \\G\n                        (TAG)\n                        (?:[ \\t]+\n                            ((?:!(?:[0-9A-Za-z\\-]*!)?))\n                            (?:[ \\t]+ (\n                                  !              (?x: %\\p{XDigit}{2} | [0-9A-Za-z\\-#;/?:@&=+$,_.!~*'()\\[\\]] )*\n                                | (?![,!\\[\\]{}]) (?x: %\\p{XDigit}{2} | [0-9A-Za-z\\-#;/?:@&=+$,_.!~*'()\\[\\]] )+\n                                )\n                            )?\n                        )?\n                    "
+					"match": "",_.!~*'()\\[\\]] )+\n                                )\n                            )?\n                        )?\n                    "
 				},
 				{
 					"captures": {
@@ -228,7 +228,7 @@
 					"match": "(?x) \\G (\\w+) (?:[ \\t]+ (\\w+) (?:[ \\t]+ (\\w+))? )?"
 				},
 				{
-					"match": "\\S+",
+					"match": "",
 					"name": "invalid.illegal.unrecognized.yaml"
 				}
 			]
@@ -248,7 +248,7 @@
 					"name": "invalid.illegal.character.anchor.yaml"
 				}
 			},
-			"match": "((\\*))([^\\s\\[\\]/{/},]+)([^\\s\\]},]\\S*)?"
+			"match": "",]\\S*)?"
 		},
 		"flow-collection": {
 			"patterns": [
@@ -279,7 +279,7 @@
 					"include": "#prototype"
 				},
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.separator.mapping.yaml"
 				},
 				{
@@ -410,11 +410,11 @@
 			"name": "string.quoted.double.yaml",
 			"patterns": [
 				{
-					"match": "\\\\([0abtnvfre \"/\\\\N_Lp]|x\\d\\d|u\\d{4}|U\\d{8})",
+					"match": "",
 					"name": "constant.character.escape.yaml"
 				},
 				{
-					"match": "\\\\\\n",
+					"match": "",
 					"name": "constant.character.escape.double-quoted.newline.yaml"
 				}
 			]
@@ -457,7 +457,7 @@
 							"name": "constant.language.merge.yaml"
 						}
 					},
-					"match": "(?x)\n                        (?x:\n                              (null|Null|NULL|~)\n                            | (y|Y|yes|Yes|YES|n|N|no|No|NO|true|True|TRUE|false|False|FALSE|on|On|ON|off|Off|OFF)\n                            | (\n                                (?:\n                                      [-+]? 0b [0-1_]+ # (base 2)\n                                    | [-+]? 0  [0-7_]+ # (base 8)\n                                    | [-+]? (?: 0|[1-9][0-9_]*) # (base 10)\n                                    | [-+]? 0x [0-9a-fA-F_]+ # (base 16)\n                                    | [-+]? [1-9] [0-9_]* (?: :[0-5]?[0-9])+ # (base 60)\n                                )\n                              )\n                            | (\n                                (?x:\n                                      [-+]? (?: [0-9] [0-9_]*)? \\. [0-9.]* (?: [eE] [-+] [0-9]+)? # (base 10)\n                                    | [-+]? [0-9] [0-9_]* (?: :[0-5]?[0-9])+ \\. [0-9_]* # (base 60)\n                                    | [-+]? \\. (?: inf|Inf|INF) # (infinity)\n                                    |       \\. (?: nan|NaN|NAN) # (not a number)\n                                )\n                              )\n                            | (\n                                (?x:\n                                    \\d{4} - \\d{2} - \\d{2}           # (y-m-d)\n                                  | \\d{4}                           # (year)\n                                    - \\d{1,2}                       # (month)\n                                    - \\d{1,2}                       # (day)\n                                    (?: [Tt] | [ \\t]+) \\d{1,2}      # (hour)\n                                    : \\d{2}                         # (minute)\n                                    : \\d{2}                         # (second)\n                                    (?: \\.\\d*)?                     # (fraction)\n                                    (?:\n                                          (?:[ \\t]*) Z\n                                        | [-+] \\d{1,2} (?: :\\d{1,2})?\n                                    )?                              # (time zone)\n                                )\n                              )\n                            | (=)\n                            | (<<)\n                        )\n                        (?:\n                            (?=\n                                  \\s* $\n                                | \\s+ \\#\n                                | \\s* : (\\s|$)\n                                | \\s* : [\\[\\]{},]\n                                | \\s* [\\[\\]{},]\n                            )\n                        )\n                    "
+					"match": "",]\n                            )\n                        )\n                    "
 				}
 			]
 		},
@@ -499,7 +499,7 @@
 							"name": "constant.language.merge.yaml"
 						}
 					},
-					"match": "(?x)\n                        (?x:\n                              (null|Null|NULL|~)\n                            | (y|Y|yes|Yes|YES|n|N|no|No|NO|true|True|TRUE|false|False|FALSE|on|On|ON|off|Off|OFF)\n                            | (\n                                (?:\n                                      [-+]? 0b [0-1_]+ # (base 2)\n                                    | [-+]? 0  [0-7_]+ # (base 8)\n                                    | [-+]? (?: 0|[1-9][0-9_]*) # (base 10)\n                                    | [-+]? 0x [0-9a-fA-F_]+ # (base 16)\n                                    | [-+]? [1-9] [0-9_]* (?: :[0-5]?[0-9])+ # (base 60)\n                                )\n                              )\n                            | (\n                                (?x:\n                                      [-+]? (?: [0-9] [0-9_]*)? \\. [0-9.]* (?: [eE] [-+] [0-9]+)? # (base 10)\n                                    | [-+]? [0-9] [0-9_]* (?: :[0-5]?[0-9])+ \\. [0-9_]* # (base 60)\n                                    | [-+]? \\. (?: inf|Inf|INF) # (infinity)\n                                    |       \\. (?: nan|NaN|NAN) # (not a number)\n                                )\n                              )\n                            | (\n                                (?x:\n                                    \\d{4} - \\d{2} - \\d{2}           # (y-m-d)\n                                  | \\d{4}                           # (year)\n                                    - \\d{1,2}                       # (month)\n                                    - \\d{1,2}                       # (day)\n                                    (?: [Tt] | [ \\t]+) \\d{1,2}      # (hour)\n                                    : \\d{2}                         # (minute)\n                                    : \\d{2}                         # (second)\n                                    (?: \\.\\d*)?                     # (fraction)\n                                    (?:\n                                          (?:[ \\t]*) Z\n                                        | [-+] \\d{1,2} (?: :\\d{1,2})?\n                                    )?                              # (time zone)\n                                )\n                              )\n                            | (=)\n                            | (<<)\n                        )\n                        (?x:\n                            (?=\n                                  \\s* $\n                                | \\s+ \\#\n                                | \\s* : (\\s|$)\n                            )\n                        )\n                    "
+					"match": "",2})?\n                                    )?                              # (time zone)\n                                )\n                              )\n                            | (=)\n                            | (<<)\n                        )\n                        (?x:\n                            (?=\n                                  \\s* $\n                                | \\s+ \\#\n                                | \\s* : (\\s|$)\n                            )\n                        )\n                    "
 				}
 			]
 		},
@@ -519,7 +519,7 @@
 			"name": "string.quoted.single.yaml",
 			"patterns": [
 				{
-					"match": "''",
+					"match": "",
 					"name": "constant.character.escape.single-quoted.yaml"
 				}
 			]
@@ -543,7 +543,7 @@
 					"include": "#prototype"
 				},
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.separator.sequence.yaml"
 				},
 				{
@@ -595,14 +595,14 @@
 							"name": "invalid.illegal.character.anchor.yaml"
 						}
 					},
-					"match": "\\G((&))([^\\s\\[\\]/{/},]+)(\\S+)?"
+					"match": "",]+)(\\S+)?"
 				},
 				{
-					"match": "(?x)\n                        \\G\n                        (?:\n                            ! < (?: %\\p{XDigit}{2} | [0-9A-Za-z\\-#;/?:@&=+$,_.!~*'()\\[\\]] )+ >\n                          | (?:!(?:[0-9A-Za-z\\-]*!)?) (?: %\\p{XDigit}{2} | [0-9A-Za-z\\-#;/?:@&=+$_.~*'()] )+\n                          | !\n                        )\n                        (?=\\ |\\t|$)\n                    ",
+					"match": "",
 					"name": "storage.type.tag-handle.yaml"
 				},
 				{
-					"match": "\\S+",
+					"match": "",
 					"name": "invalid.illegal.tag-handle.yaml"
 				}
 			]

@@ -77,7 +77,7 @@
 					"name": "string.quoted.single.css",
 					"patterns": [
 						{
-							"match": "\\\\.",
+							"match": "",
 							"name": "constant.character.escape.css"
 						}
 					]
@@ -98,19 +98,19 @@
 					"name": "string.quoted.double.css",
 					"patterns": [
 						{
-							"match": "\\\\(\\d{1,6}|.)",
+							"match": "",
 							"name": "constant.character.escape.css"
 						}
 					]
 				},
 				{
-					"match": "[^'\") \\t]+",
+					"match": "",
 					"name": "variable.parameter.misc.css"
 				}
 			]
 		},
 		{
-			"match": "(#)([0-9a-fA-F]{3}|[0-9a-fA-F]{6})\\b(?!.*?(?<!@){)",
+			"match": "",
 			"name": "constant.other.rgb-value.css"
 		},
 		{
@@ -125,7 +125,7 @@
 					"name": "variable.other.interpolation.less"
 				}
 			},
-			"match": "((#)([_a-zA-Z]|(@{[a-zA-Z0-9_-]+}))[a-zA-Z0-9_-]*)",
+			"match": "",
 			"name": "meta.selector.css"
 		},
 		{
@@ -173,7 +173,7 @@
 					"name": "punctuation.definition.end.entity.css"
 				}
 			},
-			"match": "(?i)(\\[)\\s*(-?[_a-z\\\\[[:^ascii:]]][_a-z0-9\\-\\\\[[:^ascii:]]]*)(?:\\s*([~|^$*]?=)\\s*(?:(-?[_a-z\\\\[[:^ascii:]]][_a-z0-9\\-\\\\[[:^ascii:]]]*)|((?>(['\"])(?:[^\\\\]|\\\\.)*?(\\6)))))?\\s*(\\])",
+			"match": "",
 			"name": "meta.attribute-selector.css"
 		},
 		{
@@ -195,7 +195,7 @@
 			"name": "meta.at-rule.import.css",
 			"patterns": [
 				{
-					"match": "(?<=\\(|,|\\s)\\b(reference|optional|once|multiple|less|inline)\\b(?=\\)|,)",
+					"match": "",
 					"name": "keyword.control.import.option.less"
 				},
 				{
@@ -218,7 +218,7 @@
 					"name": "punctuation.definition.keyword.css"
 				}
 			},
-			"match": "^\\s*((@)font-face\\b)",
+			"match": "",
 			"name": "meta.at-rule.fontface.css"
 		},
 		{
@@ -230,18 +230,18 @@
 					"name": "punctuation.definition.keyword.css"
 				}
 			},
-			"match": "^\\s*((@)media\\b)",
+			"match": "",
 			"name": "meta.at-rule.media.css"
 		},
 		{
 			"include": "source.css#media-features"
 		},
 		{
-			"match": "\\b(tv|tty|screen|projection|print|handheld|embossed|braille|aural|all)\\b",
+			"match": "",
 			"name": "support.constant.media-type.media.css"
 		},
 		{
-			"match": "\\b(portrait|landscape)\\b",
+			"match": "",
 			"name": "support.constant.property-value.media-property.media.css"
 		},
 		{
@@ -274,7 +274,7 @@
 			]
 		},
 		{
-			"match": "(@|\\-\\-)[\\w-]+(?=\\s*)",
+			"match": "",
 			"name": "variable.other.less",
 			"captures": {
 				"1": {
@@ -327,22 +327,22 @@
 			]
 		},
 		{
-			"match": "\\!\\s*important",
+			"match": "",
 			"name": "keyword.other.important.css"
 		},
 		{
-			"match": "\\*|\\/|\\-|\\+|~|=|<=|>=|<|>",
+			"match": "",
 			"name": "keyword.operator.less"
 		},
 		{
-			"match": "\\b(not|and|when)\\b",
+			"match": "",
 			"name": "keyword.control.logical.operator.less"
 		},
 		{
 			"include": "source.css#tag-names"
 		},
 		{
-			"match": "(?<![\\w-])[a-z][\\w&&[^A-Z]]*+-[\\w-&&[^A-Z]]+",
+			"match": "",
 			"name": "entity.name.tag.custom.css"
 		},
 		{
@@ -360,42 +360,42 @@
 					"name": "punctuation.section.property-list.end.css"
 				}
 			},
-			"match": "(\\{)(\\})",
+			"match": "",
 			"name": "meta.brace.curly.css"
 		},
 		{
-			"match": "\\{|\\}",
+			"match": "",
 			"name": "meta.brace.curly.css"
 		},
 		{
 			"include": "#brace_round"
 		},
 		{
-			"match": "\\[|\\]",
+			"match": "",
 			"name": "meta.brace.square.less"
 		},
 		{
-			"match": ";",
+			"match": "",
 			"name": "punctuation.terminator.rule.css"
 		},
 		{
-			"match": ":",
+			"match": "",
 			"name": "punctuation.separator.key-value.css"
 		},
 		{
-			"match": "\\btrue\\b",
+			"match": "",
 			"name": "constant.language.boolean.less"
 		},
 		{
-			"match": "\\bdefault\\b",
+			"match": "",
 			"name": "support.function.default.less"
 		},
 		{
-			"match": "\\b(isurl|isstring|isnumber|iskeyword|iscolor)\\b",
+			"match": "",
 			"name": "support.function.type-checking.less"
 		},
 		{
-			"match": "\\b(isunit|ispixel|ispercentage|isem)\\b",
+			"match": "",
 			"name": "support.function.unit-checking.less"
 		},
 		{
@@ -416,7 +416,7 @@
 	],
 	"repository": {
 		"variable_interpolation": {
-			"match": "@{[a-zA-Z0-9_-]+}",
+			"match": "",
 			"name": "variable.other.interpolation.less"
 		},
 		"strings": {
@@ -437,7 +437,7 @@
 					"name": "string.quoted.double.css",
 					"patterns": [
 						{
-							"match": "\\\\([0-9A-Fa-f]{1,6}|.)",
+							"match": "",
 							"name": "constant.character.escape.css"
 						},
 						{
@@ -461,7 +461,7 @@
 					"name": "string.quoted.single.css",
 					"patterns": [
 						{
-							"match": "\\\\([0-9A-Fa-f]{1,6}|.)",
+							"match": "",
 							"name": "constant.character.escape.css"
 						},
 						{
@@ -472,7 +472,7 @@
 			]
 		},
 		"brace_round": {
-			"match": "\\(|\\)",
+			"match": "",
 			"name": "meta.brace.round.css"
 		},
 		"property_values": {
@@ -509,7 +509,7 @@
 							"include": "#strings"
 						},
 						{
-							"match": "(\\b|\\.{0,2}/)[^)]*\\b",
+							"match": "",
 							"name": "string.url.css"
 						}
 					]
@@ -535,7 +535,7 @@
 			]
 		},
 		"less_builtin_functions": {
-			"match": "\\b(abs|acos|alpha|argb|asin|atan|average|blue|calc|ceil|color|contrast|convert|convert|cos|darken|data-uri|desaturate|difference|e|escape|exclusion|extract|fade|fadein|fadeout|floor|format|green|greyscale|hardlight|hsl|hsla|hsv|hsva|hsvhue|hsvsaturation|hsvvalue|hue|length|lighten|lightness|luma|max|min|mix|mod|multiply|negation|overlay|percentage|pi|pow|red|replace|round|saturate|saturation|screen|sin|softlight|spin|sqrt|tan|unit)\\b",
+			"match": "",
 			"name": "support.function.any-method.builtin.less"
 		}
 	}

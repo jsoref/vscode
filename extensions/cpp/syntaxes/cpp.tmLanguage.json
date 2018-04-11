@@ -15,55 +15,55 @@
 			"include": "#strings"
 		},
 		{
-			"match": "\\b(friend|explicit|virtual|override|final|noexcept)\\b",
+			"match": "",
 			"name": "storage.modifier.cpp"
 		},
 		{
-			"match": "\\b(private:|protected:|public:)",
+			"match": "",
 			"name": "storage.modifier.cpp"
 		},
 		{
-			"match": "\\b(catch|operator|try|throw|using)\\b",
+			"match": "",
 			"name": "keyword.control.cpp"
 		},
 		{
-			"match": "\\bdelete\\b(\\s*\\[\\])?|\\bnew\\b(?!])",
+			"match": "",
 			"name": "keyword.control.cpp"
 		},
 		{
-			"match": "\\b(f|m)[A-Z]\\w*\\b",
+			"match": "",
 			"name": "variable.other.readwrite.member.cpp"
 		},
 		{
-			"match": "\\bthis\\b",
+			"match": "",
 			"name": "variable.language.this.cpp"
 		},
 		{
-			"match": "\\bnullptr\\b",
+			"match": "",
 			"name": "constant.language.cpp"
 		},
 		{
-			"match": "\\btemplate\\b\\s*",
+			"match": "",
 			"name": "storage.type.template.cpp"
 		},
 		{
-			"match": "\\b(const_cast|dynamic_cast|reinterpret_cast|static_cast)\\b\\s*",
+			"match": "",
 			"name": "keyword.operator.cast.cpp"
 		},
 		{
-			"match": "::",
+			"match": "",
 			"name": "punctuation.separator.namespace.access.cpp"
 		},
 		{
-			"match": "\\b(and|and_eq|bitand|bitor|compl|not|not_eq|or|or_eq|typeid|xor|xor_eq|alignof|alignas)\\b",
+			"match": "",
 			"name": "keyword.operator.cpp"
 		},
 		{
-			"match": "\\b(class|decltype|wchar_t|char16_t|char32_t)\\b",
+			"match": "",
 			"name": "storage.type.cpp"
 		},
 		{
-			"match": "\\b(constexpr|export|mutable|typename|thread_local)\\b",
+			"match": "",
 			"name": "storage.modifier.cpp"
 		},
 		{
@@ -154,7 +154,7 @@
 							"name": "punctuation.definition.parameters.c"
 						}
 					},
-					"match": "(?x)\n(\n  (?!while|for|do|if|else|switch|catch|enumerate|return|r?iterate)\n  (?:\\b[A-Za-z_][A-Za-z0-9_]*+\\b|::)*+ # actual name\n)\n\\s*(\\() # opening bracket",
+					"match": "",
 					"name": "meta.function-call.c"
 				},
 				{
@@ -288,11 +288,11 @@
 						"6": {
 							"patterns": [
 								{
-									"match": "(public|protected|private)",
+									"match": "",
 									"name": "storage.type.modifier.cpp"
 								},
 								{
-									"match": "[_A-Za-z][_A-Za-z0-9]*",
+									"match": "",
 									"name": "entity.name.type.inherited.cpp"
 								}
 							]
@@ -397,19 +397,19 @@
 					"name": "string.quoted.double.cpp",
 					"patterns": [
 						{
-							"match": "\\\\u\\h{4}|\\\\U\\h{8}",
+							"match": "",
 							"name": "constant.character.escape.cpp"
 						},
 						{
-							"match": "\\\\['\"?\\\\abfnrtv]",
+							"match": "",
 							"name": "constant.character.escape.cpp"
 						},
 						{
-							"match": "\\\\[0-7]{1,3}",
+							"match": "",
 							"name": "constant.character.escape.cpp"
 						},
 						{
-							"match": "\\\\x\\h+",
+							"match": "",
 							"name": "constant.character.escape.cpp"
 						},
 						{

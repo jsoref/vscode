@@ -10,7 +10,7 @@
 	"patterns": [
 		{
 			"comment": "Doctype declaration.",
-			"match": "^(!!!|doctype)(\\s*[a-zA-Z0-9-_]+)?",
+			"match": "",
 			"name": "meta.tag.sgml.doctype.html"
 		},
 		{
@@ -32,7 +32,7 @@
 						}
 					},
 					"comment": "Buffered comments inside buffered comments will generate invalid html.",
-					"match": "^\\s*(//)(?!-)",
+					"match": "",
 					"name": "string.comment.buffered.block.jade"
 				}
 			]
@@ -43,7 +43,7 @@
 			"name": "comment.unbuffered.block.jade",
 			"patterns": [
 				{
-					"match": "--",
+					"match": "",
 					"name": "invalid.illegal.comment.comment.block.jade"
 				}
 			]
@@ -214,18 +214,18 @@
 					"name": "name.generic.filter.jade",
 					"patterns": [
 						{
-							"match": "\\G\\(",
+							"match": "",
 							"name": "invalid.illegal.name.generic.filter.jade"
 						},
 						{
-							"match": "[\\w-]",
+							"match": "",
 							"name": "constant.language.name.generic.filter.jade"
 						},
 						{
 							"include": "#tag_attributes"
 						},
 						{
-							"match": "\\W",
+							"match": "",
 							"name": "invalid.illegal.name.generic.filter.jade"
 						}
 					]
@@ -396,7 +396,7 @@
 				}
 			},
 			"comment": "Template blocks and includes.",
-			"match": "(extends|include|yield|append|prepend|block( (append|prepend))?)\\s+(.*)$",
+			"match": "",
 			"name": "meta.first-class.jade"
 		},
 		"case_conds": {
@@ -444,7 +444,7 @@
 					"include": "#case_when_paren"
 				},
 				{
-					"match": ":",
+					"match": "",
 					"name": "invalid.illegal.name.tag.jade"
 				},
 				{
@@ -469,7 +469,7 @@
 					"include": "#flow_control"
 				},
 				{
-					"match": "(?<=:)\\w.*$",
+					"match": "",
 					"name": "invalid.illegal.name.tag.jade"
 				},
 				{
@@ -548,11 +548,11 @@
 		"html_entity": {
 			"patterns": [
 				{
-					"match": "(&)([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+)(;)",
+					"match": "",
 					"name": "constant.character.entity.html.text.jade"
 				},
 				{
-					"match": "[<>&]",
+					"match": "",
 					"name": "invalid.illegal.html_entity.text.jade"
 				}
 			]
@@ -600,7 +600,7 @@
 							"include": "#inline_jade"
 						},
 						{
-							"match": "\\[",
+							"match": "",
 							"name": "invalid.illegal.tag.jade"
 						}
 					]
@@ -612,7 +612,7 @@
 					"include": "#printed_expression"
 				},
 				{
-					"match": "\\[",
+					"match": "",
 					"name": "invalid.illegal.tag.jade"
 				},
 				{
@@ -651,7 +651,7 @@
 			]
 		},
 		"interpolated_error": {
-			"match": "(?<!\\\\)[#!]\\{(?=[^}]*$)",
+			"match": "",
 			"name": "invalid.illegal.tag.jade"
 		},
 		"interpolated_value": {
@@ -660,7 +660,7 @@
 			"name": "string.interpolated.jade",
 			"patterns": [
 				{
-					"match": "{",
+					"match": "",
 					"name": "invalid.illegal.tag.jade"
 				},
 				{
@@ -733,7 +733,7 @@
 									"name": "meta.tag.other entity.other.attribute-name.tag.jade"
 								}
 							},
-							"match": "([^\\s(),=/]+)\\s*=\\s*"
+							"match": "",=/]+)\\s*=\\s*"
 						},
 						{
 							"include": "source.js"
@@ -763,7 +763,7 @@
 					"name": "punctuation.definition.parameters.begin.js"
 				}
 			},
-			"match": "(mixin\\s+)([\\w-]+)(?:(\\()\\s*((?:[a-zA-Z_]\\w*\\s*)(?:,\\s*[a-zA-Z_]\\w*\\s*)*)(\\)))?$"
+			"match": "",\\s*[a-zA-Z_]\\w*\\s*)*)(\\)))?$"
 		},
 		"printed_expression": {
 			"begin": "(!?\\=)\\s*",
@@ -789,7 +789,7 @@
 			"name": "string.quoted.jade",
 			"patterns": [
 				{
-					"match": "\\\\((x[0-9a-fA-F]{2})|(u[0-9]{4})|.)",
+					"match": "",
 					"name": "constant.character.quoted.jade"
 				},
 				{
@@ -806,7 +806,7 @@
 					"name": "entity.other.attribute-name.tag.jade"
 				}
 			},
-			"match": "([^\\s(),=/!]+)\\s*"
+			"match": "",=/!]+)\\s*"
 		},
 		"tag_attribute_name_paren": {
 			"begin": "\\(\\s*",
@@ -838,7 +838,7 @@
 					"include": "#tag_attribute_name"
 				},
 				{
-					"match": "!(?!=)",
+					"match": "",
 					"name": "invalid.illegal.tag.jade"
 				},
 				{
@@ -893,11 +893,11 @@
 					"name": "invalid.illegal.tag.jade"
 				}
 			},
-			"match": "\\.([^\\w-])?[\\w-]*",
+			"match": "",
 			"name": "entity.other.attribute-name.class.jade"
 		},
 		"tag_id": {
-			"match": "#[\\w-]+",
+			"match": "",
 			"name": "entity.other.attribute-name.id.jade"
 		},
 		"tag_mixin_attributes": {
@@ -911,7 +911,7 @@
 			"name": "meta.tag.other",
 			"patterns": [
 				{
-					"match": "attributes(?=\\))",
+					"match": "",
 					"name": "storage.type.keyword.jade"
 				},
 				{
@@ -930,7 +930,7 @@
 					"name": "meta.tag.other entity.name.tag.jade",
 					"patterns": [
 						{
-							"match": "{",
+							"match": "",
 							"name": "invalid.illegal.tag.jade"
 						},
 						{

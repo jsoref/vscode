@@ -30,7 +30,7 @@
 		},
 		{
 			"name": "support.constant.property-value.shaderlab",
-			"match": "\\b(?i:Back|Front|On|Off|[RGBA]{1,3}|AmbientAndDiffuse|Emission)\\b"
+			"match": "",3}|AmbientAndDiffuse|Emission)\\b"
 		},
 		{
 			"name": "support.constant.property-value.comparisonfunction.shaderlab",

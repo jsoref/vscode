@@ -59,7 +59,7 @@
 		},
 		{
 			"comment": "Syntax error receiving channels",
-			"match": "<\\-([\\t ]+)chan\\b",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "invalid.illegal.receive-channel.go"
@@ -68,7 +68,7 @@
 		},
 		{
 			"comment": "Syntax error sending channels",
-			"match": "\\bchan([\\t ]+)<-",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "invalid.illegal.send-channel.go"
@@ -77,7 +77,7 @@
 		},
 		{
 			"comment": "Syntax error using slices",
-			"match": "\\[\\](\\s+)",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "invalid.illegal.slice.go"
@@ -86,17 +86,17 @@
 		},
 		{
 			"comment": "Syntax error numeric literals",
-			"match": "\\b0[0-7]*[89]\\d*\\b",
+			"match": "",
 			"name": "invalid.illegal.numeric.go"
 		},
 		{
 			"comment": "Built-in functions",
-			"match": "\\b(append|cap|close|complex|copy|delete|imag|len|make|new|panic|print|println|real|recover)\\b(?=\\()",
+			"match": "",
 			"name": "support.function.builtin.go"
 		},
 		{
 			"comment": "Function declarations",
-			"match": "^(\\bfunc\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "keyword.function.go"
@@ -114,11 +114,11 @@
 				"3": {
 					"patterns": [
 						{
-							"match": "\\d\\w*",
+							"match": "",
 							"name": "invalid.illegal.identifier.go"
 						},
 						{
-							"match": "\\w+",
+							"match": "",
 							"name": "entity.name.function.go"
 						}
 					]
@@ -127,7 +127,7 @@
 		},
 		{
 			"comment": "Functions",
-			"match": "(\\bfunc\\b)|(\\w+)(?=\\()",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "keyword.function.go"
@@ -135,11 +135,11 @@
 				"2": {
 					"patterns": [
 						{
-							"match": "\\d\\w*",
+							"match": "",
 							"name": "invalid.illegal.identifier.go"
 						},
 						{
-							"match": "\\w+",
+							"match": "",
 							"name": "support.function.go"
 						}
 					]
@@ -148,17 +148,17 @@
 		},
 		{
 			"comment": "Floating-point literals",
-			"match": "(\\.\\d+([Ee][-+]\\d+)?i?)\\b|\\b\\d+\\.\\d*(([Ee][-+]\\d+)?i?\\b)?",
+			"match": "",
 			"name": "constant.numeric.floating-point.go"
 		},
 		{
 			"comment": "Integers",
-			"match": "\\b((0x[0-9a-fA-F]+)|(0[0-7]+i?)|(\\d+([Ee]\\d+)?i?)|(\\d+[Ee][-+]\\d+i?))\\b",
+			"match": "",
 			"name": "constant.numeric.integer.go"
 		},
 		{
 			"comment": "Language constants",
-			"match": "\\b(true|false|nil|iota)\\b",
+			"match": "",
 			"name": "constant.language.go"
 		},
 		{
@@ -171,11 +171,11 @@
 			"end": "(?!\\G)",
 			"patterns": [
 				{
-					"match": "\\d\\w*",
+					"match": "",
 					"name": "invalid.illegal.identifier.go"
 				},
 				{
-					"match": "\\w+",
+					"match": "",
 					"name": "entity.name.package.go"
 				}
 			]
@@ -190,11 +190,11 @@
 			"end": "(?!\\G)",
 			"patterns": [
 				{
-					"match": "\\d\\w*",
+					"match": "",
 					"name": "invalid.illegal.identifier.go"
 				},
 				{
-					"match": "\\w+",
+					"match": "",
 					"name": "entity.name.type.go"
 				}
 			]
@@ -228,16 +228,16 @@
 			]
 		},
 		{
-			"match": "(?<!var)\\s*(\\w+(?:\\.\\w+)*(?>,\\s*\\w+(?:\\.\\w+)*)*)(?=\\s*=(?!=))",
+			"match": "",
 			"captures": {
 				"1": {
 					"patterns": [
 						{
-							"match": "\\d\\w*",
+							"match": "",
 							"name": "invalid.illegal.identifier.go"
 						},
 						{
-							"match": "\\w+(?:\\.\\w+)*",
+							"match": "",
 							"name": "variable.other.assignment.go",
 							"captures": {
 								"0": {
@@ -257,16 +257,16 @@
 			}
 		},
 		{
-			"match": "\\w+(?:,\\s*\\w+)*(?=\\s*:=)",
+			"match": "",
 			"captures": {
 				"0": {
 					"patterns": [
 						{
-							"match": "\\d\\w*",
+							"match": "",
 							"name": "invalid.illegal.identifier.go"
 						},
 						{
-							"match": "\\w+",
+							"match": "",
 							"name": "variable.other.assignment.go"
 						},
 						{
@@ -278,7 +278,7 @@
 		},
 		{
 			"comment": "Terminators",
-			"match": ";",
+			"match": "",
 			"name": "punctuation.terminator.go"
 		},
 		{
@@ -342,7 +342,7 @@
 					]
 				},
 				{
-					"match": "\\[|\\]",
+					"match": "",
 					"name": "punctuation.definition.bracket.square.go"
 				}
 			]
@@ -374,15 +374,15 @@
 		"delimiters": {
 			"patterns": [
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.other.comma.go"
 				},
 				{
-					"match": "\\.(?!\\.\\.)",
+					"match": "",
 					"name": "punctuation.other.period.go"
 				},
 				{
-					"match": ":(?!=)",
+					"match": "",
 					"name": "punctuation.other.colon.go"
 				}
 			]
@@ -390,7 +390,7 @@
 		"imports": {
 			"patterns": [
 				{
-					"match": "((?!\\s+\")[^\\s]*)?\\s*((\")([^\"]*)(\"))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "entity.alias.import.go"
@@ -437,31 +437,31 @@
 			"patterns": [
 				{
 					"comment": "Flow control keywords",
-					"match": "\\b(break|case|continue|default|defer|else|fallthrough|for|go|goto|if|range|return|select|switch)\\b",
+					"match": "",
 					"name": "keyword.control.go"
 				},
 				{
-					"match": "\\bchan\\b",
+					"match": "",
 					"name": "keyword.channel.go"
 				},
 				{
-					"match": "\\bconst\\b",
+					"match": "",
 					"name": "keyword.const.go"
 				},
 				{
-					"match": "\\bfunc\\b",
+					"match": "",
 					"name": "keyword.function.go"
 				},
 				{
-					"match": "\\binterface\\b",
+					"match": "",
 					"name": "keyword.interface.go"
 				},
 				{
-					"match": "\\bmap\\b",
+					"match": "",
 					"name": "keyword.map.go"
 				},
 				{
-					"match": "\\bstruct\\b",
+					"match": "",
 					"name": "keyword.struct.go"
 				}
 			]
@@ -470,43 +470,43 @@
 			"comment": "Note that the order here is very important!",
 			"patterns": [
 				{
-					"match": "(\\*|&)(?=\\w)",
+					"match": "",
 					"name": "keyword.operator.address.go"
 				},
 				{
-					"match": "<\\-",
+					"match": "",
 					"name": "keyword.operator.channel.go"
 				},
 				{
-					"match": "\\-\\-",
+					"match": "",
 					"name": "keyword.operator.decrement.go"
 				},
 				{
-					"match": "\\+\\+",
+					"match": "",
 					"name": "keyword.operator.increment.go"
 				},
 				{
-					"match": "(==|!=|<=|>=|<(?!<)|>(?!>))",
+					"match": "",
 					"name": "keyword.operator.comparison.go"
 				},
 				{
-					"match": "(&&|\\|\\||!)",
+					"match": "",
 					"name": "keyword.operator.logical.go"
 				},
 				{
-					"match": "(=|\\+=|\\-=|\\|=|\\^=|\\*=|/=|:=|%=|<<=|>>=|&\\^=|&=)",
+					"match": "",
 					"name": "keyword.operator.assignment.go"
 				},
 				{
-					"match": "(\\+|\\-|\\*|/|%)",
+					"match": "",
 					"name": "keyword.operator.arithmetic.go"
 				},
 				{
-					"match": "(&(?!\\^)|\\||\\^|&\\^|<<|>>)",
+					"match": "",
 					"name": "keyword.operator.arithmetic.bitwise.go"
 				},
 				{
-					"match": "\\.\\.\\.",
+					"match": "",
 					"name": "keyword.operator.ellipsis.go"
 				}
 			]
@@ -529,11 +529,11 @@
 					"name": "string.quoted.rune.go",
 					"patterns": [
 						{
-							"match": "\\G(\\\\([0-7]{3}|[abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})|.)(?=')",
+							"match": "",
 							"name": "constant.other.rune.go"
 						},
 						{
-							"match": "[^']+",
+							"match": "",
 							"name": "invalid.illegal.unknown-rune.go"
 						}
 					]
@@ -543,31 +543,31 @@
 		"storage_types": {
 			"patterns": [
 				{
-					"match": "\\bbool\\b",
+					"match": "",
 					"name": "storage.type.boolean.go"
 				},
 				{
-					"match": "\\bbyte\\b",
+					"match": "",
 					"name": "storage.type.byte.go"
 				},
 				{
-					"match": "\\berror\\b",
+					"match": "",
 					"name": "storage.type.error.go"
 				},
 				{
-					"match": "\\b(complex(64|128)|float(32|64)|u?int(8|16|32|64)?)\\b",
+					"match": "",
 					"name": "storage.type.numeric.go"
 				},
 				{
-					"match": "\\brune\\b",
+					"match": "",
 					"name": "storage.type.rune.go"
 				},
 				{
-					"match": "\\bstring\\b",
+					"match": "",
 					"name": "storage.type.string.go"
 				},
 				{
-					"match": "\\buintptr\\b",
+					"match": "",
 					"name": "storage.type.uintptr.go"
 				}
 			]
@@ -575,11 +575,11 @@
 		"string_escaped_char": {
 			"patterns": [
 				{
-					"match": "\\\\([0-7]{3}|[abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})",
+					"match": "",
 					"name": "constant.character.escape.go"
 				},
 				{
-					"match": "\\\\[^0-7xuUabfnrtv\\'\"]",
+					"match": "",
 					"name": "invalid.illegal.unknown-escape.go"
 				}
 			]
@@ -587,7 +587,7 @@
 		"string_placeholder": {
 			"patterns": [
 				{
-					"match": "%(\\[\\d+\\])?([\\+#\\-0\\x20]{,2}((\\d+|\\*)?(\\.?(\\d+|\\*|(\\[\\d+\\])\\*?)?(\\[\\d+\\])?)?))?[vT%tbcdoqxXUbeEfFgGsp]",
+					"match": "",
 					"name": "constant.other.placeholder.go"
 				}
 			]
@@ -595,16 +595,16 @@
 		"variables": {
 			"patterns": [
 				{
-					"match": "(\\w+(?:,\\s*\\w+)*)(\\s+\\*?\\w+(?:\\.\\w+)?\\s*)?(?=\\s*=)",
+					"match": "",
 					"captures": {
 						"1": {
 							"patterns": [
 								{
-									"match": "\\d\\w*",
+									"match": "",
 									"name": "invalid.illegal.identifier.go"
 								},
 								{
-									"match": "\\w+",
+									"match": "",
 									"name": "variable.other.assignment.go"
 								},
 								{
@@ -622,16 +622,16 @@
 					}
 				},
 				{
-					"match": "(\\w+(?:,\\s*\\w+)*)(\\s+(\\[(\\d*|\\.\\.\\.)\\])*\\*?(<-)?\\w+(?:\\.\\w+)?\\s*[^=].*)",
+					"match": "",
 					"captures": {
 						"1": {
 							"patterns": [
 								{
-									"match": "\\d\\w*",
+									"match": "",
 									"name": "invalid.illegal.identifier.go"
 								},
 								{
-									"match": "\\w+",
+									"match": "",
 									"name": "variable.other.declaration.go"
 								},
 								{

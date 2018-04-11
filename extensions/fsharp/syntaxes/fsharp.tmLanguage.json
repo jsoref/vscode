@@ -215,7 +215,7 @@
 					"patterns": [
 						{
 							"name": "entity.name.section.fsharp",
-							"match": "(\\.)([A-Z][[:alpha:]0-9'_]*)",
+							"match": "",
 							"captures": {
 								"1": {
 									"name": "punctuation.separator.namespace-reference.fsharp"
@@ -242,7 +242,7 @@
 					"patterns": [
 						{
 							"name": "entity.name.section.fsharp",
-							"match": "(\\.)([[:alpha:]][[:alpha:]0-9'_]*)",
+							"match": "",
 							"captures": {
 								"1": {
 									"name": "punctuation.separator.namespace-reference.fsharp"
@@ -275,7 +275,7 @@
 					"patterns": [
 						{
 							"name": "entity.name.section.fsharp",
-							"match": "(\\.)([A-Z][[:alpha:]0-9'_]*)",
+							"match": "",
 							"captures": {
 								"1": {
 									"name": "punctuation.separator.namespace-reference.fsharp"
@@ -370,7 +370,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.type.format.specifier.fsharp",
-					"match": "(%0?-?(\\d+)?((a|t)|(\\.\\d+)?(f|F|e|E|g|G|M)|(b|c|s|d|i|x|X|o)|(s|b|O)|(\\+?A)))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "keyword.other.format.specifier.fsharp"
@@ -395,7 +395,7 @@
 			"patterns": [
 				{
 					"name": "variable.other.binding.fsharp",
-					"match": "(``)(.*)(``)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "string.quoted.single.fsharp"
@@ -414,7 +414,7 @@
 			"patterns": [
 				{
 					"name": "record.fsharp",
-					"match": "(type)[\\s]+(private|internal|public)?[\\s]*([[:alpha:]0-9'<>^:,._ ]+)[\\s]*(\\([[:alpha:]0-9'<>^:,._ ]+\\))?[\\s]*((with)|(as [[:alpha:]0-9']+)|(=)|(\\(\\)))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "keyword.other.fsharp"
@@ -448,7 +448,7 @@
 			"patterns": [
 				{
 					"name": "cexpr.fsharp",
-					"match": "\\b([[:alpha:]]*\\s+\\{)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "keyword.other.fsharp"
@@ -461,7 +461,7 @@
 			"patterns": [
 				{
 					"name": "char.fsharp",
-					"match": "('\\\\?.')",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "string.quoted.single.fsharp"

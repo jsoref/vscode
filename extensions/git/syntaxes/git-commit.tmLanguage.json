@@ -40,11 +40,11 @@
 									"match": "\\G((fixup|squash)!)\\s*"
 								},
 								{
-									"match": ".{73,}$",
+									"match": "",
 									"name": "invalid.illegal.line-too-long.git-commit"
 								},
 								{
-									"match": ".{51,}$",
+									"match": "",
 									"name": "invalid.deprecated.line-too-long.git-commit"
 								}
 							]
@@ -101,19 +101,19 @@
 							"end": "(?!\\G)^",
 							"patterns": [
 								{
-									"match": "\\G#",
+									"match": "",
 									"name": "punctuation.definition.comment.git-commit"
 								},
 								{
-									"match": "((modified|renamed):.*)$\\n?",
+									"match": "",
 									"name": "markup.changed.git-commit"
 								},
 								{
-									"match": "(new file:.*)$\\n?",
+									"match": "",
 									"name": "markup.inserted.git-commit"
 								},
 								{
-									"match": "(deleted:.*)$\\n?",
+									"match": "",
 									"name": "markup.deleted.git-commit"
 								}
 							]

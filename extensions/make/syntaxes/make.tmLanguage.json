@@ -45,7 +45,7 @@
 					"name": "comment.line.number-sign.makefile",
 					"patterns": [
 						{
-							"match": "\\\\\\n",
+							"match": "",
 							"name": "constant.character.escape.continuation.makefile"
 						}
 					]
@@ -70,7 +70,7 @@
 							"include": "#variables"
 						},
 						{
-							"match": "%",
+							"match": "",
 							"name": "constant.other.placeholder.makefile"
 						}
 					]
@@ -91,7 +91,7 @@
 							"include": "#variables"
 						},
 						{
-							"match": "%",
+							"match": "",
 							"name": "constant.other.placeholder.makefile"
 						}
 					]
@@ -148,7 +148,7 @@
 							"include": "#variable-assignment"
 						},
 						{
-							"match": "[^\\s]+",
+							"match": "",
 							"name": "variable.other.makefile"
 						}
 					]
@@ -183,7 +183,7 @@
 							"include": "#comment"
 						},
 						{
-							"match": "[^\\s]+",
+							"match": "",
 							"name": "variable.other.makefile"
 						}
 					]
@@ -322,7 +322,7 @@
 									"include": "#variables"
 								},
 								{
-									"match": "%",
+									"match": "",
 									"name": "constant.other.placeholder.makefile"
 								}
 							]
@@ -342,11 +342,11 @@
 					"name": "meta.scope.prerequisites.makefile",
 					"patterns": [
 						{
-							"match": "\\\\\\n",
+							"match": "",
 							"name": "constant.character.escape.continuation.makefile"
 						},
 						{
-							"match": "%|\\*",
+							"match": "",
 							"name": "constant.other.placeholder.makefile"
 						},
 						{
@@ -366,7 +366,7 @@
 								"0": {
 									"patterns": [
 										{
-											"match": "\\\\\\n",
+											"match": "",
 											"name": "constant.character.escape.continuation.makefile"
 										},
 										{
@@ -398,7 +398,7 @@
 			"end": "\\n",
 			"patterns": [
 				{
-					"match": "\\\\\\n",
+					"match": "",
 					"name": "constant.character.escape.continuation.makefile"
 				},
 				{
@@ -415,7 +415,7 @@
 		"variables": {
 			"patterns": [
 				{
-					"match": "\\$[^\\(\\)]",
+					"match": "",
 					"name": "variable.language.makefile"
 				},
 				{
@@ -432,7 +432,7 @@
 							"include": "#variables"
 						},
 						{
-							"match": "(?<=\\()(MAKEFILES|VPATH|SHELL|MAKESHELL|MAKE|MAKELEVEL|MAKEFLAGS|MAKECMDGOALS|CURDIR|SUFFIXES|\\.LIBPATTERNS)(?=\\s*\\))",
+							"match": "",
 							"name": "variable.language.makefile"
 						},
 						{
@@ -452,11 +452,11 @@
 									"include": "#braces-interpolation"
 								},
 								{
-									"match": "%|\\*",
+									"match": "",
 									"name": "constant.other.placeholder.makefile"
 								},
 								{
-									"match": "\\\\\\n",
+									"match": "",
 									"name": "constant.character.escape.continuation.makefile"
 								}
 							]
@@ -486,7 +486,7 @@
 									"include": "#variables"
 								},
 								{
-									"match": "\\\\\\n",
+									"match": "",
 									"name": "constant.character.escape.continuation.makefile"
 								}
 							]

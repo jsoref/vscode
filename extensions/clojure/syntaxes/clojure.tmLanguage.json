@@ -71,43 +71,43 @@
 		"constants": {
 			"patterns": [
 				{
-					"match": "(nil)(?=(\\s|\\)|\\]|\\}))",
+					"match": "",
 					"name": "constant.language.nil.clojure"
 				},
 				{
-					"match": "(true|false)",
+					"match": "",
 					"name": "constant.language.boolean.clojure"
 				},
 				{
-					"match": "(-?\\d+/\\d+)",
+					"match": "",
 					"name": "constant.numeric.ratio.clojure"
 				},
 				{
-					"match": "(-?\\d+[rR][0-9a-zA-Z]+)",
+					"match": "",
 					"name": "constant.numeric.arbitrary-radix.clojure"
 				},
 				{
-					"match": "(-?0[xX][0-9a-fA-F]+)",
+					"match": "",
 					"name": "constant.numeric.hexadecimal.clojure"
 				},
 				{
-					"match": "(-?0\\d+)",
+					"match": "",
 					"name": "constant.numeric.octal.clojure"
 				},
 				{
-					"match": "(-?\\d+\\.\\d+([eE][+-]?\\d+)?M)",
+					"match": "",
 					"name": "constant.numeric.bigdecimal.clojure"
 				},
 				{
-					"match": "(-?\\d+\\.\\d+([eE][+-]?\\d+)?)",
+					"match": "",
 					"name": "constant.numeric.double.clojure"
 				},
 				{
-					"match": "(-?\\d+N)",
+					"match": "",
 					"name": "constant.numeric.bigint.clojure"
 				},
 				{
-					"match": "(-?\\d+)",
+					"match": "",
 					"name": "constant.numeric.long.clojure"
 				},
 				{
@@ -116,23 +116,23 @@
 			]
 		},
 		"keyword": {
-			"match": "(?<=(\\s|\\(|\\[|\\{)):[a-zA-Z0-9\\#\\.\\-\\_\\:\\+\\=\\>\\<\\/\\!\\?\\*]+(?=(\\s|\\)|\\]|\\}|\\,))",
+			"match": "",
 			"name": "constant.keyword.clojure"
 		},
 		"keyfn": {
 			"patterns": [
 				{
-					"match": "(?<=(\\s|\\(|\\[|\\{))(if(-[-a-z\\?]*)?|when(-[-a-z]*)?|for(-[-a-z]*)?|cond|do|let(-[-a-z\\?]*)?|binding|loop|recur|fn|throw[a-z\\-]*|try|catch|finally|([a-z]*case))(?=(\\s|\\)|\\]|\\}))",
+					"match": "",
 					"name": "storage.control.clojure"
 				},
 				{
-					"match": "(?<=(\\s|\\(|\\[|\\{))(declare-?|(in-)?ns|import|use|require|load|compile|(def[a-z\\-]*))(?=(\\s|\\)|\\]|\\}))",
+					"match": "",
 					"name": "keyword.control.clojure"
 				}
 			]
 		},
 		"dynamic-variables": {
-			"match": "\\*[\\w\\.\\-\\_\\:\\+\\=\\>\\<\\!\\?\\d]+\\*",
+			"match": "",
 			"name": "meta.symbol.dynamic.clojure"
 		},
 		"map": {
@@ -245,7 +245,7 @@
 			]
 		},
 		"regexp_escaped_char": {
-			"match": "\\\\.",
+			"match": "",
 			"name": "constant.character.escape.clojure"
 		},
 		"set": {
@@ -309,7 +309,7 @@
 							"include": "#dynamic-variables"
 						},
 						{
-							"match": "([a-zA-Z\\.\\-\\_\\+\\=\\>\\<\\!\\?\\*][\\w\\.\\-\\_\\:\\+\\=\\>\\<\\!\\?\\*\\d]*)",
+							"match": "",
 							"name": "entity.global.clojure"
 						},
 						{
@@ -336,7 +336,7 @@
 					"include": "#sexp"
 				},
 				{
-					"match": "(?<=\\()(.+?)(?=\\s|\\))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.clojure"
@@ -379,7 +379,7 @@
 			"name": "string.quoted.double.clojure",
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escape.clojure"
 				}
 			]
@@ -387,7 +387,7 @@
 		"namespace-symbol": {
 			"patterns": [
 				{
-					"match": "([a-zA-Z\\.\\-\\_\\+\\=\\>\\<\\!\\?\\*][\\w\\.\\-\\_\\:\\+\\=\\>\\<\\!\\?\\*\\d]*)/",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "meta.symbol.namespace.clojure"
@@ -399,13 +399,13 @@
 		"symbol": {
 			"patterns": [
 				{
-					"match": "([a-zA-Z\\.\\-\\_\\+\\=\\>\\<\\!\\?\\*][\\w\\.\\-\\_\\:\\+\\=\\>\\<\\!\\?\\*\\d]*)",
+					"match": "",
 					"name": "meta.symbol.clojure"
 				}
 			]
 		},
 		"var": {
-			"match": "(?<=(\\s|\\(|\\[|\\{)\\#)'[a-zA-Z0-9\\.\\-\\_\\:\\+\\=\\>\\<\\/\\!\\?\\*]+(?=(\\s|\\)|\\]|\\}))",
+			"match": "",
 			"name": "meta.var.clojure"
 		},
 		"vector": {

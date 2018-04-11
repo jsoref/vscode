@@ -1668,12 +1668,12 @@
 					"name": "markup.fenced_code.block.markdown"
 				},
 				"heading": {
-					"match": "(?:^|\\G)[ ]{0,3}((#{1,6})\\s*(?=[\\S[^#]]).*?\\s*(#{1,6})?)$\\n?",
+					"match": "",
 					"captures": {
 						"1": {
 							"patterns": [
 								{
-									"match": "(#{6})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.6.markdown",
 									"captures": {
 										"1": {
@@ -1688,7 +1688,7 @@
 									}
 								},
 								{
-									"match": "(#{5})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.5.markdown",
 									"captures": {
 										"1": {
@@ -1703,7 +1703,7 @@
 									}
 								},
 								{
-									"match": "(#{4})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.4.markdown",
 									"captures": {
 										"1": {
@@ -1718,7 +1718,7 @@
 									}
 								},
 								{
-									"match": "(#{3})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.3.markdown",
 									"captures": {
 										"1": {
@@ -1733,7 +1733,7 @@
 									}
 								},
 								{
-									"match": "(#{2})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.2.markdown",
 									"captures": {
 										"1": {
@@ -1748,7 +1748,7 @@
 									}
 								},
 								{
-									"match": "(#{1})\\s*(?=[\\S[^#]])(.*?)\\s*(\\s+#+)?$\\n?",
+									"match": "",
 									"name": "heading.1.markdown",
 									"captures": {
 										"1": {
@@ -1775,11 +1775,11 @@
 				"heading-setext": {
 					"patterns": [
 						{
-							"match": "^(={3,})(?=[ \\t]*$\\n?)",
+							"match": "",
 							"name": "markup.heading.setext.1.markdown"
 						},
 						{
-							"match": "^(-{3,})(?=[ \\t]*$\\n?)",
+							"match": "",
 							"name": "markup.heading.setext.2.markdown"
 						}
 					]
@@ -1876,7 +1876,7 @@
 							"name": "punctuation.definition.string.end.markdown"
 						}
 					},
-					"match": "(?x)\n  \\s*            # Leading whitespace\n  (\\[)(.+?)(\\])(:)    # Reference name\n  [ \\t]*          # Optional whitespace\n  (<?)(\\S+?)(>?)      # The url\n  [ \\t]*          # Optional whitespace\n  (?:\n      ((\\().+?(\\)))    # Match title in quotes…\n    | ((\").+?(\"))    # or in parens.\n  )?            # Title is optional\n  \\s*            # Optional whitespace\n  $\n",
+					"match": "",
 					"name": "meta.link.reference.def.markdown"
 				},
 				"list_paragraph": {
@@ -1958,7 +1958,7 @@
 					"while": "(^|\\G)([ ]{4}|\\t)"
 				},
 				"separator": {
-					"match": "(^|\\G)[ ]{0,3}([*-_])([ ]{0,2}\\2){2,}[ \\t]*$\\n?",
+					"match": "",
 					"name": "meta.separator.markdown"
 				}
 			}
@@ -2018,7 +2018,7 @@
 			"repository": {
 				"ampersand": {
 					"comment": "Markdown will convert this for us. We match it so that the HTML grammar will not mark it up as invalid.",
-					"match": "&(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)",
+					"match": "",
 					"name": "meta.other.valid-ampersand.markdown"
 				},
 				"bold": {
@@ -2084,11 +2084,11 @@
 				},
 				"bracket": {
 					"comment": "Markdown will convert this for us. We match it so that the HTML grammar will not mark it up as invalid.",
-					"match": "<(?![a-z/?\\$!])",
+					"match": "",
 					"name": "meta.other.valid-bracket.markdown"
 				},
 				"escape": {
-					"match": "\\\\[-`*_#+.!(){}\\[\\]\\\\>]",
+					"match": "",
 					"name": "constant.character.escape.markdown"
 				},
 				"image-inline": {
@@ -2136,7 +2136,7 @@
 							"name": "punctuation.definition.metadata.markdown"
 						}
 					},
-					"match": "(?x)\n  (\\!\\[)((?<square>[^\\[\\]\\\\]|\\\\.|\\[\\g<square>*+\\])*+)(\\])\n                # Match the link text.\n  (\\()            # Opening paren for url\n    (<?)(\\S+?)(>?)      # The url\n    [ \\t]*          # Optional whitespace\n    (?:\n        ((\\().+?(\\)))    # Match title in parens…\n      | ((\").+?(\"))    # or in quotes.\n    )?            # Title is optional\n    \\s*            # Optional whitespace\n  (\\))\n",
+					"match": "",
 					"name": "meta.image.inline.markdown"
 				},
 				"image-ref": {
@@ -2160,7 +2160,7 @@
 							"name": "punctuation.definition.constant.markdown"
 						}
 					},
-					"match": "(\\!\\[)((?<square>[^\\[\\]\\\\]|\\\\.|\\[\\g<square>*+\\])*+)(\\])[ ]?(\\[)(.*?)(\\])",
+					"match": "",
 					"name": "meta.image.reference.markdown"
 				},
 				"italic": {
@@ -2233,7 +2233,7 @@
 							"name": "punctuation.definition.link.markdown"
 						}
 					},
-					"match": "(<)((?:mailto:)?[-.\\w]+@[-a-z0-9]+(\\.[-a-z0-9]+)*\\.[a-z]+)(>)",
+					"match": "",
 					"name": "meta.link.email.lt-gt.markdown"
 				},
 				"link-inet": {
@@ -2248,7 +2248,7 @@
 							"name": "punctuation.definition.link.markdown"
 						}
 					},
-					"match": "(<)((?:https?|ftp)://.*?)(>)",
+					"match": "",
 					"name": "meta.link.inet.markdown"
 				},
 				"link-inline": {
@@ -2296,7 +2296,7 @@
 							"name": "punctuation.definition.metadata.markdown"
 						}
 					},
-					"match": "(?x)\n  (\\[)((?<square>[^\\[\\]\\\\]|\\\\.|\\[\\g<square>*+\\])*+)(\\])\n                # Match the link text.\n  (\\()            # Opening paren for url\n    (<?)(.*?)(>?)      # The url\n    [ \\t]*          # Optional whitespace\n    (?:\n        ((\\().+?(\\)))    # Match title in parens…\n      | ((\").+?(\"))    # or in quotes.\n    )?            # Title is optional\n    \\s*            # Optional whitespace\n  (\\))\n",
+					"match": "",
 					"name": "meta.link.inline.markdown"
 				},
 				"link-ref": {
@@ -2320,7 +2320,7 @@
 							"name": "punctuation.definition.constant.end.markdown"
 						}
 					},
-					"match": "(\\[)((?<square>[^\\[\\]\\\\]|\\\\.|\\[\\g<square>*+\\])*+)(\\])(\\[)([^\\]]*+)(\\])",
+					"match": "",
 					"name": "meta.link.reference.markdown"
 				},
 				"link-ref-literal": {
@@ -2341,7 +2341,7 @@
 							"name": "punctuation.definition.constant.end.markdown"
 						}
 					},
-					"match": "(\\[)((?<square>[^\\[\\]\\\\]|\\\\.|\\[\\g<square>*+\\])*+)(\\])[ ]?(\\[)(\\])",
+					"match": "",
 					"name": "meta.link.reference.literal.markdown"
 				},
 				"raw": {
@@ -2353,7 +2353,7 @@
 							"name": "punctuation.definition.raw.markdown"
 						}
 					},
-					"match": "(`+)([^`]|(?!(?<!`)\\1(?!`))`)*+(\\1)",
+					"match": "",
 					"name": "markup.inline.raw.string.markdown"
 				}
 			}

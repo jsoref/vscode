@@ -14,11 +14,11 @@
 					"name": "punctuation.definition.separator.diff"
 				}
 			},
-			"match": "^((\\*{15})|(={67})|(-{3}))$\\n?",
+			"match": "",
 			"name": "meta.separator.diff"
 		},
 		{
-			"match": "^\\d+(,\\d+)*(a|d|c)\\d+(,\\d+)*$\\n?",
+			"match": "",
 			"name": "meta.diff.range.normal"
 		},
 		{
@@ -33,7 +33,7 @@
 					"name": "punctuation.definition.range.diff"
 				}
 			},
-			"match": "^(@@)\\s*(.+?)\\s*(@@)($\\n?)?",
+			"match": "",
 			"name": "meta.diff.range.unified"
 		},
 		{
@@ -51,15 +51,15 @@
 					"name": "punctuation.definition.range.diff"
 				}
 			},
-			"match": "^(((\\-{3}) .+ (\\-{4}))|((\\*{3}) .+ (\\*{4})))$\\n?",
+			"match": "",
 			"name": "meta.diff.range.context"
 		},
 		{
-			"match": "^diff --git a/.*$\\n?",
+			"match": "",
 			"name": "meta.diff.header.git"
 		},
 		{
-			"match": "^diff (-|\\S+\\s+\\S+).*$\\n?",
+			"match": "",
 			"name": "meta.diff.header.command"
 		},
 		{
@@ -74,7 +74,7 @@
 					"name": "punctuation.definition.from-file.diff"
 				}
 			},
-			"match": "(^(((-{3}) .+)|((\\*{3}) .+))$\\n?|^(={4}) .+(?= - ))",
+			"match": "",
 			"name": "meta.diff.header.from-file"
 		},
 		{
@@ -89,7 +89,7 @@
 					"name": "punctuation.definition.to-file.diff"
 				}
 			},
-			"match": "(^(\\+{3}) .+$\\n?| (-) .* (={4})$\\n?)",
+			"match": "",
 			"name": "meta.diff.header.to-file"
 		},
 		{
@@ -101,7 +101,7 @@
 					"name": "punctuation.definition.inserted.diff"
 				}
 			},
-			"match": "^(((>)( .*)?)|((\\+).*))$\\n?",
+			"match": "",
 			"name": "markup.inserted.diff"
 		},
 		{
@@ -110,7 +110,7 @@
 					"name": "punctuation.definition.changed.diff"
 				}
 			},
-			"match": "^(!).*$\\n?",
+			"match": "",
 			"name": "markup.changed.diff"
 		},
 		{
@@ -122,7 +122,7 @@
 					"name": "punctuation.definition.deleted.diff"
 				}
 			},
-			"match": "^(((<)( .*)?)|((-).*))$\\n?",
+			"match": "",
 			"name": "markup.deleted.diff"
 		},
 		{
@@ -137,7 +137,7 @@
 			"name": "comment.line.number-sign.diff"
 		},
 		{
-			"match": "^index [0-9a-f]{7,40}\\.\\.[0-9a-f]{7,40}.*$\\n?",
+			"match": "",
 			"name": "meta.diff.index.git"
 		},
 		{
@@ -149,11 +149,11 @@
 					"name": "meta.toc-list.file-name.diff"
 				}
 			},
-			"match": "^Index(:) (.+)$\\n?",
+			"match": "",
 			"name": "meta.diff.index"
 		},
 		{
-			"match": "^Only in .*: .*$\\n?",
+			"match": "",
 			"name": "meta.diff.only-in"
 		}
 	]

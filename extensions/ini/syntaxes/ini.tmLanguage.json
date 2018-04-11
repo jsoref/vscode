@@ -70,7 +70,7 @@
 					"name": "punctuation.definition.entity.ini"
 				}
 			},
-			"match": "^(\\[)(.*?)(\\])",
+			"match": "",
 			"name": "entity.name.section.group-title.ini"
 		},
 		{
@@ -89,7 +89,7 @@
 			"name": "string.quoted.single.ini",
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escape.ini"
 				}
 			]

@@ -14,7 +14,7 @@
 					"name": "punctuation.definition.comment.git-rebase"
 				}
 			},
-			"match": "^\\s*(#).*$\\n?",
+			"match": "",
 			"name": "comment.line.number-sign.git-rebase"
 		},
 		{
@@ -29,7 +29,7 @@
 					"name": "meta.commit-message.git-rebase"
 				}
 			},
-			"match": "^\\s*(pick|p|reword|r|edit|e|squash|s|fixup|f|exec|x|drop|d)\\s+([0-9a-f]+)\\s+(.*)$",
+			"match": "",
 			"name": "meta.commit-command.git-rebase"
 		}
 	]

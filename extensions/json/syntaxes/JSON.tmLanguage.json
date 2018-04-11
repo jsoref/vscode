@@ -32,11 +32,11 @@
 					"include": "#value"
 				},
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.separator.array.json"
 				},
 				{
-					"match": "[^\\s\\]]",
+					"match": "",
 					"name": "invalid.illegal.expected-array-separator.json"
 				}
 			]
@@ -69,17 +69,17 @@
 							"name": "punctuation.definition.comment.json"
 						}
 					},
-					"match": "(//).*$\\n?",
+					"match": "",
 					"name": "comment.line.double-slash.js"
 				}
 			]
 		},
 		"constant": {
-			"match": "\\b(?:true|false|null)\\b",
+			"match": "",
 			"name": "constant.language.json"
 		},
 		"number": {
-			"match": "(?x)        # turn on extended mode\n  -?        # an optional minus\n  (?:\n    0       # a zero\n    |       # ...or...\n    [1-9]   # a 1-9 character\n    \\d*     # followed by zero or more digits\n  )\n  (?:\n    (?:\n      \\.    # a period\n      \\d+   # followed by one or more digits\n    )?\n    (?:\n      [eE]  # an e character\n      [+-]? # followed by an option +/-\n      \\d+   # followed by one or more digits\n    )?      # make exponent optional\n  )?        # make decimal portion optional",
+			"match": "",
 			"name": "constant.numeric.json"
 		},
 		"object": {
@@ -124,13 +124,13 @@
 							"include": "#value"
 						},
 						{
-							"match": "[^\\s,]",
+							"match": "",
 							"name": "invalid.illegal.expected-dictionary-separator.json"
 						}
 					]
 				},
 				{
-					"match": "[^\\s\\}]",
+					"match": "",
 					"name": "invalid.illegal.expected-dictionary-separator.json"
 				}
 			]
@@ -178,11 +178,11 @@
 		"stringcontent": {
 			"patterns": [
 				{
-					"match": "(?x)                # turn on extended mode\n  \\\\                # a literal backslash\n  (?:               # ...followed by...\n    [\"\\\\/bfnrt]     # one of these characters\n    |               # ...or...\n    u               # a u\n    [0-9a-fA-F]{4}) # and four hex digits",
+					"match": "",
 					"name": "constant.character.escape.json"
 				},
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "invalid.illegal.unrecognized-string-escape.json"
 				}
 			]

@@ -14,7 +14,7 @@
 					"name": "punctuation.definition.comment.groovy"
 				}
 			},
-			"match": "^(#!).+$\\n",
+			"match": "",
 			"name": "comment.line.hashbang.groovy"
 		},
 		{
@@ -29,7 +29,7 @@
 					"name": "punctuation.terminator.groovy"
 				}
 			},
-			"match": "^\\s*(package)\\b(?:\\s*([^ ;$]+)\\s*(;)?)?",
+			"match": "",
 			"name": "meta.package.groovy"
 		},
 		{
@@ -60,11 +60,11 @@
 			"name": "meta.import.groovy",
 			"patterns": [
 				{
-					"match": "\\.",
+					"match": "",
 					"name": "punctuation.separator.groovy"
 				},
 				{
-					"match": "\\s",
+					"match": "",
 					"name": "invalid.illegal.character_not_allowed_here.groovy"
 				}
 			]
@@ -97,11 +97,11 @@
 			"name": "meta.import.groovy",
 			"patterns": [
 				{
-					"match": "\\.",
+					"match": "",
 					"name": "punctuation.separator.groovy"
 				},
 				{
-					"match": "\\s",
+					"match": "",
 					"name": "invalid.illegal.character_not_allowed_here.groovy"
 				}
 			]
@@ -121,7 +121,7 @@
 					"name": "punctuation.terminator.groovy"
 				}
 			},
-			"match": "^\\s*(import)(?:\\s+(static)\\s+)\\b(?:\\s*([^ ;$]+)\\s*(;)?)?",
+			"match": "",
 			"name": "meta.import.groovy"
 		},
 		{
@@ -164,13 +164,13 @@
 							"include": "#values"
 						},
 						{
-							"match": ",",
+							"match": "",
 							"name": "punctuation.definition.seperator.groovy"
 						}
 					]
 				},
 				{
-					"match": "(?<!\\.)@\\S+",
+					"match": "",
 					"name": "storage.type.annotation.groovy"
 				}
 			]
@@ -282,7 +282,7 @@
 							"name": "entity.name.type.class.groovy"
 						}
 					},
-					"match": "(class|(?:@)?interface|enum)\\s+(\\w+)",
+					"match": "",
 					"name": "meta.class.identifier.groovy"
 				},
 				{
@@ -422,7 +422,7 @@
 							"name": "punctuation.definition.comment.groovy"
 						}
 					},
-					"match": "/\\*\\*/",
+					"match": "",
 					"name": "comment.block.empty.groovy"
 				},
 				{
@@ -437,7 +437,7 @@
 							"name": "punctuation.definition.comment.groovy"
 						}
 					},
-					"match": "(//).*$\\n?",
+					"match": "",
 					"name": "comment.line.double-slash.groovy"
 				}
 			]
@@ -445,11 +445,11 @@
 		"constants": {
 			"patterns": [
 				{
-					"match": "\\b([A-Z][A-Z0-9_]+)\\b",
+					"match": "",
 					"name": "constant.other.groovy"
 				},
 				{
-					"match": "\\b(true|false|null)\\b",
+					"match": "",
 					"name": "constant.language.groovy"
 				}
 			]
@@ -481,7 +481,7 @@
 							"name": "meta.enum.value.groovy",
 							"patterns": [
 								{
-									"match": ",",
+									"match": "",
 									"name": "punctuation.definition.seperator.parameter.groovy"
 								},
 								{
@@ -579,11 +579,11 @@
 		"keyword-language": {
 			"patterns": [
 				{
-					"match": "\\b(try|catch|finally|throw)\\b",
+					"match": "",
 					"name": "keyword.control.exception.groovy"
 				},
 				{
-					"match": "\\b((?<!\\.)(?:return|break|continue|default|do|while|for|switch|if|else))\\b",
+					"match": "",
 					"name": "keyword.control.groovy"
 				},
 				{
@@ -617,7 +617,7 @@
 					"name": "meta.declaration.assertion.groovy",
 					"patterns": [
 						{
-							"match": ":",
+							"match": "",
 							"name": "keyword.operator.assert.expression-seperator.groovy"
 						},
 						{
@@ -626,7 +626,7 @@
 					]
 				},
 				{
-					"match": "\\b(throws)\\b",
+					"match": "",
 					"name": "keyword.other.throws.groovy"
 				}
 			]
@@ -634,39 +634,39 @@
 		"keyword-operator": {
 			"patterns": [
 				{
-					"match": "\\b(as)\\b",
+					"match": "",
 					"name": "keyword.operator.as.groovy"
 				},
 				{
-					"match": "\\b(in)\\b",
+					"match": "",
 					"name": "keyword.operator.in.groovy"
 				},
 				{
-					"match": "\\?\\:",
+					"match": "",
 					"name": "keyword.operator.elvis.groovy"
 				},
 				{
-					"match": "\\*\\:",
+					"match": "",
 					"name": "keyword.operator.spreadmap.groovy"
 				},
 				{
-					"match": "\\.\\.",
+					"match": "",
 					"name": "keyword.operator.range.groovy"
 				},
 				{
-					"match": "\\->",
+					"match": "",
 					"name": "keyword.operator.arrow.groovy"
 				},
 				{
-					"match": "<<",
+					"match": "",
 					"name": "keyword.operator.leftshift.groovy"
 				},
 				{
-					"match": "(?<=\\S)\\.(?=\\S)",
+					"match": "",
 					"name": "keyword.operator.navigation.groovy"
 				},
 				{
-					"match": "(?<=\\S)\\?\\.(?=\\S)",
+					"match": "",
 					"name": "keyword.operator.safe-navigation.groovy"
 				},
 				{
@@ -680,7 +680,7 @@
 					"name": "meta.evaluation.ternary.groovy",
 					"patterns": [
 						{
-							"match": ":",
+							"match": "",
 							"name": "keyword.operator.ternary.expression-seperator.groovy"
 						},
 						{
@@ -689,35 +689,35 @@
 					]
 				},
 				{
-					"match": "==~",
+					"match": "",
 					"name": "keyword.operator.match.groovy"
 				},
 				{
-					"match": "=~",
+					"match": "",
 					"name": "keyword.operator.find.groovy"
 				},
 				{
-					"match": "\\b(instanceof)\\b",
+					"match": "",
 					"name": "keyword.operator.instanceof.groovy"
 				},
 				{
-					"match": "(===|==|!=|<=|>=|<=>|<>|<|>|<<)",
+					"match": "",
 					"name": "keyword.operator.comparison.groovy"
 				},
 				{
-					"match": "=",
+					"match": "",
 					"name": "keyword.operator.assignment.groovy"
 				},
 				{
-					"match": "(\\-\\-|\\+\\+)",
+					"match": "",
 					"name": "keyword.operator.increment-decrement.groovy"
 				},
 				{
-					"match": "(\\-|\\+|\\*|\\/|%)",
+					"match": "",
 					"name": "keyword.operator.arithmetic.groovy"
 				},
 				{
-					"match": "(!|&&|\\|\\|)",
+					"match": "",
 					"name": "keyword.operator.logical.groovy"
 				}
 			]
@@ -725,7 +725,7 @@
 		"language-variables": {
 			"patterns": [
 				{
-					"match": "\\b(this|super)\\b",
+					"match": "",
 					"name": "variable.language.groovy"
 				}
 			]
@@ -764,7 +764,7 @@
 			"name": "meta.method-call.groovy",
 			"patterns": [
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.definition.seperator.parameter.groovy"
 				},
 				{
@@ -814,7 +814,7 @@
 									"name": "meta.method.parameter.groovy",
 									"patterns": [
 										{
-											"match": ",",
+											"match": "",
 											"name": "punctuation.definition.separator.groovy"
 										},
 										{
@@ -855,7 +855,7 @@
 									"include": "#types"
 								},
 								{
-									"match": ",",
+									"match": "",
 									"name": "punctuation.definition.seperator.groovy"
 								}
 							]
@@ -917,7 +917,7 @@
 		"numbers": {
 			"patterns": [
 				{
-					"match": "((0(x|X)[0-9a-fA-F]*)|(\\+|-)?\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)([LlFfUuDdg]|UL|ul)?\\b",
+					"match": "",
 					"name": "constant.numeric.groovy"
 				}
 			]
@@ -957,7 +957,7 @@
 					]
 				},
 				{
-					"match": "\\b(?:[a-zA-Z]\\w*\\.)*(?:[A-Z]+\\w*[a-z]+\\w*|UR[LI])\\b",
+					"match": "",
 					"name": "storage.type.groovy"
 				}
 			]
@@ -986,7 +986,7 @@
 							"name": "keyword.operator.dereference.groovy"
 						}
 					},
-					"match": "\\b(?:[a-zA-Z]\\w*(\\.))*[A-Z]+\\w*[a-z]+\\w*\\b",
+					"match": "",
 					"name": "entity.other.inherited-class.groovy"
 				}
 			]
@@ -1003,7 +1003,7 @@
 					"include": "#types"
 				},
 				{
-					"match": "\\w+",
+					"match": "",
 					"name": "variable.parameter.method.groovy"
 				}
 			]
@@ -1020,7 +1020,7 @@
 		"primitive-arrays": {
 			"patterns": [
 				{
-					"match": "\\b(?:void|boolean|byte|char|short|int|float|long|double)(\\[\\])*\\b",
+					"match": "",
 					"name": "storage.type.primitive.array.groovy"
 				}
 			]
@@ -1028,7 +1028,7 @@
 		"primitive-types": {
 			"patterns": [
 				{
-					"match": "\\b(?:void|boolean|byte|char|short|int|float|long|double)\\b",
+					"match": "",
 					"name": "storage.type.primitive.groovy"
 				}
 			]
@@ -1051,7 +1051,7 @@
 					"name": "string.regexp.groovy",
 					"patterns": [
 						{
-							"match": "\\\\.",
+							"match": "",
 							"name": "constant.character.escape.groovy"
 						}
 					]
@@ -1072,7 +1072,7 @@
 					"name": "string.regexp.compiled.groovy",
 					"patterns": [
 						{
-							"match": "\\\\.",
+							"match": "",
 							"name": "constant.character.escape.groovy"
 						}
 					]
@@ -1082,19 +1082,19 @@
 		"storage-modifiers": {
 			"patterns": [
 				{
-					"match": "\\b(private|protected|public)\\b",
+					"match": "",
 					"name": "storage.modifier.access-control.groovy"
 				},
 				{
-					"match": "\\b(static)\\b",
+					"match": "",
 					"name": "storage.modifier.static.groovy"
 				},
 				{
-					"match": "\\b(final)\\b",
+					"match": "",
 					"name": "storage.modifier.final.groovy"
 				},
 				{
-					"match": "\\b(native|synchronized|abstract|threadsafe|transient)\\b",
+					"match": "",
 					"name": "storage.modifier.other.groovy"
 				}
 			]
@@ -1122,7 +1122,7 @@
 		"string-quoted-double-contents": {
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escape.groovy"
 				},
 				{
@@ -1132,11 +1132,11 @@
 					"name": "variable.other.interpolated.groovy",
 					"patterns": [
 						{
-							"match": "\\w",
+							"match": "",
 							"name": "variable.other.interpolated.groovy"
 						},
 						{
-							"match": "\\.",
+							"match": "",
 							"name": "keyword.other.dereference.groovy"
 						}
 					]
@@ -1201,7 +1201,7 @@
 		"string-quoted-single-contents": {
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escape.groovy"
 				}
 			]
@@ -1264,7 +1264,7 @@
 					"include": "#groovy-code"
 				},
 				{
-					"match": ",",
+					"match": "",
 					"name": "punctuation.definition.separator.groovy"
 				}
 			]
@@ -1272,11 +1272,11 @@
 		"support-functions": {
 			"patterns": [
 				{
-					"match": "(?x)\\b(?:sprintf|print(?:f|ln)?)\\b",
+					"match": "",
 					"name": "support.function.print.groovy"
 				},
 				{
-					"match": "(?x)\\b(?:shouldFail|fail(?:NotEquals)?|ass(?:ume|ert(?:S(?:cript|ame)|N(?:ot(?:Same|\n\t\t\t\t\tNull)|ull)|Contains|T(?:hat|oString|rue)|Inspect|Equals|False|Length|\n\t\t\t\t\tArrayEquals)))\\b",
+					"match": "",
 					"name": "support.function.testing.groovy"
 				}
 			]
@@ -1284,7 +1284,7 @@
 		"types": {
 			"patterns": [
 				{
-					"match": "\\b(def)\\b",
+					"match": "",
 					"name": "storage.type.def.groovy"
 				},
 				{
@@ -1348,7 +1348,7 @@
 									"name": "meta.definition.variable.name.groovy"
 								}
 							},
-							"match": "(\\w[^\\s,]*)\\s+(?=\\=)"
+							"match": "",]*)\\s+(?=\\=)"
 						},
 						{
 							"begin": "=",

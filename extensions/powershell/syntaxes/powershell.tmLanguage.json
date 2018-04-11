@@ -39,7 +39,7 @@
 			]
 		},
 		{
-			"match": "[2-6]>&1|>>|>|<<|<|>|>\\||[1-6]>|[1-6]>>",
+			"match": "",
 			"name": "keyword.operator.redirection.powershell"
 		},
 		{
@@ -75,7 +75,7 @@
 					"include": "#interpolation"
 				},
 				{
-					"match": "`\\s*$",
+					"match": "",
 					"name": "keyword.other.powershell"
 				}
 			]
@@ -90,7 +90,7 @@
 			"name": "string.quoted.single.powershell",
 			"patterns": [
 				{
-					"match": "''",
+					"match": "",
 					"name": "constant.character.escape.powershell"
 				}
 			]
@@ -117,7 +117,7 @@
 			"name": "string.quoted.single.heredoc.powershell",
 			"patterns": [
 				{
-					"match": "''",
+					"match": "",
 					"name": "constant.character.escape.powershell"
 				}
 			]
@@ -157,15 +157,15 @@
 			]
 		},
 		{
-			"match": "(?<!\\w)-([ci]?[lg][te]|eq|ne)",
+			"match": "",
 			"name": "keyword.operator.logical.powershell"
 		},
 		{
-			"match": "(\\b(([A-Za-z0-9\\-_\\.]+)\\.(?i:exe|com|cmd|bat))\\b)",
+			"match": "",
 			"name": "support.function.powershell"
 		},
 		{
-			"match": "(?<!\\w)((?i:begin|break|catch|continue|data|define|do|dynamicparam|else|elseif|end|exit|finally|for|foreach(?!-object)|from|if|in|inlinescript|parallel|param|process|return|switch|throw|trap|try|until|using|var|where(?!-object)|while)|%|\\?)(?!\\w)",
+			"match": "",
 			"name": "keyword.control.powershell"
 		},
 		{
@@ -181,44 +181,44 @@
 			"match": "(?<!\\w)((?i:class)|%|\\?)(?:\\s)+((?:\\p{L}|\\d|_|-|)+)\\b"
 		},
 		{
-			"match": "(?<!\\w)-(?i:is(?:not)?|as)\\b",
+			"match": "",
 			"name": "keyword.operator.comparison.powershell"
 		},
 		{
-			"match": "(?<!\\w)-(?i:[ic]?(?:eq|ne|[gl][te]|(?:not)?(?:like|match|contains|in)|replace))(?!\\p{L})",
+			"match": "",
 			"name": "keyword.operator.comparison.powershell"
 		},
 		{
-			"match": "(?<!\\w)-(?i:join|split)(?!\\p{L})|!",
+			"match": "",
 			"name": "keyword.operator.unary.powershell"
 		},
 		{
-			"match": "(?<!\\w)-(?i:and|or|not|xor)(?!\\p{L})|!",
+			"match": "",
 			"name": "keyword.operator.logical.powershell"
 		},
 		{
-			"match": "(?<!\\w)-(?i:band|bor|bnot|bxor)(?!\\p{L})",
+			"match": "",
 			"name": "keyword.operator.bitwise.powershell"
 		},
 		{
-			"match": "(?<!\\w)-(?i:f)(?!\\p{L})",
+			"match": "",
 			"name": "keyword.operator.string-format.powershell"
 		},
 		{
-			"match": "[+%*/-]?=|[+/*%-]",
+			"match": "",
 			"name": "keyword.operator.assignment.powershell"
 		},
 		{
-			"match": "\\|{2}|&{2}|;",
+			"match": "",
 			"name": "keyword.other.statement-separator.powershell"
 		},
 		{
-			"match": "&|(?<!\\w)\\.(?= )|`|,|\\|",
+			"match": "",
 			"name": "keyword.operator.other.powershell"
 		},
 		{
 			"comment": "This is very imprecise, is there a syntax for 'must come after...' ",
-			"match": "(?<!\\s|^)\\.\\.(?=\\d|\\(|\\$)",
+			"match": "",
 			"name": "keyword.operator.range.powershell"
 		}
 	],
@@ -258,7 +258,7 @@
 								}
 							},
 							"comment": "really we should match the known attributes first",
-							"match": "(\\w+)\\s*=?([^\"']*?|'[^']*?'|\"[^\"]*?\")?(?=,|\\))",
+							"match": "",
 							"name": "entity.other.attribute-name.powershell"
 						},
 						{
@@ -272,17 +272,17 @@
 			"patterns": [
 				{
 					"comment": "Verb-Noun pattern:",
-					"match": "(?:(\\p{L}|\\d|_|-|\\\\|\\:)*\\\\)?\\b(?i:Add|Approve|Assert|Backup|Block|Checkpoint|Clear|Close|Compare|Complete|Compress|Confirm|Connect|Convert|ConvertFrom|ConvertTo|Copy|Debug|Deny|Disable|Disconnect|Dismount|Edit|Enable|Enter|Exit|Expand|Export|Find|Format|Get|Grant|Group|Hide|Import|Initialize|Install|Invoke|Join|Limit|Lock|Measure|Merge|Mount|Move|New|Open|Optimize|Out|Ping|Pop|Protect|Publish|Push|Read|Receive|Redo|Register|Remove|Rename|Repair|Request|Reset|Resize|Resolve|Restart|Restore|Resume|Revoke|Save|Search|Select|Send|Set|Show|Skip|Split|Start|Step|Stop|Submit|Suspend|Switch|Sync|Test|Trace|Unblock|Undo|Uninstall|Unlock|Unprotect|Unpublish|Unregister|Update|Use|Wait|Watch|Write)\\-.+?(?:\\.(?i:exe|cmd|bat|ps1))?\\b",
+					"match": "",
 					"name": "support.function.powershell"
 				},
 				{
 					"comment": "Builtin cmdlets with reserved verbs",
-					"match": "(?<!\\w)(?i:foreach-object)(?!\\w)",
+					"match": "",
 					"name": "support.function.powershell"
 				},
 				{
 					"comment": "Builtin cmdlets with reserved verbs",
-					"match": "(?<!\\w)(?i:where-object)(?!\\w)",
+					"match": "",
 					"name": "support.function.powershell"
 				}
 			]
@@ -298,7 +298,7 @@
 							"name": "keyword.operator.documentation.powershell"
 						}
 					},
-					"match": "(?i:\\s*(\\.)(SYNOPSIS|DESCRIPTION|EXAMPLE|INPUTS|OUTPUTS|NOTES|LINK|COMPONENT|FUNCTIONALITY))",
+					"match": "",
 					"name": "comment.documentation.embedded.powershell"
 				},
 				{
@@ -313,7 +313,7 @@
 							"name": "keyword.operator.documentation.powershell"
 						}
 					},
-					"match": "(?i:\\s*(\\.)(PARAMETER|FORWARDHELPTARGETNAME|FORWARDHELPCATEGORY|REMOTEHELPRUNSPACE|EXTERNALHELP)\\s+([a-z0-9-_]+))",
+					"match": "",
 					"name": "comment.documentation.embedded.powershell"
 				},
 				{
@@ -328,7 +328,7 @@
 							"name": "string.quoted.double.heredoc.powershell"
 						}
 					},
-					"match": "(?i:requires\\s+-(Version\\s+\\d(.\\d+)?|Assembly\\s+(.*)|Module\\s+(.*)|PsSnapIn\\s+(.*)|ShellId\\s+(.*)))",
+					"match": "",
 					"name": "comment.documentation.embedded.powershell"
 				}
 			]
@@ -336,11 +336,11 @@
 		"doubleQuotedStringEscapes": {
 			"patterns": [
 				{
-					"match": "`[0abnfrvt\"'$`]",
+					"match": "",
 					"name": "constant.character.escape.powershell"
 				},
 				{
-					"match": "\"\"",
+					"match": "",
 					"name": "constant.character.escape.powershell"
 				}
 			]
@@ -429,7 +429,7 @@
 							"name": "keyword.other.powershell"
 						}
 					},
-					"match": "(?<!\\w)(?i:(0x)([a-f0-9]+)((?i:L)?(?i:[kmgtp]b)?))(?!\\w)",
+					"match": "",
 					"name": "constant.numeric.hexadecimal.powershell"
 				},
 				{
@@ -450,7 +450,7 @@
 							"name": "keyword.other.powershell"
 						}
 					},
-					"match": "(?<!\\w)(?i:(\\d*\\.?\\d+)(?:((?i:E)[+-]?)(\\d+))?((?i:[DL])?)((?i:[kmgtp]b)?))(?!\\w)",
+					"match": "",
 					"name": "constant.numeric.scientific.powershell"
 				}
 			]
@@ -481,7 +481,7 @@
 			},
 			"patterns": [
 				{
-					"match": "(\\p{L}|\\.|``\\d+)+?",
+					"match": "",
 					"name": "entity.other.attribute-name"
 				},
 				{

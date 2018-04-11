@@ -9,7 +9,7 @@
 	"scopeName": "source.coffee",
 	"patterns": [
 		{
-			"match": "(new)\\s+(?:(?:(class)\\s+(\\w+(?:\\.\\w*)*)?)|(\\w+(?:\\.\\w*)*))",
+			"match": "",
 			"name": "meta.class.instance.constructor.coffee",
 			"captures": {
 				"1": {
@@ -47,7 +47,7 @@
 							"name": "punctuation.definition.escape.backslash.coffee"
 						}
 					},
-					"match": "(\\\\).",
+					"match": "",
 					"name": "constant.character.escape.backslash.coffee"
 				}
 			]
@@ -73,7 +73,7 @@
 							"name": "punctuation.definition.escape.backslash.coffee"
 						}
 					},
-					"match": "(\\\\).",
+					"match": "",
 					"name": "constant.character.escape.backslash.coffee"
 				},
 				{
@@ -82,7 +82,7 @@
 			]
 		},
 		{
-			"match": "(`)(.*)(`)",
+			"match": "",
 			"name": "string.quoted.script.coffee",
 			"captures": {
 				"1": {
@@ -117,7 +117,7 @@
 			"name": "comment.block.coffee",
 			"patterns": [
 				{
-					"match": "(?<=^|\\s)@\\w*(?=\\s)",
+					"match": "",
 					"name": "storage.type.annotation.coffee"
 				}
 			]
@@ -173,15 +173,15 @@
 			]
 		},
 		{
-			"match": "\\b(?<![\\.\\$])(break|by|catch|continue|else|finally|for|in|of|if|return|switch|then|throw|try|unless|when|while|until|loop|do|export|import|default|from|as|yield|async|await|(?<=for)\\s+own)(?!\\s*:)\\b",
+			"match": "",
 			"name": "keyword.control.coffee"
 		},
 		{
-			"match": "\\b(?<![\\.\\$])(delete|instanceof|new|typeof)(?!\\s*:)\\b",
+			"match": "",
 			"name": "keyword.operator.$1.coffee"
 		},
 		{
-			"match": "\\b(?<![\\.\\$])(case|function|var|void|with|const|let|enum|native|__hasProp|__extends|__slice|__bind|__indexOf|implements|interface|package|private|protected|public|static)(?!\\s*:)\\b",
+			"match": "",
 			"name": "keyword.reserved.coffee"
 		},
 		{
@@ -288,7 +288,7 @@
 					"include": "$self"
 				},
 				{
-					"match": "[a-zA-Z$_]\\w*",
+					"match": "",
 					"name": "variable.assignment.coffee"
 				}
 			]
@@ -312,29 +312,29 @@
 					"include": "$self"
 				},
 				{
-					"match": "[a-zA-Z$_]\\w*",
+					"match": "",
 					"name": "variable.assignment.coffee"
 				}
 			]
 		},
 		{
-			"match": "\\b(?<!\\.|::)(true|on|yes)(?!\\s*[:=][^=])\\b",
+			"match": "",
 			"name": "constant.language.boolean.true.coffee"
 		},
 		{
-			"match": "\\b(?<!\\.|::)(false|off|no)(?!\\s*[:=][^=])\\b",
+			"match": "",
 			"name": "constant.language.boolean.false.coffee"
 		},
 		{
-			"match": "\\b(?<!\\.|::)null(?!\\s*[:=][^=])\\b",
+			"match": "",
 			"name": "constant.language.null.coffee"
 		},
 		{
-			"match": "\\b(?<!\\.|::)extends(?!\\s*[:=])\\b",
+			"match": "",
 			"name": "variable.language.coffee"
 		},
 		{
-			"match": "(?<!\\.)\\b(?<!\\$)(super|this|arguments)(?!\\s*[:=][^=]|\\$)\\b",
+			"match": "",
 			"name": "variable.language.$1.coffee"
 		},
 		{
@@ -349,7 +349,7 @@
 					"name": "entity.other.inherited-class.coffee"
 				}
 			},
-			"match": "(?<=\\s|^|\\[|\\()(class)\\s+(extends)\\s+(@?[a-zA-Z\\$\\._][\\w\\.]*)",
+			"match": "",
 			"name": "meta.class.coffee"
 		},
 		{
@@ -367,51 +367,51 @@
 					"name": "entity.other.inherited-class.coffee"
 				}
 			},
-			"match": "(?<=\\s|^|\\[|\\()(class\\b)\\s+(@?[a-zA-Z\\$_][\\w\\.]*)?(?:\\s+(extends)\\s+(@?[a-zA-Z\\$\\._][\\w\\.]*))?",
+			"match": "",
 			"name": "meta.class.coffee"
 		},
 		{
-			"match": "\\b(debugger|\\\\)\\b",
+			"match": "",
 			"name": "keyword.other.coffee"
 		},
 		{
-			"match": "\\b(Array|ArrayBuffer|Blob|Boolean|Date|document|Function|Int(8|16|32|64)Array|Math|Map|Number|Object|Proxy|RegExp|Set|String|WeakMap|window|Uint(8|16|32|64)Array|XMLHttpRequest)\\b",
+			"match": "",
 			"name": "support.class.coffee"
 		},
 		{
-			"match": "\\b(console)\\b",
+			"match": "",
 			"name": "entity.name.type.object.coffee"
 		},
 		{
-			"match": "((?<=console\\.)(debug|warn|info|log|error|time|timeEnd|assert))\\b",
+			"match": "",
 			"name": "support.function.console.coffee"
 		},
 		{
-			"match": "((?<=\\.)(apply|call|concat|every|filter|forEach|from|hasOwnProperty|indexOf|isPrototypeOf|join|lastIndexOf|map|of|pop|propertyIsEnumerable|push|reduce(Right)?|reverse|shift|slice|some|sort|splice|to(Locale)?String|unshift|valueOf))\\b",
+			"match": "",
 			"name": "support.function.method.array.coffee"
 		},
 		{
-			"match": "((?<=Array\\.)(isArray))\\b",
+			"match": "",
 			"name": "support.function.static.array.coffee"
 		},
 		{
-			"match": "((?<=Object\\.)(create|definePropert(ies|y)|freeze|getOwnProperty(Descriptors?|Names)|getProperty(Descriptor|Names)|getPrototypeOf|is(Extensible|Frozen|Sealed)?|isnt|keys|preventExtensions|seal))\\b",
+			"match": "",
 			"name": "support.function.static.object.coffee"
 		},
 		{
-			"match": "((?<=Math\\.)(abs|acos|acosh|asin|asinh|atan|atan2|atanh|ceil|cos|cosh|exp|expm1|floor|hypot|log|log10|log1p|log2|max|min|pow|random|round|sign|sin|sinh|sqrt|tan|tanh|trunc))\\b",
+			"match": "",
 			"name": "support.function.static.math.coffee"
 		},
 		{
-			"match": "((?<=Number\\.)(is(Finite|Integer|NaN)|toInteger))\\b",
+			"match": "",
 			"name": "support.function.static.number.coffee"
 		},
 		{
-			"match": "(?<!\\.)\\b(module|exports|__filename|__dirname|global|process)(?!\\s*:)\\b",
+			"match": "",
 			"name": "support.variable.coffee"
 		},
 		{
-			"match": "\\b(Infinity|NaN|undefined)\\b",
+			"match": "",
 			"name": "constant.language.coffee"
 		},
 		{
@@ -433,19 +433,19 @@
 			"include": "#properties"
 		},
 		{
-			"match": "::",
+			"match": "",
 			"name": "keyword.operator.prototype.coffee"
 		},
 		{
-			"match": "(?<!\\$)\\b[0-9]+[\\w$]*",
+			"match": "",
 			"name": "invalid.illegal.identifier.coffee"
 		},
 		{
-			"match": ";",
+			"match": "",
 			"name": "punctuation.terminator.statement.coffee"
 		},
 		{
-			"match": ",",
+			"match": "",
 			"name": "punctuation.separator.delimiter.coffee"
 		},
 		{
@@ -482,11 +482,11 @@
 			},
 			"patterns": [
 				{
-					"match": "(?<!\\.)\\.{3}",
+					"match": "",
 					"name": "keyword.operator.slice.exclusive.coffee"
 				},
 				{
-					"match": "(?<!\\.)\\.{2}",
+					"match": "",
 					"name": "keyword.operator.slice.inclusive.coffee"
 				},
 				{
@@ -581,7 +581,7 @@
 									"name": "punctuation.definition.escape.backslash.coffee"
 								}
 							},
-							"match": "(\\\\)(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
+							"match": "",
 							"name": "constant.character.escape.backslash.coffee"
 						},
 						{
@@ -642,15 +642,15 @@
 		"function_names": {
 			"patterns": [
 				{
-					"match": "(?x)\n\\b(isNaN|isFinite|eval|uneval|parseInt|parseFloat|decodeURI|\ndecodeURIComponent|encodeURI|encodeURIComponent|escape|unescape|\nrequire|set(Interval|Timeout)|clear(Interval|Timeout))\\b",
+					"match": "",
 					"name": "support.function.coffee"
 				},
 				{
-					"match": "[a-zA-Z_$][\\w$]*",
+					"match": "",
 					"name": "entity.name.function.coffee"
 				},
 				{
-					"match": "\\d[\\w$]*",
+					"match": "",
 					"name": "invalid.illegal.identifier.coffee"
 				}
 			]
@@ -673,7 +673,7 @@
 					"name": "meta.parameters.coffee",
 					"patterns": [
 						{
-							"match": "([a-zA-Z_$][\\w$]*)(\\.\\.\\.)?",
+							"match": "",
 							"captures": {
 								"1": {
 									"name": "variable.parameter.function.coffee"
@@ -684,7 +684,7 @@
 							}
 						},
 						{
-							"match": "(@(?:[a-zA-Z_$][\\w$]*)?)(\\.\\.\\.)?",
+							"match": "",
 							"captures": {
 								"1": {
 									"name": "variable.parameter.function.readwrite.instance.coffee"
@@ -709,7 +709,7 @@
 							"name": "punctuation.definition.comment.coffee"
 						}
 					},
-					"match": "(?<!\\\\)(#).*$\\n?",
+					"match": "",
 					"name": "comment.line.number-sign.coffee"
 				}
 			]
@@ -717,7 +717,7 @@
 		"instance_variable": {
 			"patterns": [
 				{
-					"match": "(@)([a-zA-Z_\\$]\\w*)?",
+					"match": "",
 					"name": "variable.other.readwrite.instance.coffee"
 				}
 			]
@@ -798,23 +798,23 @@
 		"method_names": {
 			"patterns": [
 				{
-					"match": "(?x)\n\\bon(Rowsinserted|Rowsdelete|Rowenter|Rowexit|Resize|Resizestart|Resizeend|Reset|\nReadystatechange|Mouseout|Mouseover|Mousedown|Mouseup|Mousemove|\nBefore(cut|deactivate|unload|update|paste|print|editfocus|activate)|\nBlur|Scrolltop|Submit|Select|Selectstart|Selectionchange|Hover|Help|\nChange|Contextmenu|Controlselect|Cut|Cellchange|Clock|Close|Deactivate|\nDatasetchanged|Datasetcomplete|Dataavailable|Drop|Drag|Dragstart|Dragover|\nDragdrop|Dragenter|Dragend|Dragleave|Dblclick|Unload|Paste|Propertychange|Error|\nErrorupdate|Keydown|Keyup|Keypress|Focus|Load|Activate|Afterupdate|Afterprint|Abort)\\b",
+					"match": "",
 					"name": "support.function.event-handler.coffee"
 				},
 				{
-					"match": "(?x)\n\\b(shift|showModelessDialog|showModalDialog|showHelp|scroll|scrollX|scrollByPages|\nscrollByLines|scrollY|scrollTo|stop|strike|sizeToContent|sidebar|signText|sort|\nsup|sub|substr|substring|splice|split|send|set(Milliseconds|Seconds|Minutes|Hours|\nMonth|Year|FullYear|Date|UTC(Milliseconds|Seconds|Minutes|Hours|Month|FullYear|Date)|\nTime|Hotkeys|Cursor|ZOptions|Active|Resizable|RequestHeader)|search|slice|\nsavePreferences|small|home|handleEvent|navigate|char|charCodeAt|charAt|concat|\ncontextual|confirm|compile|clear|captureEvents|call|createStyleSheet|createPopup|\ncreateEventObject|to(GMTString|UTCString|String|Source|UpperCase|LowerCase|LocaleString)|\ntest|taint|taintEnabled|indexOf|italics|disableExternalCapture|dump|detachEvent|unshift|\nuntaint|unwatch|updateCommands|join|javaEnabled|pop|push|plugins.refresh|paddings|parse|\nprint|prompt|preference|enableExternalCapture|exec|execScript|valueOf|UTC|find|file|\nfileModifiedDate|fileSize|fileCreatedDate|fileUpdatedDate|fixed|fontsize|fontcolor|\nforward|fromCharCode|watch|link|load|lastIndexOf|anchor|attachEvent|atob|apply|alert|\nabort|routeEvents|resize|resizeBy|resizeTo|recalc|returnValue|replace|reverse|reload|\nreleaseCapture|releaseEvents|go|get(Milliseconds|Seconds|Minutes|Hours|Month|Day|Year|FullYear|\nTime|Date|TimezoneOffset|UTC(Milliseconds|Seconds|Minutes|Hours|Day|Month|FullYear|Date)|\nAttention|Selection|ResponseHeader|AllResponseHeaders)|moveBy|moveBelow|moveTo|\nmoveToAbsolute|moveAbove|mergeAttributes|match|margins|btoa|big|bold|borderWidths|blink|back)\\b",
+					"match": "",
 					"name": "support.function.coffee"
 				},
 				{
-					"match": "(?x)\n\\b(acceptNode|add|addEventListener|addTextTrack|adoptNode|after|animate|append|\nappendChild|appendData|before|blur|canPlayType|captureStream|\ncaretPositionFromPoint|caretRangeFromPoint|checkValidity|clear|click|\ncloneContents|cloneNode|cloneRange|close|closest|collapse|\ncompareBoundaryPoints|compareDocumentPosition|comparePoint|contains|\nconvertPointFromNode|convertQuadFromNode|convertRectFromNode|createAttribute|\ncreateAttributeNS|createCaption|createCDATASection|createComment|\ncreateContextualFragment|createDocument|createDocumentFragment|\ncreateDocumentType|createElement|createElementNS|createEntityReference|\ncreateEvent|createExpression|createHTMLDocument|createNodeIterator|\ncreateNSResolver|createProcessingInstruction|createRange|createShadowRoot|\ncreateTBody|createTextNode|createTFoot|createTHead|createTreeWalker|delete|\ndeleteCaption|deleteCell|deleteContents|deleteData|deleteRow|deleteTFoot|\ndeleteTHead|detach|disconnect|dispatchEvent|elementFromPoint|elementsFromPoint|\nenableStyleSheetsForSet|entries|evaluate|execCommand|exitFullscreen|\nexitPointerLock|expand|extractContents|fastSeek|firstChild|focus|forEach|get|\ngetAll|getAnimations|getAttribute|getAttributeNames|getAttributeNode|\ngetAttributeNodeNS|getAttributeNS|getBoundingClientRect|getBoxQuads|\ngetClientRects|getContext|getDestinationInsertionPoints|getElementById|\ngetElementsByClassName|getElementsByName|getElementsByTagName|\ngetElementsByTagNameNS|getItem|getNamedItem|getSelection|getStartDate|\ngetVideoPlaybackQuality|has|hasAttribute|hasAttributeNS|hasAttributes|\nhasChildNodes|hasFeature|hasFocus|importNode|initEvent|insertAdjacentElement|\ninsertAdjacentHTML|insertAdjacentText|insertBefore|insertCell|insertData|\ninsertNode|insertRow|intersectsNode|isDefaultNamespace|isEqualNode|\nisPointInRange|isSameNode|item|key|keys|lastChild|load|lookupNamespaceURI|\nlookupPrefix|matches|move|moveAttribute|moveAttributeNode|moveChild|\nmoveNamedItem|namedItem|nextNode|nextSibling|normalize|observe|open|\nparentNode|pause|play|postMessage|prepend|preventDefault|previousNode|\npreviousSibling|probablySupportsContext|queryCommandEnabled|\nqueryCommandIndeterm|queryCommandState|queryCommandSupported|queryCommandValue|\nquerySelector|querySelectorAll|registerContentHandler|registerElement|\nregisterProtocolHandler|releaseCapture|releaseEvents|remove|removeAttribute|\nremoveAttributeNode|removeAttributeNS|removeChild|removeEventListener|\nremoveItem|replace|replaceChild|replaceData|replaceWith|reportValidity|\nrequestFullscreen|requestPointerLock|reset|scroll|scrollBy|scrollIntoView|\nscrollTo|seekToNextFrame|select|selectNode|selectNodeContents|set|setAttribute|\nsetAttributeNode|setAttributeNodeNS|setAttributeNS|setCapture|\nsetCustomValidity|setEnd|setEndAfter|setEndBefore|setItem|setNamedItem|\nsetRangeText|setSelectionRange|setSinkId|setStart|setStartAfter|setStartBefore|\nslice|splitText|stepDown|stepUp|stopImmediatePropagation|stopPropagation|\nsubmit|substringData|supports|surroundContents|takeRecords|terminate|toBlob|\ntoDataURL|toggle|toString|values|write|writeln)\\b",
+					"match": "",
 					"name": "support.function.dom.coffee"
 				},
 				{
-					"match": "[a-zA-Z_$][\\w$]*",
+					"match": "",
 					"name": "entity.name.function.coffee"
 				},
 				{
-					"match": "\\d[\\w$]*",
+					"match": "",
 					"name": "invalid.illegal.identifier.coffee"
 				}
 			]
@@ -822,19 +822,19 @@
 		"numbers": {
 			"patterns": [
 				{
-					"match": "\\b(?<!\\$)0(x|X)[0-9a-fA-F]+\\b(?!\\$)",
+					"match": "",
 					"name": "constant.numeric.hex.coffee"
 				},
 				{
-					"match": "\\b(?<!\\$)0(b|B)[01]+\\b(?!\\$)",
+					"match": "",
 					"name": "constant.numeric.binary.coffee"
 				},
 				{
-					"match": "\\b(?<!\\$)0(o|O)?[0-7]+\\b(?!\\$)",
+					"match": "",
 					"name": "constant.numeric.octal.coffee"
 				},
 				{
-					"match": "(?x)\n(?<!\\$)(?:\n  (?:\\b[0-9]+(\\.)[0-9]+[eE][+-]?[0-9]+\\b)| # 1.1E+3\n  (?:\\b[0-9]+(\\.)[eE][+-]?[0-9]+\\b)|       # 1.E+3\n  (?:\\B(\\.)[0-9]+[eE][+-]?[0-9]+\\b)|       # .1E+3\n  (?:\\b[0-9]+[eE][+-]?[0-9]+\\b)|            # 1E+3\n  (?:\\b[0-9]+(\\.)[0-9]+\\b)|                # 1.1\n  (?:\\b[0-9]+(?=\\.{2,3}))|                  # 1 followed by a slice\n  (?:\\b[0-9]+(\\.)\\B)|                      # 1.\n  (?:\\B(\\.)[0-9]+\\b)|                      # .1\n  (?:\\b[0-9]+\\b(?!\\.))                     # 1\n)(?!\\$)",
+					"match": "",
 					"captures": {
 						"0": {
 							"name": "constant.numeric.decimal.coffee"
@@ -864,11 +864,11 @@
 		"objects": {
 			"patterns": [
 				{
-					"match": "[A-Z][A-Z0-9_$]*(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+					"match": "",
 					"name": "constant.other.object.coffee"
 				},
 				{
-					"match": "[a-zA-Z_$][\\w$]*(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+					"match": "",
 					"name": "variable.other.object.coffee"
 				}
 			]
@@ -876,7 +876,7 @@
 		"operators": {
 			"patterns": [
 				{
-					"match": "(?:([a-zA-Z$_][\\w$]*)?\\s+|(?<![\\w$]))(and=|or=)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "variable.assignment.coffee"
@@ -887,7 +887,7 @@
 					}
 				},
 				{
-					"match": "([a-zA-Z$_][\\w$]*)?\\s*(%=|\\+=|-=|\\*=|&&=|\\|\\|=|\\?=|(?<!\\()/=)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "variable.assignment.coffee"
@@ -898,7 +898,7 @@
 					}
 				},
 				{
-					"match": "([a-zA-Z$_][\\w$]*)?\\s*(&=|\\^=|<<=|>>=|>>>=|\\|=)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "variable.assignment.coffee"
@@ -909,23 +909,23 @@
 					}
 				},
 				{
-					"match": "<<|>>>|>>",
+					"match": "",
 					"name": "keyword.operator.bitwise.shift.coffee"
 				},
 				{
-					"match": "!=|<=|>=|==|<|>",
+					"match": "",
 					"name": "keyword.operator.comparison.coffee"
 				},
 				{
-					"match": "&&|!|\\|\\|",
+					"match": "",
 					"name": "keyword.operator.logical.coffee"
 				},
 				{
-					"match": "&|\\||\\^|~",
+					"match": "",
 					"name": "keyword.operator.bitwise.coffee"
 				},
 				{
-					"match": "([a-zA-Z$_][\\w$]*)?\\s*(=|:(?!:))(?![>=])",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "variable.assignment.coffee"
@@ -936,27 +936,27 @@
 					}
 				},
 				{
-					"match": "--",
+					"match": "",
 					"name": "keyword.operator.decrement.coffee"
 				},
 				{
-					"match": "\\+\\+",
+					"match": "",
 					"name": "keyword.operator.increment.coffee"
 				},
 				{
-					"match": "\\.\\.\\.",
+					"match": "",
 					"name": "keyword.operator.splat.coffee"
 				},
 				{
-					"match": "\\?",
+					"match": "",
 					"name": "keyword.operator.existential.coffee"
 				},
 				{
-					"match": "%|\\*|/|-|\\+",
+					"match": "",
 					"name": "keyword.operator.coffee"
 				},
 				{
-					"match": "(?x)\n\\b(?<![\\.\\$])\n(?:\n  (and|or|not) # logical\n  |\n  (is|isnt) # comparison\n)\n(?!\\s*:)\\b",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "keyword.operator.logical.coffee"
@@ -971,7 +971,7 @@
 		"properties": {
 			"patterns": [
 				{
-					"match": "(?:(\\.)|(::))\\s*([A-Z][A-Z0-9_$]*\\b\\$*)(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "punctuation.separator.property.period.coffee"
@@ -985,7 +985,7 @@
 					}
 				},
 				{
-					"match": "(?:(\\.)|(::))\\s*(\\$*[a-zA-Z_$][\\w$]*)(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "punctuation.separator.property.period.coffee"
@@ -999,7 +999,7 @@
 					}
 				},
 				{
-					"match": "(?:(\\.)|(::))\\s*([A-Z][A-Z0-9_$]*\\b\\$*)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "punctuation.separator.property.period.coffee"
@@ -1013,7 +1013,7 @@
 					}
 				},
 				{
-					"match": "(?:(\\.)|(::))\\s*(\\$*[a-zA-Z_$][\\w$]*)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "punctuation.separator.property.period.coffee"
@@ -1027,7 +1027,7 @@
 					}
 				},
 				{
-					"match": "(?:(\\.)|(::))\\s*([0-9][\\w$]*)",
+					"match": "",
 					"captures": {
 						"1": {
 							"name": "punctuation.separator.property.period.coffee"
@@ -1065,7 +1065,7 @@
 									"name": "punctuation.definition.escape.backslash.coffee"
 								}
 							},
-							"match": "(\\\\)(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+							"match": "",
 							"name": "constant.character.escape.backslash.coffee"
 						}
 					]
@@ -1075,19 +1075,19 @@
 		"regex-character-class": {
 			"patterns": [
 				{
-					"match": "\\\\[wWsSdD]|\\.",
+					"match": "",
 					"name": "constant.character.character-class.regexp"
 				},
 				{
-					"match": "\\\\([0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4})",
+					"match": "",
 					"name": "constant.character.numeric.regexp"
 				},
 				{
-					"match": "\\\\c[A-Z]",
+					"match": "",
 					"name": "constant.character.control.regexp"
 				},
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escape.backslash.regexp"
 				}
 			]
@@ -1095,19 +1095,19 @@
 		"heregexp": {
 			"patterns": [
 				{
-					"match": "\\\\[bB]|\\^|\\$",
+					"match": "",
 					"name": "keyword.control.anchor.regexp"
 				},
 				{
-					"match": "\\\\[1-9]\\d*",
+					"match": "",
 					"name": "keyword.other.back-reference.regexp"
 				},
 				{
-					"match": "[?+*]|\\{(\\d+,\\d+|\\d+,|,\\d+|\\d+)\\}\\??",
+					"match": "",
 					"name": "keyword.operator.quantifier.regexp"
 				},
 				{
-					"match": "\\|",
+					"match": "",
 					"name": "keyword.operator.or.regexp"
 				},
 				{
@@ -1195,7 +1195,7 @@
 									"name": "constant.character.escape.backslash.regexp"
 								}
 							},
-							"match": "(?:.|(\\\\(?:[0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}))|(\\\\c[A-Z])|(\\\\.))\\-(?:[^\\]\\\\]|(\\\\(?:[0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}))|(\\\\c[A-Z])|(\\\\.))",
+							"match": "",
 							"name": "constant.other.character-class.range.regexp"
 						},
 						{

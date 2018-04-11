@@ -79,7 +79,7 @@
 			},
 			"patterns": [
 				{
-					"match": "(([a-zA-Z0-9]+)(\\.)?)+?",
+					"match": "",
 					"captures": {
 						"2": {
 							"name": "entity.name.tag.source.cshtml"
@@ -129,7 +129,7 @@
 	],
 	"repository": {
 		"embedded-code": {
-			"match": "(@?[a-zA-Z0-9]+)(\\.([a-zA-Z0-9]+))?",
+			"match": "",
 			"captures": {
 				"1": {
 					"name": "keyword.control.cshtml"

@@ -57,7 +57,7 @@
 			"name": "string.quoted.double.dockerfile",
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escaped.dockerfile"
 				}
 			]
@@ -78,7 +78,7 @@
 			"name": "string.quoted.single.dockerfile",
 			"patterns": [
 				{
-					"match": "\\\\.",
+					"match": "",
 					"name": "constant.character.escaped.dockerfile"
 				}
 			]

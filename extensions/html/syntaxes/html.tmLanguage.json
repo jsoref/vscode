@@ -12,7 +12,7 @@
 			"comment": "Use R: to ensure this matches after any other injections.",
 			"patterns": [
 				{
-					"match": "<",
+					"match": "",
 					"name": "invalid.illegal.bad-angle-bracket.html"
 				}
 			]
@@ -86,7 +86,7 @@
 			"name": "comment.block.html",
 			"patterns": [
 				{
-					"match": "--",
+					"match": "",
 					"name": "invalid.illegal.bad-comments-or-CDATA.html"
 				},
 				{
@@ -115,7 +115,7 @@
 					"name": "meta.tag.sgml.doctype.html",
 					"patterns": [
 						{
-							"match": "\"[^\">]*\"",
+							"match": "",
 							"name": "string.quoted.double.doctype.identifiers-and-DTDs.html"
 						}
 					]
@@ -126,7 +126,7 @@
 					"name": "constant.other.inline-data.html"
 				},
 				{
-					"match": "(\\s*)(?!--|>)\\S(\\s*)",
+					"match": "",
 					"name": "invalid.illegal.bad-comments-or-CDATA.html"
 				}
 			]
@@ -516,7 +516,7 @@
 			"include": "#entities"
 		},
 		{
-			"match": "<>",
+			"match": "",
 			"name": "invalid.illegal.incomplete.html"
 		}
 	],
@@ -542,11 +542,11 @@
 							"name": "punctuation.definition.entity.html"
 						}
 					},
-					"match": "(&)([a-zA-Z0-9]+|#[0-9]+|#[xX][0-9a-fA-F]+)(;)",
+					"match": "",
 					"name": "constant.character.entity.html"
 				},
 				{
-					"match": "&",
+					"match": "",
 					"name": "invalid.illegal.bad-ampersand.html"
 				}
 			]
@@ -635,7 +635,7 @@
 			]
 		},
 		"tag-generic-attribute": {
-			"match": "(?<=[^=])\\b([a-zA-Z0-9:-]+)",
+			"match": "",
 			"name": "entity.other.attribute-name.html"
 		},
 		"tag-id-attribute": {
@@ -705,7 +705,7 @@
 							"name": "meta.toc-list.id.html"
 						}
 					},
-					"match": "(?<==)(?:[^\\s<>/'\"]|/(?!>))+",
+					"match": "",
 					"name": "string.unquoted.html"
 				}
 			]
@@ -733,7 +733,7 @@
 			]
 		},
 		"unquoted-attribute": {
-			"match": "(?<==)(?:[^\\s<>/'\"]|/(?!>))+",
+			"match": "",
 			"name": "string.unquoted.html"
 		}
 	}
