@@ -339,7 +339,7 @@
 							"name": "entity.other.attribute-name.localname.xml"
 						}
 					},
-					"match": "(?:^|\\s+)(?:([-\\w.]+)((:)))?([-\\w.:]+)\\s*="
+					"match": ""
 				},
 				{
 					"include": "#doublequotedString"

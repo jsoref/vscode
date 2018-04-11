@@ -138,7 +138,7 @@
 					"patterns": [
 						{
 							"comment": "This is to prevent thinks like qr/foo$/ to treat $/ as a variable",
-							"match": "\\$(?=[^\\s\\w\\\\'\\{\\[\\(\\<])"
+							"match": ""
 						},
 						{
 							"include": "#escaped_char"
@@ -607,7 +607,7 @@
 					]
 				},
 				{
-					"match": "\\s+"
+					"match": ""
 				}
 			]
 		},
@@ -793,7 +793,7 @@
 					"name": "constant.other.key.perl"
 				}
 			},
-			"match": "\\b(\\w+)\\s*(?==>)"
+			"match": ""
 		},
 		{
 			"match": "",
@@ -855,7 +855,7 @@
 							"name": "meta.even-tab"
 						}
 					},
-					"match": "(\\t| {4})(\\t| {4})?"
+					"match": ""
 				}
 			]
 		},
@@ -2078,7 +2078,7 @@
 					"name": "entity.name.function.perl"
 				}
 			},
-			"match": "\\b(x)\\s*(\\d+)\\b"
+			"match": ""
 		},
 		{
 			"match": "",
@@ -2094,7 +2094,7 @@
 				}
 			},
 			"comment": "Match empty brackets for ↩ snippet",
-			"match": "(\\{)(\\})"
+			"match": ""
 		},
 		{
 			"captures": {
@@ -2106,7 +2106,7 @@
 				}
 			},
 			"comment": "Match empty parenthesis for ↩ snippet",
-			"match": "(\\()(\\))"
+			"match": ""
 		}
 	],
 	"repository": {
@@ -2369,7 +2369,7 @@
 							]
 						}
 					},
-					"match": "^(=(?:head[1-4]|item|over|encoding|begin|end|for))\\b\\s*(.*)"
+					"match": ""
 				},
 				{
 					"include": "#pod-formatting"

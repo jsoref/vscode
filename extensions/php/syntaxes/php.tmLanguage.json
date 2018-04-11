@@ -137,7 +137,7 @@
 			]
 		},
 		{
-			"match": "\\s+(?=use\\b)"
+			"match": ""
 		},
 		{
 			"begin": "(?i)\\buse\\b",
@@ -664,7 +664,7 @@
 					"name": "storage.modifier.reference.php"
 				}
 			},
-			"match": "(?i)(\\=)(&)|(&)(?=[$a-z_])"
+			"match": ""
 		},
 		{
 			"match": "",
@@ -730,7 +730,7 @@
 					"name": "support.other.php"
 				}
 			},
-			"match": "(?i)(goto)\\s+([a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*)"
+			"match": ""
 		},
 		{
 			"captures": {
@@ -738,7 +738,7 @@
 					"name": "entity.name.goto-label.php"
 				}
 			},
-			"match": "(?i)^\\s*([a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*)\\s*:(?!:)"
+			"match": ""
 		},
 		{
 			"include": "#string-backtick"
@@ -2134,7 +2134,7 @@
 							"name": "punctuation.definition.variable.php"
 						}
 					},
-					"match": "(?i)(->)((\\$+)?[a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*)?"
+					"match": ""
 				}
 			]
 		},
@@ -2230,7 +2230,7 @@
 							"name": "invalid.illegal.wrong-access-type.phpdoc.php"
 						}
 					},
-					"match": "^\\s*\\*\\s*(@access)\\s+((public|private|protected)|(.+))\\s*$"
+					"match": ""
 				},
 				{
 					"captures": {
@@ -2241,7 +2241,7 @@
 							"name": "markup.underline.link.php"
 						}
 					},
-					"match": "(@xlink)\\s+(.+)\\s*$"
+					"match": ""
 				},
 				{
 					"begin": "(@(?:global|param|property(-(read|write))?|return|throws|var))\\s+(?=[A-Za-z_\\x{7f}-\\x{7fffffff}\\\\]|\\()",
@@ -3171,7 +3171,7 @@
 		"switch_statement": {
 			"patterns": [
 				{
-					"match": "\\s+(?=switch\\b)"
+					"match": ""
 				},
 				{
 					"begin": "\\bswitch\\b(?!\\s*\\(.*\\)\\s*:)",
@@ -3334,7 +3334,7 @@
 							"name": "punctuation.section.array.end.php"
 						}
 					},
-					"match": "(?xi)\n((\\$)(?<name>[a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*))\n(?:\n  (->)(\\g<name>)\n  |\n  (\\[)(?:(\\d+)|((\\$)\\g<name>)|([a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*))(\\])\n)?"
+					"match": ""
 				},
 				{
 					"captures": {
@@ -3348,7 +3348,7 @@
 							"name": "punctuation.definition.variable.php"
 						}
 					},
-					"match": "(?i)((\\${)(?<name>[a-z_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*)(}))"
+					"match": ""
 				}
 			]
 		},

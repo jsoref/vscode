@@ -243,7 +243,7 @@
 									"name": "variable.parameter.function.ruby"
 								}
 							},
-							"match": "\\G([&*]?)(?:([_a-zA-Z]\\w*(:))|([_a-zA-Z]\\w*))"
+							"match": ""
 						},
 						{
 							"include": "#parens"
@@ -1112,7 +1112,7 @@
 				}
 			},
 			"comment": "Safe navigation operator - Added in 2.3",
-			"match": "(&\\.)\\s*(?![A-Z])"
+			"match": ""
 		},
 		{
 			"match": "",
@@ -1141,7 +1141,7 @@
 				}
 			},
 			"comment": "Mark as namespace separator if double colons followed by capital letter",
-			"match": "(::)\\s*(?=[A-Z])"
+			"match": ""
 		},
 		{
 			"captures": {
@@ -1150,7 +1150,7 @@
 				}
 			},
 			"comment": "Mark as method separator if double colons not followed by capital letter",
-			"match": "(\\.|::)\\s*(?![A-Z])"
+			"match": ""
 		},
 		{
 			"comment": "Must come after method and constant separators to prefer double colons",

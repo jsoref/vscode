@@ -32,7 +32,7 @@
 					"include": "#fstring-formatting-braces"
 				},
 				{
-					"match": "\\{.*?\\}"
+					"match": ""
 				},
 				{
 					"include": "#regexp-base-common"
@@ -58,7 +58,7 @@
 				},
 				{
 					"name": "constant.character.escape.python",
-					"match": "({{|}})"
+					"match": ""
 				}
 			]
 		},
@@ -66,23 +66,23 @@
 			"patterns": [
 				{
 					"name": "support.other.match.any.regexp",
-					"match": "\\."
+					"match": ""
 				},
 				{
 					"name": "support.other.match.begin.regexp",
-					"match": "\\^"
+					"match": ""
 				},
 				{
 					"name": "support.other.match.end.regexp",
-					"match": "\\$"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.quantifier.regexp",
-					"match": "[+*?]\\??"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.disjunction.regexp",
-					"match": "\\|"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-sequence"
@@ -91,11 +91,11 @@
 		},
 		"regexp-quantifier": {
 			"name": "keyword.operator.quantifier.regexp",
-			"match": "",\\d+\n  )\\}\n"
+			"match": ""
 		},
 		"fregexp-quantifier": {
 			"name": "keyword.operator.quantifier.regexp",
-			"match": "",\\d+\n  )\\}\\}\n"
+			"match": ""
 		},
 		"regexp-backreference-number": {
 			"name": "meta.backreference.regexp",
@@ -123,23 +123,23 @@
 		},
 		"regexp-flags": {
 			"name": "storage.modifier.flag.regexp",
-			"match": "\\(\\?[aiLmsux]+\\)"
+			"match": ""
 		},
 		"regexp-escape-special": {
 			"name": "support.other.escape.special.regexp",
-			"match": "\\\\([AbBdDsSwWZ])"
+			"match": ""
 		},
 		"regexp-escape-character": {
 			"name": "constant.character.escape.regexp",
-			"match": "",2}\n        | [0-7]{3}\n     )\n"
+			"match": ""
 		},
 		"regexp-escape-unicode": {
 			"name": "constant.character.unicode.regexp",
-			"match": "(?x)\n  \\\\ (\n        u[0-9A-Fa-f]{4}\n        | U[0-9A-Fa-f]{8}\n     )\n"
+			"match": ""
 		},
 		"regexp-escape-catchall": {
 			"name": "constant.character.escape.regexp",
-			"match": "\\\\(.|\\n)"
+			"match": ""
 		},
 		"regexp-escape-sequence": {
 			"patterns": [
@@ -164,14 +164,14 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.regexp",
-					"match": "\\\\[abfnrtv\\\\]"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-special"
 				},
 				{
 					"name": "constant.character.escape.regexp",
-					"match": "",3})"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-character"
@@ -238,7 +238,7 @@
 		"regexp-character-set": {
 			"patterns": [
 				{
-					"match": "(?x)\n  \\[ \\^? \\] (?! .*?\\])\n"
+					"match": ""
 				},
 				{
 					"name": "meta.character.set.regexp",
@@ -269,7 +269,7 @@
 						},
 						{
 							"name": "constant.character.set.regexp",
-							"match": "[^\\n]"
+							"match": ""
 						}
 					]
 				}

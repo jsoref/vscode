@@ -112,7 +112,7 @@
 				},
 				{
 					"name": "comment.line.double-slash.fsharp",
-					"match": "//.*$"
+					"match": ""
 				}
 			]
 		},
@@ -120,19 +120,19 @@
 			"patterns": [
 				{
 					"name": "constant.language.unit.fsharp",
-					"match": "\\(\\)"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.floating-point.fsharp",
-					"match": "\\b-?[0-9][0-9_]*((\\.([0-9][0-9_]*([eE][+-]??[0-9][0-9_]*)?)?)|([eE][+-]??[0-9][0-9_]*))"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.integer.nativeint.fsharp",
-					"match": "\\b(-?((0(x|X)[0-9a-fA-F][0-9a-fA-F_]*)|(0(o|O)[0-7][0-7_]*)|(0(b|B)[01][01_]*)|([0-9][0-9_]*)))"
+					"match": ""
 				},
 				{
 					"name": "constant.others.fsharp",
-					"match": "\\b(true|false|null|unit)\\b"
+					"match": ""
 				}
 			]
 		},
@@ -182,7 +182,7 @@
 			"patterns": [
 				{
 					"name": "keyword.other.fsharp",
-					"match": "\\b(function|yield!|yield|class|match|delegate|of|new|in|as|if|then|else|elif|for|begin|end|inherit|do|let\\!|return\\!|return|interface|with|abstract|property|union|enum|member|try|finally|and|when|use|use\\!|struct|while|mutable)\\b"
+					"match": ""
 				},
 				{
 					"name": "meta.preprocessor.fsharp",
@@ -191,7 +191,7 @@
 				},
 				{
 					"name": "keyword.other.fsharp",
-					"match": "(&&&|\\|\\|\\||\\^\\^\\^|~~~|<<<|>>>|\\|>|\\->|\\<\\-|:>|:\\?>|:|\\[|\\]|\\;|<>|=|@|\\|\\||&&|{|}|\\||_|\\.\\.|\\+|\\-|\\*|\\/|\\^|\\!|\\>|\\>\\=|\\>\\>|\\<|\\<\\=|\\<\\<)"
+					"match": ""
 				}
 			]
 		},
@@ -308,7 +308,7 @@
 					"patterns": [
 						{
 							"name": "constant.character.string.escape.fsharp",
-							"match": "\"(\")"
+							"match": ""
 						}
 					]
 				},
@@ -349,15 +349,15 @@
 					"patterns": [
 						{
 							"name": "punctuation.separator.string.ignore-eol.fsharp",
-							"match": "\\\\$[ \\t]*"
+							"match": ""
 						},
 						{
 							"name": "constant.character.string.escape.fsharp",
-							"match": "\\\\([\\\\''ntbr]|u[a-fA-F0-9]{4}|u[a-fA-F0-9]{8})"
+							"match": ""
 						},
 						{
 							"name": "invalid.illeagal.character.string.fsharp",
-							"match": "\\\\(?![\\\\''ntbr]|u[a-fA-F0-9]{4}|u[a-fA-F0-9]{8})."
+							"match": ""
 						},
 						{
 							"include": "#string_formatter"
@@ -383,11 +383,11 @@
 			"patterns": [
 				{
 					"name": "constant.language.unit.fsharp",
-					"match": "\\(\\)"
+					"match": ""
 				},
 				{
 					"name": "variable.parameter.fsharp",
-					"match": "[[:alpha:]']\\w*"
+					"match": ""
 				}
 			]
 		},
@@ -474,7 +474,7 @@
 			"patterns": [
 				{
 					"name": "text.fsharp",
-					"match": "\\\\"
+					"match": ""
 				}
 			]
 		}

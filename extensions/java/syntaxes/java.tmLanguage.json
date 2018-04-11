@@ -150,7 +150,7 @@
 									"name": "keyword.operator.assignment.java"
 								}
 							},
-							"match": "(\\w*)\\s*(=)"
+							"match": ""
 						},
 						{
 							"include": "#code"

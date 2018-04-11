@@ -18,7 +18,7 @@
 	"repository": {
 		"impossible": {
 			"comment": "This is a special rule that should be used where no match is desired. It is not a good idea to match something like '1{0}' because in some cases that can result in infinite loops in token generation. So the rule instead matches and impossible expression to allow a match to fail and move to the next token.",
-			"match": "$.^"
+			"match": ""
 		},
 		"statement": {
 			"patterns": [
@@ -52,7 +52,7 @@
 			"patterns": [
 				{
 					"name": "invalid.deprecated.semicolon.python",
-					"match": "\\;$"
+					"match": ""
 				}
 			]
 		},
@@ -74,19 +74,19 @@
 					"patterns": [
 						{
 							"name": "comment.typehint.ignore.notation.python",
-							"match": "(?x)\n  \\G ignore\n  (?= \\s* (?: $ | \\#))\n"
+							"match": ""
 						},
 						{
 							"name": "comment.typehint.type.notation.python",
-							"match": "(?x)\n  (?<!\\.)\\b(\n    bool | bytes | float | int | object | str\n    | List | Dict | Iterable | Sequence | Set\n    | FrozenSet | Callable | Union | Tuple\n    | Any | None\n  )\\b\n"
+							"match": ""
 						},
 						{
 							"name": "comment.typehint.punctuation.notation.python",
-							"match": "",\\.\\=\\*]|(->))"
+							"match": ""
 						},
 						{
 							"name": "comment.typehint.variable.notation.python",
-							"match": "([[:alpha:]_]\\w*)"
+							"match": ""
 						}
 					]
 				},
@@ -243,19 +243,19 @@
 			"patterns": [
 				{
 					"name": "storage.type.function.python",
-					"match": "\\b((async\\s+)?\\s*def)\\b"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.flow.python",
-					"match": "(?x)\n  \\b(?<!\\.)(\n    as | async | continue | del | assert | break | finally | for\n    | from | elif | else | if | except | pass | raise\n    | return | try | while | with\n  )\\b\n"
+					"match": ""
 				},
 				{
 					"name": "storage.modifier.declaration.python",
-					"match": "(?x)\n  \\b(?<!\\.)(\n    global | nonlocal\n  )\\b\n"
+					"match": ""
 				},
 				{
 					"name": "storage.type.class.python",
-					"match": "\\b(?<!\\.)(class)\\b"
+					"match": ""
 				}
 			]
 		},
@@ -358,7 +358,7 @@
 				},
 				{
 					"comment": "Tokenize identifiers to help linters",
-					"match": "(?x) \\b ([[:alpha:]_]\\w*) \\b"
+					"match": ""
 				}
 			]
 		},
@@ -403,7 +403,7 @@
 		},
 		"special-names": {
 			"name": "constant.other.caps.python",
-			"match": "", meaning 2 or more upper-case\n    # letters in the beginning of the constant\n    #\n    # for more details refer to:\n    #   https://github.com/MagicStack/MagicPython/issues/42\n    (\n      _* [[:upper:]] [_\\d]* [[:upper:]]\n    )\n    [[:upper:]\\d]* (_\\w*)?\n  \\b\n"
+			"match": ""
 		},
 		"curly-braces": {
 			"begin": "\\{",
@@ -421,7 +421,7 @@
 			"patterns": [
 				{
 					"name": "punctuation.separator.dict.python",
-					"match": ":"
+					"match": ""
 				},
 				{
 					"include": "#expression"
@@ -500,7 +500,7 @@
 		},
 		"assignment-operator": {
 			"name": "keyword.operator.assignment.python",
-			"match": "(?x)\n     <<= | >>= | //= | \\*\\*=\n    | \\+= | -= | /= | @=\n    | \\*= | %= | ~= | \\^= | &= | \\|=\n    | =(?!=)\n"
+			"match": ""
 		},
 		"operator": {
 			"match": "",
@@ -526,11 +526,11 @@
 			"patterns": [
 				{
 					"name": "punctuation.separator.colon.python",
-					"match": ":"
+					"match": ""
 				},
 				{
 					"name": "punctuation.separator.element.python",
-					"match": "","
+					"match": ""
 				}
 			]
 		},
@@ -538,7 +538,7 @@
 			"patterns": [
 				{
 					"name": "constant.language.python",
-					"match": "\\b(True|False|None|NotImplemented|Ellipsis)\\b"
+					"match": ""
 				},
 				{
 					"include": "#number"
@@ -568,7 +568,7 @@
 				},
 				{
 					"name": "invalid.illegal.name.python",
-					"match": "\\b[0-9]+\\w+"
+					"match": ""
 				}
 			]
 		},
@@ -721,7 +721,7 @@
 			]
 		},
 		"string-consume-escape": {
-			"match": "\\\\['\"\\n\\\\]"
+			"match": ""
 		},
 		"string-raw-guts": {
 			"patterns": [
@@ -826,7 +826,7 @@
 				},
 				{
 					"comment": "Tokenize identifiers to help linters",
-					"match": "(?x) \\b ([[:alpha:]_]\\w*) \\b"
+					"match": ""
 				}
 			]
 		},
@@ -834,21 +834,21 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.python",
-					"match": "(?x)\n  \\\\ (\n        u[0-9A-Fa-f]{4}\n        | U[0-9A-Fa-f]{8}\n        | N\\{[\\w\\s]+?\\}\n     )\n"
+					"match": ""
 				}
 			]
 		},
 		"escape-sequence": {
 			"name": "constant.character.escape.python",
-			"match": "",3}\n        | [\\\\\"'abfnrtv]\n     )\n"
+			"match": ""
 		},
 		"string-line-continuation": {
 			"name": "constant.language.python",
-			"match": "\\\\$"
+			"match": ""
 		},
 		"string-formatting": {
 			"name": "constant.character.format.placeholder.other.python",
-			"match": "(?x)\n  % (\\([\\w\\s]*\\))?\n    [-+#0 ]*\n    (\\d+|\\*)? (\\.(\\d+|\\*))?\n    ([hlL])?\n    [diouxXeEfFgGcrsa%]\n"
+			"match": ""
 		},
 		"string-brace-formatting": {
 			"patterns": [
@@ -878,7 +878,7 @@
 					},
 					"patterns": [
 						{
-							"match": "(?x) \\{ [^'\"}\\n]*? \\} (?=.*?\\})\n"
+							"match": ""
 						}
 					]
 				}
@@ -896,7 +896,7 @@
 		},
 		"fstring-formatting-singe-brace": {
 			"name": "invalid.illegal.brace.python",
-			"match": "(}(?!}))"
+			"match": ""
 		},
 		"import": {
 			"comment": "Import statements\n",
@@ -917,7 +917,7 @@
 				},
 				{
 					"name": "keyword.control.import.python",
-					"match": "\\b(?<!\\.)import\\b"
+					"match": ""
 				}
 			]
 		},
@@ -958,7 +958,7 @@
 				},
 				{
 					"name": "entity.name.type.class.python",
-					"match": "(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"
+					"match": ""
 				}
 			]
 		},
@@ -979,19 +979,19 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.unpacking.arguments.python",
-					"match": "(\\*\\*|\\*)"
+					"match": ""
 				},
 				{
 					"name": "punctuation.separator.inheritance.python",
-					"match": "","
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.python",
-					"match": "=(?!=)"
+					"match": ""
 				},
 				{
 					"name": "support.type.metaclass.python",
-					"match": "\\bmetaclass\\b"
+					"match": ""
 				},
 				{
 					"include": "#illegal-names"
@@ -1088,7 +1088,7 @@
 					"patterns": [
 						{
 							"name": "keyword.operator.unpacking.parameter.python",
-							"match": "(\\*\\*|\\*)"
+							"match": ""
 						},
 						{
 							"include": "#lambda-nested-incomplete"
@@ -1131,11 +1131,11 @@
 		},
 		"lambda-incomplete": {
 			"name": "storage.type.function.lambda.python",
-			"match": "",)])"
+			"match": ""
 		},
 		"lambda-nested-incomplete": {
 			"name": "storage.type.function.lambda.python",
-			"match": "",)])"
+			"match": ""
 		},
 		"lambda-parameter-with-default": {
 			"begin": "(?x)\n  \\b\n  ([[:alpha:]_]\\w*) \\s* (=)\n",
@@ -1201,7 +1201,7 @@
 				},
 				{
 					"name": "entity.name.function.python",
-					"match": "(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"
+					"match": ""
 				}
 			]
 		},
@@ -1222,7 +1222,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.unpacking.parameter.python",
-					"match": "(\\*\\*|\\*)"
+					"match": ""
 				},
 				{
 					"include": "#lambda-incomplete"
@@ -1316,7 +1316,7 @@
 				},
 				{
 					"name": "keyword.operator.assignment.python",
-					"match": "=(?!=)"
+					"match": ""
 				}
 			]
 		},
@@ -1371,7 +1371,7 @@
 					"include": "#special-names"
 				},
 				{
-					"match": "(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"
+					"match": ""
 				}
 			]
 		},
@@ -1387,7 +1387,7 @@
 			"patterns": [
 				{
 					"name": "punctuation.separator.slice.python",
-					"match": ":"
+					"match": ""
 				},
 				{
 					"include": "#expression"
@@ -1430,7 +1430,7 @@
 				},
 				{
 					"name": "entity.name.function.decorator.python",
-					"match": "(?x)\n  ([[:alpha:]_]\\w*) | \\.\n"
+					"match": ""
 				},
 				{
 					"include": "#line-continuation"
@@ -1507,7 +1507,7 @@
 				{
 					"comment": "Some color schemas support meta.function-call.generic scope",
 					"name": "meta.function-call.generic.python",
-					"match": "(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"
+					"match": ""
 				}
 			]
 		},
@@ -1554,7 +1554,7 @@
 				},
 				{
 					"name": "keyword.operator.assignment.python",
-					"match": "=(?!=)"
+					"match": ""
 				},
 				{
 					"include": "#expression"
@@ -1603,23 +1603,23 @@
 		},
 		"builtin-exceptions": {
 			"name": "support.type.exception.python",
-			"match": "(?x) (?<!\\.) \\b(\n  (\n    Arithmetic | Assertion | Attribute | Buffer | BlockingIO\n    | BrokenPipe | ChildProcess\n    | (Connection (Aborted | Refused | Reset)?)\n    | EOF | Environment | FileExists | FileNotFound\n    | FloatingPoint | IO | Import | Indentation | Index | Interrupted\n    | IsADirectory | NotADirectory | Permission | ProcessLookup\n    | Timeout\n    | Key | Lookup | Memory | Name | NotImplemented | OS | Overflow\n    | Reference | Runtime | Recursion | Syntax | System\n    | Tab | Type | UnboundLocal | Unicode(Encode|Decode|Translate)?\n    | Value | Windows | ZeroDivision | ModuleNotFound\n  ) Error\n|\n  ((Pending)?Deprecation | Runtime | Syntax | User | Future | Import\n    | Unicode | Bytes | Resource\n  )? Warning\n|\n  SystemExit | Stop(Async)?Iteration\n  | KeyboardInterrupt\n  | GeneratorExit | (Base)?Exception\n)\\b\n"
+			"match": ""
 		},
 		"builtin-functions": {
 			"patterns": [
 				{
 					"name": "support.function.builtin.python",
-					"match": "(?x)\n  (?<!\\.) \\b(\n    __import__ | abs | all | any | ascii | bin | callable\n    | chr | compile | copyright | credits | delattr | dir | divmod\n    | enumerate | eval | exec | exit | filter | format | getattr\n    | globals | hasattr | hash | help | hex | id | input\n    | isinstance | issubclass | iter | len | license | locals | map\n    | max | memoryview | min | next | oct | open | ord | pow | print\n    | quit | range | reload | repr | reversed | round\n    | setattr | sorted | sum | vars | zip\n  )\\b\n"
+					"match": ""
 				},
 				{
 					"name": "variable.legacy.builtin.python",
-					"match": "(?x)\n  (?<!\\.) \\b(\n    file | reduce | intern | raw_input | unicode | cmp | basestring\n    | execfile | long | xrange\n  )\\b\n"
+					"match": ""
 				}
 			]
 		},
 		"builtin-types": {
 			"name": "support.type.python",
-			"match": "",\n        and is special enough to be highlighted differently from\n        other built-ins)\n    | super\n  )\\b\n"
+			"match": ""
 		},
 		"magic-function-names": {
 			"comment": "these methods have magic interpretation by python and are generally called\nindirectly through syntactic constructs\n",
@@ -1651,7 +1651,7 @@
 		},
 		"illegal-names": {
 			"name": "keyword.control.flow.python",
-			"match": "(?x)\n  \\b(\n    and | as | assert | async | await | break | class | continue | def\n    | del | elif | else | except | exec | finally | for | from | global\n    | if | import | in | is | (?<=\\.)lambda | lambda(?=\\s*[\\.=])\n    | nonlocal | not | or | pass | raise | return | try | while | with\n    | yield\n  )\\b\n"
+			"match": ""
 		},
 		"special-variables": {
 			"match": "",
@@ -1666,7 +1666,7 @@
 		},
 		"ellipsis": {
 			"name": "constant.other.ellipsis.python",
-			"match": "\\.\\.\\."
+			"match": ""
 		},
 		"backticks": {
 			"name": "invalid.deprecated.backtick.python",
@@ -1682,27 +1682,27 @@
 			"patterns": [
 				{
 					"name": "invalid.illegal.operator.python",
-					"match": "&&|\\|\\||--|\\+\\+"
+					"match": ""
 				},
 				{
 					"name": "invalid.illegal.operator.python",
-					"match": "[?$]"
+					"match": ""
 				},
 				{
 					"name": "invalid.illegal.operator.python",
 					"comment": "We don't want `!` to flash when we're typing `!=`",
-					"match": "!\\b"
+					"match": ""
 				}
 			]
 		},
 		"illegal-object-name": {
 			"comment": "It's illegal to name class or function \"True\"",
 			"name": "keyword.illegal.name.python",
-			"match": "\\b(True|False|None)\\b"
+			"match": ""
 		},
 		"illegal-anno": {
 			"name": "invalid.illegal.annotation.python",
-			"match": "->"
+			"match": ""
 		},
 		"regexp-base-expression": {
 			"patterns": [
@@ -1723,7 +1723,7 @@
 					"include": "#fstring-formatting-braces"
 				},
 				{
-					"match": "\\{.*?\\}"
+					"match": ""
 				},
 				{
 					"include": "#regexp-base-common"
@@ -1749,7 +1749,7 @@
 				},
 				{
 					"name": "constant.character.escape.python",
-					"match": "({{|}})"
+					"match": ""
 				}
 			]
 		},
@@ -1757,23 +1757,23 @@
 			"patterns": [
 				{
 					"name": "support.other.match.any.regexp",
-					"match": "\\."
+					"match": ""
 				},
 				{
 					"name": "support.other.match.begin.regexp",
-					"match": "\\^"
+					"match": ""
 				},
 				{
 					"name": "support.other.match.end.regexp",
-					"match": "\\$"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.quantifier.regexp",
-					"match": "[+*?]\\??"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.disjunction.regexp",
-					"match": "\\|"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-sequence"
@@ -1782,11 +1782,11 @@
 		},
 		"regexp-quantifier": {
 			"name": "keyword.operator.quantifier.regexp",
-			"match": "",\\d+\n  )\\}\n"
+			"match": ""
 		},
 		"fregexp-quantifier": {
 			"name": "keyword.operator.quantifier.regexp",
-			"match": "",\\d+\n  )\\}\\}\n"
+			"match": ""
 		},
 		"regexp-backreference-number": {
 			"name": "meta.backreference.regexp",
@@ -1814,23 +1814,23 @@
 		},
 		"regexp-flags": {
 			"name": "storage.modifier.flag.regexp",
-			"match": "\\(\\?[aiLmsux]+\\)"
+			"match": ""
 		},
 		"regexp-escape-special": {
 			"name": "support.other.escape.special.regexp",
-			"match": "\\\\([AbBdDsSwWZ])"
+			"match": ""
 		},
 		"regexp-escape-character": {
 			"name": "constant.character.escape.regexp",
-			"match": "",2}\n        | [0-7]{3}\n     )\n"
+			"match": ""
 		},
 		"regexp-escape-unicode": {
 			"name": "constant.character.unicode.regexp",
-			"match": "(?x)\n  \\\\ (\n        u[0-9A-Fa-f]{4}\n        | U[0-9A-Fa-f]{8}\n     )\n"
+			"match": ""
 		},
 		"regexp-escape-catchall": {
 			"name": "constant.character.escape.regexp",
-			"match": "\\\\(.|\\n)"
+			"match": ""
 		},
 		"regexp-escape-sequence": {
 			"patterns": [
@@ -1855,14 +1855,14 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.regexp",
-					"match": "\\\\[abfnrtv\\\\]"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-special"
 				},
 				{
 					"name": "constant.character.escape.regexp",
-					"match": "",3})"
+					"match": ""
 				},
 				{
 					"include": "#regexp-escape-character"
@@ -1974,7 +1974,7 @@
 		"single-one-regexp-character-set": {
 			"patterns": [
 				{
-					"match": "(?x)\n  \\[ \\^? \\] (?! .*?\\])\n"
+					"match": ""
 				},
 				{
 					"name": "meta.character.set.regexp",
@@ -2005,7 +2005,7 @@
 						},
 						{
 							"name": "constant.character.set.regexp",
-							"match": "[^\\n]"
+							"match": ""
 						}
 					]
 				}
@@ -2278,7 +2278,7 @@
 		"single-three-regexp-character-set": {
 			"patterns": [
 				{
-					"match": "(?x)\n  \\[ \\^? \\] (?! .*?\\])\n"
+					"match": ""
 				},
 				{
 					"name": "meta.character.set.regexp",
@@ -2309,7 +2309,7 @@
 						},
 						{
 							"name": "constant.character.set.regexp",
-							"match": "[^\\n]"
+							"match": ""
 						}
 					]
 				}
@@ -2603,7 +2603,7 @@
 		"double-one-regexp-character-set": {
 			"patterns": [
 				{
-					"match": "(?x)\n  \\[ \\^? \\] (?! .*?\\])\n"
+					"match": ""
 				},
 				{
 					"name": "meta.character.set.regexp",
@@ -2634,7 +2634,7 @@
 						},
 						{
 							"name": "constant.character.set.regexp",
-							"match": "[^\\n]"
+							"match": ""
 						}
 					]
 				}
@@ -2907,7 +2907,7 @@
 		"double-three-regexp-character-set": {
 			"patterns": [
 				{
-					"match": "(?x)\n  \\[ \\^? \\] (?! .*?\\])\n"
+					"match": ""
 				},
 				{
 					"name": "meta.character.set.regexp",
@@ -2938,7 +2938,7 @@
 						},
 						{
 							"name": "constant.character.set.regexp",
-							"match": "[^\\n]"
+							"match": ""
 						}
 					]
 				}
@@ -4909,11 +4909,11 @@
 		},
 		"fstring-single-core": {
 			"name": "string.interpolated.python string.quoted.single.python",
-			"match": "(?x)\n  (.+?)\n    (\n      (?# .* and .*? in multi-line match need special handling of\n        newlines otherwise SublimeText and Atom will match slightly\n        differently.\n\n        The guard for newlines has to be separate from the\n        lookahead because of special $ matching rule.)\n      ($\\n?)\n      |\n      (?=[\\\\\\}\\{]|(['\"])|((?<!\\\\)\\n))\n    )\n  (?# due to how multiline regexps are matched we need a special case\n    for matching a newline character)\n  | \\n\n"
+			"match": ""
 		},
 		"fstring-raw-single-core": {
 			"name": "string.interpolated.python string.quoted.raw.single.python",
-			"match": "(?x)\n  (.+?)\n    (\n      (?# .* and .*? in multi-line match need special handling of\n        newlines otherwise SublimeText and Atom will match slightly\n        differently.\n\n        The guard for newlines has to be separate from the\n        lookahead because of special $ matching rule.)\n      ($\\n?)\n      |\n      (?=[\\\\\\}\\{]|(['\"])|((?<!\\\\)\\n))\n    )\n  (?# due to how multiline regexps are matched we need a special case\n    for matching a newline character)\n  | \\n\n"
+			"match": ""
 		},
 		"fstring-single-brace": {
 			"comment": "value interpolation using { ... }",
@@ -4942,7 +4942,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.format.python",
-					"match": "(![rsa])(?=})"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -4980,35 +4980,35 @@
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([bcdeEfFgGnosxX%])(?=})"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\.\\d+)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "",)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\d+)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\#)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([-+ ])"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([<>=^])"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\w)"
+					"match": ""
 				}
 			]
 		},
@@ -5125,11 +5125,11 @@
 		},
 		"fstring-multi-core": {
 			"name": "string.interpolated.python string.quoted.multi.python",
-			"match": "(?x)\n  (.+?)\n    (\n      (?# .* and .*? in multi-line match need special handling of\n        newlines otherwise SublimeText and Atom will match slightly\n        differently.\n\n        The guard for newlines has to be separate from the\n        lookahead because of special $ matching rule.)\n      ($\\n?)\n      |\n      (?=[\\\\\\}\\{]|'''|\"\"\")\n    )\n  (?# due to how multiline regexps are matched we need a special case\n    for matching a newline character)\n  | \\n\n"
+			"match": ""
 		},
 		"fstring-raw-multi-core": {
 			"name": "string.interpolated.python string.quoted.raw.multi.python",
-			"match": "(?x)\n  (.+?)\n    (\n      (?# .* and .*? in multi-line match need special handling of\n        newlines otherwise SublimeText and Atom will match slightly\n        differently.\n\n        The guard for newlines has to be separate from the\n        lookahead because of special $ matching rule.)\n      ($\\n?)\n      |\n      (?=[\\\\\\}\\{]|'''|\"\"\")\n    )\n  (?# due to how multiline regexps are matched we need a special case\n    for matching a newline character)\n  | \\n\n"
+			"match": ""
 		},
 		"fstring-multi-brace": {
 			"comment": "value interpolation using { ... }",
@@ -5158,7 +5158,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.format.python",
-					"match": "(![rsa])(?=})"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -5196,35 +5196,35 @@
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([bcdeEfFgGnosxX%])(?=})"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\.\\d+)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "",)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\d+)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\#)"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([-+ ])"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "([<>=^])"
+					"match": ""
 				},
 				{
 					"name": "storage.type.format.python",
-					"match": "(\\w)"
+					"match": ""
 				}
 			]
 		}

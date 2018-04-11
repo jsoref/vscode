@@ -197,7 +197,7 @@
 							"name": "constant.numeric.yaml-version.yaml"
 						}
 					},
-					"match": "\\G(YAML)[ \\t]+(\\d+\\.\\d+)"
+					"match": ""
 				},
 				{
 					"captures": {
@@ -211,7 +211,7 @@
 							"name": "support.type.tag-prefix.yaml"
 						}
 					},
-					"match": "",_.!~*'()\\[\\]] )+\n                                )\n                            )?\n                        )?\n                    "
+					"match": ""
 				},
 				{
 					"captures": {
@@ -225,7 +225,7 @@
 							"name": "string.unquoted.directive-parameter.yaml"
 						}
 					},
-					"match": "(?x) \\G (\\w+) (?:[ \\t]+ (\\w+) (?:[ \\t]+ (\\w+))? )?"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -248,7 +248,7 @@
 					"name": "invalid.illegal.character.anchor.yaml"
 				}
 			},
-			"match": "",]\\S*)?"
+			"match": ""
 		},
 		"flow-collection": {
 			"patterns": [
@@ -457,7 +457,7 @@
 							"name": "constant.language.merge.yaml"
 						}
 					},
-					"match": "",]\n                            )\n                        )\n                    "
+					"match": ""
 				}
 			]
 		},
@@ -499,7 +499,7 @@
 							"name": "constant.language.merge.yaml"
 						}
 					},
-					"match": "",2})?\n                                    )?                              # (time zone)\n                                )\n                              )\n                            | (=)\n                            | (<<)\n                        )\n                        (?x:\n                            (?=\n                                  \\s* $\n                                | \\s+ \\#\n                                | \\s* : (\\s|$)\n                            )\n                        )\n                    "
+					"match": ""
 				}
 			]
 		},
@@ -595,7 +595,7 @@
 							"name": "invalid.illegal.character.anchor.yaml"
 						}
 					},
-					"match": "",]+)(\\S+)?"
+					"match": ""
 				},
 				{
 					"match": "",

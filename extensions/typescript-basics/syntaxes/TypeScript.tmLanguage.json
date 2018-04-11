@@ -103,35 +103,35 @@
 				},
 				{
 					"name": "keyword.control.trycatch.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(catch|finally|throw|try)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.loop.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(break|continue|do|goto|while)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.flow.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(return)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.switch.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(case|default|switch)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.conditional.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(else|if)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.with.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(with)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.other.debugger.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(debugger)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "storage.modifier.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(declare)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				}
 			]
 		},
@@ -430,7 +430,7 @@
 				},
 				{
 					"name": "variable.object.property.ts",
-					"match": "([_$[:alpha:]][_$[:alnum:]]*)"
+					"match": ""
 				}
 			]
 		},
@@ -760,11 +760,11 @@
 						},
 						{
 							"name": "meta.definition.property.ts variable.object.property.ts",
-							"match": "[_$[:alpha:]][_$[:alnum:]]*"
+							"match": ""
 						},
 						{
 							"name": "keyword.operator.optional.ts",
-							"match": "\\?"
+							"match": ""
 						}
 					]
 				}
@@ -861,7 +861,7 @@
 		},
 		"function-name": {
 			"name": "meta.definition.function.ts entity.name.function.ts",
-			"match": "[_$[:alpha:]][_$[:alnum:]]*"
+			"match": ""
 		},
 		"function-body": {
 			"patterns": [
@@ -882,7 +882,7 @@
 				},
 				{
 					"name": "keyword.generator.asterisk.ts",
-					"match": "\\*"
+					"match": ""
 				}
 			]
 		},
@@ -1009,11 +1009,11 @@
 				},
 				{
 					"name": "meta.definition.method.ts entity.name.function.ts",
-					"match": "[_$[:alpha:]][_$[:alnum:]]*"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.optional.ts",
-					"match": "\\?"
+					"match": ""
 				}
 			]
 		},
@@ -1184,7 +1184,7 @@
 				},
 				{
 					"name": "punctuation.separator.parameter.ts",
-					"match": "","
+					"match": ""
 				}
 			]
 		},
@@ -1400,15 +1400,15 @@
 		},
 		"access-modifier": {
 			"name": "storage.modifier.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(abstract|public|protected|private|readonly|static)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"property-accessor": {
 			"name": "storage.type.property.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(get|set)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"async-modifier": {
 			"name": "storage.modifier.async.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(async)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"enum-declaration": {
 			"name": "meta.enum.declaration.ts",
@@ -1512,7 +1512,7 @@
 				},
 				{
 					"name": "entity.name.type.module.ts",
-					"match": "([_$[:alpha:]][_$[:alnum:]]*)"
+					"match": ""
 				},
 				{
 					"include": "#punctuation-accessor"
@@ -1635,7 +1635,7 @@
 						},
 						{
 							"name": "variable.other.readwrite.ts",
-							"match": "([_$[:alpha:]][_$[:alnum:]]*)"
+							"match": ""
 						}
 					]
 				}
@@ -1749,7 +1749,7 @@
 				},
 				{
 					"name": "keyword.control.from.ts",
-					"match": "\\bfrom\\b"
+					"match": ""
 				},
 				{
 					"include": "#import-export-clause"
@@ -1809,15 +1809,15 @@
 				},
 				{
 					"name": "constant.language.import-export-all.ts",
-					"match": "\\*"
+					"match": ""
 				},
 				{
 					"name": "keyword.control.default.ts",
-					"match": "\\b(default)\\b"
+					"match": ""
 				},
 				{
 					"name": "variable.other.readwrite.alias.ts",
-					"match": "([_$[:alpha:]][_$[:alnum:]]*)"
+					"match": ""
 				}
 			]
 		},
@@ -1905,7 +1905,7 @@
 				},
 				{
 					"name": "keyword.control.loop.ts",
-					"match": "await"
+					"match": ""
 				},
 				{
 					"begin": "\\(",
@@ -2161,11 +2161,11 @@
 						},
 						{
 							"name": "keyword.operator.expression.import.ts",
-							"match": "(?:(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))import(?=\\s*[\\(]\\s*[\\\"\\'\\`]))"
+							"match": ""
 						},
 						{
 							"name": "entity.name.function.ts",
-							"match": "([_$[:alpha:]][_$[:alnum:]]*)"
+							"match": ""
 						}
 					]
 				},
@@ -2174,7 +2174,7 @@
 				},
 				{
 					"name": "meta.function-call.ts punctuation.accessor.optional.ts",
-					"match": "\\?\\."
+					"match": ""
 				},
 				{
 					"include": "#type-arguments"
@@ -2364,7 +2364,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.flow.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(await)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"begin": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(yield)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))(?=\\s*\\/\\*([^\\*]|(\\*[^\\/]))*\\*\\/\\s*\\*)",
@@ -2398,30 +2398,30 @@
 				},
 				{
 					"name": "keyword.operator.expression.delete.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))delete(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.expression.in.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))in(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.expression.of.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))of(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.expression.instanceof.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))instanceof(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.new.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))new(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"include": "#typeof-operator"
 				},
 				{
 					"name": "keyword.operator.expression.void.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))void(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"begin": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(as)\\s+",
@@ -2439,51 +2439,51 @@
 				},
 				{
 					"name": "keyword.operator.spread.ts",
-					"match": "\\.\\.\\."
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.compound.ts",
-					"match": "\\*=|(?<!\\()/=|%=|\\+=|\\-="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.compound.bitwise.ts",
-					"match": "\\&=|\\^=|<<=|>>=|>>>=|\\|="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.bitwise.shift.ts",
-					"match": "<<|>>>|>>"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.comparison.ts",
-					"match": "===|!==|==|!="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.relational.ts",
-					"match": "<=|>=|<>|<|>"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.logical.ts",
-					"match": "\\!|&&|\\|\\|"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.bitwise.ts",
-					"match": "\\&|~|\\^|\\|"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.ts",
-					"match": "\\="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.decrement.ts",
-					"match": "--"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.increment.ts",
-					"match": "\\+\\+"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.arithmetic.ts",
-					"match": "%|\\*|/|-|\\+"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -2497,7 +2497,7 @@
 		},
 		"typeof-operator": {
 			"name": "keyword.operator.expression.typeof.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))typeof(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"literal": {
 			"patterns": [
@@ -2554,15 +2554,15 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.hex.ts",
-					"match": "\\b(?<!\\$)0(x|X)[0-9a-fA-F][0-9a-fA-F_]*\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.binary.ts",
-					"match": "\\b(?<!\\$)0(b|B)[01][01_]*\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.octal.ts",
-					"match": "\\b(?<!\\$)0(o|O)?[0-7][0-7_]*\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -2596,39 +2596,39 @@
 			"patterns": [
 				{
 					"name": "constant.language.boolean.true.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))true(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "constant.language.boolean.false.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))false(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				}
 			]
 		},
 		"null-literal": {
 			"name": "constant.language.null.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))null(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"this-literal": {
 			"name": "variable.language.this.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))this\\b(?!\\$)"
+			"match": ""
 		},
 		"super-literal": {
 			"name": "variable.language.super.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))super\\b(?!\\$)"
+			"match": ""
 		},
 		"undefined-literal": {
 			"name": "constant.language.undefined.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))undefined(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"numericConstant-literal": {
 			"patterns": [
 				{
 					"name": "constant.language.nan.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))NaN(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "constant.language.infinity.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))Infinity(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				}
 			]
 		},
@@ -2636,23 +2636,23 @@
 			"patterns": [
 				{
 					"name": "variable.language.arguments.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(arguments)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "support.class.builtin.ts",
-					"match": "(?x)(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(Array|ArrayBuffer|Atomics|Boolean|DataView|Date|Float32Array|Float64Array|Function|Generator\n  |GeneratorFunction|Int8Array|Int16Array|Int32Array|Intl|Map|Number|Object|Proxy\n  |Reflect|RegExp|Set|SharedArrayBuffer|SIMD|String|Symbol|TypedArray\n  |Uint8Array|Uint16Array|Uint32Array|Uint8ClampedArray|WeakMap|WeakSet)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "support.class.error.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))((Eval|Internal|Range|Reference|Syntax|Type|URI)?Error)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "support.class.promise.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(Promise)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"name": "support.function.ts",
-					"match": "(?x)(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(clear(Interval|Timeout)|decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|escape|eval|\n  isFinite|isNaN|parseFloat|parseInt|require|set(Interval|Timeout)|super|unescape|uneval)(?=\\s*\\()"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -2755,7 +2755,7 @@
 				},
 				{
 					"name": "support.class.node.ts",
-					"match": "(?x)(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(Buffer|EventEmitter|Server|Pipe|Socket|REPLServer|ReadStream|WriteStream|Stream\n  |Inflate|Deflate|InflateRaw|DeflateRaw|GZip|GUnzip|Unzip|Zip)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -2799,7 +2799,7 @@
 				},
 				{
 					"name": "support.variable.object.node.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(global|GLOBAL|root|__dirname|__filename)\\b(?!\\$)"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -2875,11 +2875,11 @@
 				},
 				{
 					"name": "variable.other.constant.ts",
-					"match": "([[:upper:]][_$[:digit:][:upper:]]*)(?![_$[:alnum:]])"
+					"match": ""
 				},
 				{
 					"name": "variable.other.readwrite.ts",
-					"match": "[_$[:alpha:]][_$[:alnum:]]*"
+					"match": ""
 				}
 			]
 		},
@@ -2887,7 +2887,7 @@
 			"patterns": [
 				{
 					"name": "support.class.ts",
-					"match": "([_$[:alpha:]][_$[:alnum:]]*)(?=\\s*\\??\\.\\s*prototype\\b(?!\\$))"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -3078,11 +3078,11 @@
 				},
 				{
 					"name": "storage.modifier.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(extends)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.ts",
-					"match": "\\=(?!>)"
+					"match": ""
 				},
 				{
 					"include": "#type"
@@ -3163,11 +3163,11 @@
 		},
 		"type-primitive": {
 			"name": "support.type.primitive.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(string|number|boolean|symbol|any|void|never)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"type-builtin-literals": {
 			"name": "support.type.builtin.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(this|true|false|undefined|null|object)(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"type-tuple": {
 			"name": "meta.type.tuple.ts",
@@ -3405,25 +3405,25 @@
 				},
 				{
 					"name": "keyword.operator.expression.keyof.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))keyof(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.ternary.ts",
-					"match": "(\\?|\\:)"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.expression.infer.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))infer(?=\\s+[_$[:alpha:]])"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.expression.import.ts",
-					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))import(?=\\s*\\()"
+					"match": ""
 				}
 			]
 		},
 		"type-predicate-operator": {
 			"name": "keyword.operator.expression.is.ts",
-			"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))is(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+			"match": ""
 		},
 		"type-name": {
 			"patterns": [
@@ -3443,17 +3443,17 @@
 				},
 				{
 					"name": "entity.name.type.ts",
-					"match": "[_$[:alpha:]][_$[:alnum:]]*"
+					"match": ""
 				}
 			]
 		},
 		"punctuation-comma": {
 			"name": "punctuation.separator.comma.ts",
-			"match": "","
+			"match": ""
 		},
 		"punctuation-semicolon": {
 			"name": "punctuation.terminator.statement.ts",
-			"match": ";"
+			"match": ""
 		},
 		"punctuation-accessor": {
 			"match": "",
@@ -3524,7 +3524,7 @@
 		},
 		"string-character-escape": {
 			"name": "constant.character.escape.ts",
-			"match": "",2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.|$)"
+			"match": ""
 		},
 		"template": {
 			"name": "string.template.ts",
@@ -3627,7 +3627,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.anchor.regexp",
-					"match": "\\\\[bB]|\\^|\\$"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -3642,11 +3642,11 @@
 				},
 				{
 					"name": "keyword.operator.quantifier.regexp",
-					"match": "",\\d+|\\d+)\\}\\??"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.or.regexp",
-					"match": "\\|"
+					"match": ""
 				},
 				{
 					"name": "meta.group.assertion.regexp",
@@ -3765,19 +3765,19 @@
 			"patterns": [
 				{
 					"name": "constant.other.character-class.regexp",
-					"match": "\\\\[wWsSdDtrnvf]|\\."
+					"match": ""
 				},
 				{
 					"name": "constant.character.numeric.regexp",
-					"match": "\\\\([0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4})"
+					"match": ""
 				},
 				{
 					"name": "constant.character.control.regexp",
-					"match": "\\\\c[A-Z]"
+					"match": ""
 				},
 				{
 					"name": "constant.character.escape.backslash.regexp",
-					"match": "\\\\."
+					"match": ""
 				}
 			]
 		},
@@ -3878,11 +3878,11 @@
 					"patterns": [
 						{
 							"name": "entity.other.attribute-name.directive.ts",
-							"match": "path|types|no-default-lib|name"
+							"match": ""
 						},
 						{
 							"name": "keyword.operator.assignment.ts",
-							"match": "="
+							"match": ""
 						},
 						{
 							"include": "#string"
@@ -3964,7 +3964,7 @@
 					},
 					"patterns": [
 						{
-							"match": "^\\s\\*\\s+"
+							"match": ""
 						},
 						{
 							"contentName": "constant.other.description.jsdoc",
@@ -4079,7 +4079,7 @@
 						},
 						{
 							"name": "entity.name.type.instance.jsdoc",
-							"match": "(?:[^@\\s*/]|\\*[^/])+"
+							"match": ""
 						}
 					]
 				},
@@ -4100,7 +4100,7 @@
 						},
 						{
 							"name": "variable.other.jsdoc",
-							"match": "([A-Za-z_$][\\w$.\\[\\]]*)"
+							"match": ""
 						},
 						{
 							"name": "variable.other.jsdoc",
@@ -4298,7 +4298,7 @@
 			"patterns": [
 				{
 					"name": "invalid.illegal.type.jsdoc",
-					"match": "\\G{(?:[^}*]|\\*[^/}])+$"
+					"match": ""
 				},
 				{
 					"contentName": "entity.name.type.instance.jsdoc",

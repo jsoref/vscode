@@ -1267,7 +1267,7 @@
 									"name": "punctuation.section.array.shell"
 								}
 							},
-							"match": "(\\[)([^\\]]+)(\\])"
+							"match": ""
 						},
 						{
 							"include": "#variable"

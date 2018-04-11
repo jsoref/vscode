@@ -128,7 +128,7 @@
 					"name": "storage.type.sql"
 				}
 			},
-			"match": "", 15\n\t\t\t\t|\\b(timestamp)(?:(s|tz))?\\b(?:\\((\\d+)\\))?(\\s(with|without)\\stime\\szone\\b)?\n\n\t\t\t"
+			"match": ""
 		},
 		{
 			"match": "",
@@ -259,7 +259,7 @@
 					"name": "constant.other.table-name.sql"
 				}
 			},
-			"match": "(\\w+?)\\.(\\w+)"
+			"match": ""
 		},
 		{
 			"include": "#strings"

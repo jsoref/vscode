@@ -496,7 +496,7 @@
 							"name": "invalid.illegal.end.tag.jade"
 						}
 					},
-					"match": "((\\.)\\s+$)|((:)\\s*$)"
+					"match": ""
 				},
 				{
 					"include": "#printed_expression"
@@ -733,7 +733,7 @@
 									"name": "meta.tag.other entity.other.attribute-name.tag.jade"
 								}
 							},
-							"match": "",=/]+)\\s*=\\s*"
+							"match": ""
 						},
 						{
 							"include": "source.js"
@@ -763,7 +763,7 @@
 					"name": "punctuation.definition.parameters.begin.js"
 				}
 			},
-			"match": "",\\s*[a-zA-Z_]\\w*\\s*)*)(\\)))?$"
+			"match": ""
 		},
 		"printed_expression": {
 			"begin": "(!?\\=)\\s*",
@@ -806,7 +806,7 @@
 					"name": "entity.other.attribute-name.tag.jade"
 				}
 			},
-			"match": "",=/!]+)\\s*"
+			"match": ""
 		},
 		"tag_attribute_name_paren": {
 			"begin": "\\(\\s*",

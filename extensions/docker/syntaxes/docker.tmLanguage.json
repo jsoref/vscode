@@ -17,7 +17,7 @@
 					"name": "keyword.other.special-method.dockerfile"
 				}
 			},
-			"match": "^\\s*\\b(?i:(FROM))\\b.*?\\b(?i:(AS))\\b"
+			"match": ""
 		},
 		{
 			"captures": {
@@ -28,7 +28,7 @@
 					"name": "keyword.other.special-method.dockerfile"
 				}
 			},
-			"match": "^\\s*(?i:(ONBUILD)\\s+)?(?i:(ADD|ARG|CMD|COPY|ENTRYPOINT|ENV|EXPOSE|FROM|HEALTHCHECK|LABEL|MAINTAINER|RUN|SHELL|STOPSIGNAL|USER|VOLUME|WORKDIR))\\s"
+			"match": ""
 		},
 		{
 			"captures": {
@@ -39,7 +39,7 @@
 					"name": "keyword.other.special-method.dockerfile"
 				}
 			},
-			"match": "^\\s*(?i:(ONBUILD)\\s+)?(?i:(CMD|ENTRYPOINT))\\s"
+			"match": ""
 		},
 		{
 			"begin": "\"",
@@ -96,7 +96,7 @@
 				}
 			},
 			"comment": "comment.line",
-			"match": "^(\\s*)((#).*$\\n?)"
+			"match": ""
 		}
 	]
 }

@@ -311,7 +311,7 @@
 									"name": "support.function.target.$1.makefile"
 								}
 							},
-							"match": "^\\s*(\\.(PHONY|SUFFIXES|DEFAULT|PRECIOUS|INTERMEDIATE|SECONDARY|SECONDEXPANSION|DELETE_ON_ERROR|IGNORE|LOW_RESOLUTION_TIME|SILENT|EXPORT_ALL_VARIABLES|NOTPARALLEL|ONESHELL|POSIX))\\s*$"
+							"match": ""
 						},
 						{
 							"begin": "(?=\\S)",
@@ -378,7 +378,7 @@
 									]
 								}
 							},
-							"match": ".+\\n?"
+							"match": ""
 						}
 					],
 					"while": "^\\t"

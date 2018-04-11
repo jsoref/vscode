@@ -64,7 +64,7 @@
 									"name": "invalid.illegal.unexpected-characters.charset.css"
 								}
 							},
-							"match": "", or a tab\n|\n(?<=@charset\\x20)    # Beginning of charset name\n([^\";]+)              # Not double-quoted\n|\n(\"[^\"]+$)             # Unclosed quote\n|\n(?<=\")                # After charset name\n([^;]+)               # Unexpected junk instead of semicolon"
+							"match": ""
 						},
 						{
 							"captures": {
@@ -75,7 +75,7 @@
 									"name": "punctuation.definition.keyword.css"
 								}
 							},
-							"match": "((@)charset)(?=\\s)"
+							"match": ""
 						},
 						{
 							"begin": "\"",
@@ -445,7 +445,7 @@
 											"name": "entity.other.keyframe-offset.percentage.css"
 										}
 									},
-									"match": "(?xi)\n(?<![\\w-]) (from|to) (?![\\w-])         # Keywords for 0% | 100%\n|\n([-+]?(?:\\d+(?:\\.\\d+)?|\\.\\d+)%)     # Percentile value"
+									"match": ""
 								},
 								{
 									"include": "#rule-list"
@@ -592,7 +592,7 @@
 									]
 								}
 							},
-							"match": "",6}|.)\n  )*\n)"
+							"match": ""
 						},
 						{
 							"include": "#comment-block"
@@ -1011,7 +1011,7 @@
 					"patterns": [
 						{
 							"name": "variable.argument.css",
-							"match": "",6}|.)\n)*"
+							"match": ""
 						},
 						{
 							"include": "#property-values"
@@ -1203,7 +1203,7 @@
 					"name": "support.type.vendored.property-name.media.css"
 				}
 			},
-			"match": "", bracket or comment\n(?:\n  # Standardised features\n  (\n    (?:min-|max-)?            # Range features\n    (?: height\n      | width\n      | aspect-ratio\n      | color\n      | color-index\n      | monochrome\n      | resolution\n    )\n    | grid                    # Discrete features\n    | scan\n    | orientation\n    | display-mode\n  )\n  |\n  # Deprecated features\n  (\n    (?:min-|max-)?            # Deprecated in Media Queries 4\n    device-\n    (?: height\n      | width\n      | aspect-ratio\n    )\n  )\n  |\n  # Vendor extensions\n  (\n    (?:\n      # Spec-compliant syntax\n      [-_]\n      (?: webkit              # Webkit/Blink\n        | apple|khtml         # Webkit aliases\n        | epub                # ePub3\n        | moz                 # Gecko\n        | ms                  # Microsoft\n        | o                   # Presto (pre-Opera 15)\n        | xv|ah|rim|atsc|     # Less common vendors\n          hp|tc|wap|ro\n      )\n      |\n      # Non-standard prefixes\n      (?: mso                 # Microsoft Office\n        | prince              # YesLogic\n      )\n    )\n    -\n    [\\w-]+                   # Feature name\n    (?=                       # Terminates correctly\n      \\s*                    # Possible whitespace\n      (?:                     # Possible injected comment\n        /\\*\n        (?:[^*]|\\*[^/])*\n        \\*/\n      )?\n      \\s*\n      [:)]                    # Ends with a colon or closed bracket\n    )\n  )\n)\n(?=\\s|$|[><:=]|\\)|/\\*)     # Terminates cleanly"
+			"match": ""
 		},
 		"media-feature-keywords": {
 			"match": "",
@@ -1308,7 +1308,7 @@
 					"name": "invalid.deprecated.constant.media.css"
 				}
 			},
-			"match": "",\\s;]|/\\*)"
+			"match": ""
 		},
 		"numeric-values": {
 			"patterns": [
@@ -1533,7 +1533,7 @@
 							"name": "punctuation.separator.css"
 						}
 					},
-					"match": "",6}|.)\n  )*\n  |\n  \\*     # Universal namespace\n)?\n(\\|)     # Namespace separator"
+					"match": ""
 				},
 				{
 					"include": "#tag-names"
@@ -1617,7 +1617,7 @@
 									"name": "storage.modifier.ignore-case.css"
 								}
 							},
-							"match": "(?<=[\"'\\s]|^|\\*/)\\s*([iI])\\s*(?=[\\s\\]]|/\\*|$)"
+							"match": ""
 						},
 						{
 							"captures": {
@@ -1630,7 +1630,7 @@
 									]
 								}
 							},
-							"match": "(?x)(?<==)\\s*((?!/\\*)(?:[^\\\\\"'\\s\\]]|\\\\.)+)"
+							"match": ""
 						},
 						{
 							"include": "#escapes"
@@ -1654,7 +1654,7 @@
 									]
 								}
 							},
-							"match": "",6}|.))+\n| \\*\n)\n# Lookahead to ensure there's a valid identifier ahead\n(?=\n  \\| (?!\\s|=|$|\\])\n  (?: -?(?!\\d)\n   |   [\\\\\\w-]\n   |   [^\\x00-\\x7F]\n   )\n)"
+							"match": ""
 						},
 						{
 							"captures": {
@@ -1667,7 +1667,7 @@
 									]
 								}
 							},
-							"match": "",6}|.))+)\n\\s*\n(?=[~|^\\]$*=]|/\\*)"
+							"match": ""
 						}
 					]
 				},
@@ -1763,7 +1763,7 @@
 					"name": "punctuation.separator.dash.unicode-range.css"
 				}
 			},
-			"match": "",6})?(?![\\w-])"
+			"match": ""
 		},
 		"url": {
 			"begin": "(?i)(?<![\\w@-])(url)(\\()",

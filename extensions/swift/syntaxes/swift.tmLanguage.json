@@ -10,47 +10,47 @@
 	"patterns": [
 		{
 			"name": "keyword.others.swift",
-			"match": "^\\s*(#if|#else|#endif|#elseif|@warn_unused_result|@discardableResult|@IBAction|@IBOutlet|@IBDesignable|@IBInspectable)\\b"
+			"match": ""
 		},
 		{
 			"name": "keyword.declaration.swift",
-			"match": "\\b(deinit|import|init|subscript)\\b"
+			"match": ""
 		},
 		{
 			"name": "storage.type.swift",
-			"match": "\\b(precedencegroup|class|struct|enum|extension|protocol|let|var|typealias)\\b"
+			"match": ""
 		},
 		{
 			"name": "storage.modifier.swift",
-			"match": "\\b(final|internal|private|fileprivate|public|open|static|required|convenience)\\b"
+			"match": ""
 		},
 		{
 			"name": "keyword.statement.swift",
-			"match": "\\b(try|catch|repeat|break|case|continue|default|do|else|fallthrough|if|in|for|return|switch|where|while|guard|defer)\\b"
+			"match": ""
 		},
 		{
 			"name": "support.type.swift",
-			"match": "(?x) \\b(Character|U?Int|U?Int(8|16|32|64) |Float|Double|Float(32|64)|Bool|String|Date|Data|URL |(double|float)[234]|(double|float)[234]x[234] |Any |AnyObject |Error |Equatable |Hashable |Comparable |CustomDebugStringConvertible |CustomStringConvertible |OptionSet |ManagedBuffer |ManagedBufferPointer |BitwiseOperations |CountedSet |Counter |Directions |ExpressibleByArrayLiteral |ExpressibleByBooleanLiteral |ExpressibleByDictionaryLiteral |ExpressibleByExtendedGraphemeClusterLiteral |ExpressibleByFloatLitera |ExpressibleByIntegerLiteral |ExpressibleByNilLiteral |ExpressibleByStringInterpolation |ExpressibleByStringLiteral |ExpressibleByUnicodeScalarLiteral |OrderedSet |PaperSize |RawRepresentable |(UI|NS|CF|CG)[A-Z][a-zA-Z0-9]+ |Stream |(In|Out)putStream |FileManager |Array |Unsafe[a-zA-Z]*Pointer |Bundle |Jex)\\b"
+			"match": ""
 		},
 		{
 			"name": "support.function.swift",
-			"match": "\\b(assert|assertionFailure|print)\\b"
+			"match": ""
 		},
 		{
 			"name": "keyword.expressions-and-types.swift",
-			"match": "\\b(as|dynamicType|is|new|super|self|Self|Type|#column|#file|#function|#line)\\b"
+			"match": ""
 		},
 		{
 			"name": "keyword.reserved.swift",
-			"match": "\\b(associativity|didSet|get|infix|inout|left|mutating|nonmutating|operator|override|postfix|precedence|prefix|right|set|unowned|unowned(safe)|unowned(unsafe)|weak|willSet)\\b"
+			"match": ""
 		},
 		{
 			"name": "constant.language.swift",
-			"match": "\\b(true|false|nil|none)\\b"
+			"match": ""
 		},
 		{
 			"name": "entity.name.function.swift",
-			"match": "\\bfunc\\s+([^\\t\\n\\x20\\x28]+)"
+			"match": ""
 		},
 		{
 			"include": "#comment"
@@ -106,7 +106,7 @@
 							"patterns": [
 								{
 									"name": "punctuation.separator.continuation.swift",
-									"match": "(?>\\\\\\s*\\n)"
+									"match": ""
 								}
 							]
 						}
@@ -118,15 +118,15 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.swift",
-					"match": "\\\\[0\\\\tnr\"']"
+					"match": ""
 				},
 				{
 					"name": "constant.character.escape.swift",
-					"match": "\\\\(x\\h{2}|u\\h{4}|U\\h{8})"
+					"match": ""
 				},
 				{
 					"name": "invalid.illegal.constant.character.escape.swift",
-					"match": "\\\\[^uxU]"
+					"match": ""
 				}
 			]
 		},
@@ -150,7 +150,7 @@
 		},
 		"literal-number": {
 			"name": "constant.numeric.swift",
-			"match": "(?x) (?### INTEGER ###) (?<integer-literal>                 \\g<binary-literal> |                                 \\g<octal-literal> |                                 \\g<hexadecimal-literal> |                                 \\g<decimal-literal> ){0} (?### BINARY ###) (?<binary-literal>                  \\b 0b \\g<binary-digit> \\g<binary-literal-characters>? \\b ){0} (?<binary-digit>                    [0-1] ){0} (?<binary-literal-character>        \\g<binary-digit> |                                 _ ){0} (?<binary-literal-characters>       \\g<binary-literal-character> \\g<binary-literal-characters>? ){0} (?### OCTAL ###) (?<octal-literal>                   \\b 0o \\g<octal-digit> \\g<octal-literal-characters>? \\b ){0} (?<octal-digit>                     [0-7] ){0} (?<octal-literal-character>         \\g<octal-digit> |                                 _ ){0} (?<octal-literal-characters>        \\g<octal-literal-character> \\g<octal-literal-characters>? ){0} (?### DECIMAL ###) (?<decimal-literal>                 \\b \\g<decimal-digit> \\g<decimal-literal-characters>? \\b ){0} (?<decimal-digit>                   \\d ){0} (?<decimal-literal-character>       \\g<decimal-digit> |                                 _ ){0} (?<decimal-literal-characters>      \\g<decimal-literal-character> \\g<decimal-literal-characters>? ){0} (?### HEXADECIMAL ###) (?<hexadecimal-literal>             \\b 0x \\g<hexadecimal-digit> \\g<hexadecimal-literal-characters>? \\b ){0} (?<hexadecimal-digit>               \\h ){0} (?<hexadecimal-literal-character>   \\g<hexadecimal-digit> |                                 _ ){0} (?<hexadecimal-literal-characters>  \\g<hexadecimal-literal-character> \\g<hexadecimal-literal-characters>? ){0} (?### FLOATING POINT ###) (?<floating-point-literal>          \\b \\g<decimal-literal>     \\g<decimal-fraction>?     \\g<decimal-exponent>? \\b |                                 \\b \\g<hexadecimal-literal> \\g<hexadecimal-fraction>? \\g<hexadecimal-exponent> \\b ){0} (?<decimal-fraction>                \\. \\g<decimal-literal> ){0} (?<decimal-exponent>                \\g<floating-point-e> \\g<sign>? \\g<decimal-literal> ){0} (?<hexadecimal-fraction>            \\. \\g<hexadecimal-literal>? ){0} (?<hexadecimal-exponent>            \\g<floating-point-p> \\g<sign>? \\g<hexadecimal-literal> ){0} (?<floating-point-e>                [eE] ){0} (?<floating-point-p>                [pP] ){0} (?<sign>                            [+-] ){0} (?!0[box]) \\g<floating-point-literal> |            \\g<integer-literal>"
+			"match": ""
 		},
 		"literal-string": {
 			"name": "string.quoted.double.swift",
@@ -181,7 +181,7 @@
 		},
 		"operator-character": {
 			"name": "keyword.operator.swift",
-			"match": "",\\?:\\[\\]]"
+			"match": ""
 		},
 		"quoted-text": {
 			"patterns": [
@@ -212,7 +212,7 @@
 			]
 		},
 		"whitespace": {
-			"match": "(?x) [ \\u0020 (?#           space) \\u000A (?#       line-feed) \\u000D (?# carriage-return) \\u0009 (?#  horizontal-tab) \\u000B (?#    vertical-tab) \\u000C (?#       form-feed) \\u0000 (?#            null) ]"
+			"match": ""
 		}
 	}
 }

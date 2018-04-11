@@ -416,7 +416,7 @@
 						},
 						{
 							"name": "entity.name.type.namespace.cs",
-							"match": "[_[:alpha:]][_[:alnum:]]*"
+							"match": ""
 						},
 						{
 							"include": "#operator-assignment"
@@ -522,7 +522,7 @@
 				},
 				{
 					"name": "entity.name.type.namespace.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				},
 				{
 					"include": "#punctuation-accessor"
@@ -556,7 +556,7 @@
 		},
 		"storage-modifier": {
 			"name": "storage.modifier.cs",
-			"match": "(?<!\\.)\\b(new|public|protected|internal|private|abstract|virtual|override|sealed|static|partial|readonly|volatile|const|extern|async|unsafe)\\b"
+			"match": ""
 		},
 		"class-declaration": {
 			"begin": "(?=\\bclass\\b)",
@@ -935,11 +935,11 @@
 			"patterns": [
 				{
 					"name": "keyword.other.class.cs",
-					"match": "\\bclass\\b"
+					"match": ""
 				},
 				{
 					"name": "keyword.other.struct.cs",
-					"match": "\\bstruct\\b"
+					"match": ""
 				},
 				{
 					"match": "",
@@ -984,7 +984,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.variable.field.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				},
 				{
 					"include": "#punctuation-comma"
@@ -1113,7 +1113,7 @@
 					"patterns": [
 						{
 							"name": "entity.name.variable.event.cs",
-							"match": "[_[:alpha:]][_[:alnum:]]*"
+							"match": ""
 						},
 						{
 							"include": "#punctuation-comma"
@@ -1150,15 +1150,15 @@
 			"patterns": [
 				{
 					"name": "storage.modifier.cs",
-					"match": "\\b(private|protected|internal)\\b"
+					"match": ""
 				},
 				{
 					"name": "keyword.other.get.cs",
-					"match": "\\b(get)\\b"
+					"match": ""
 				},
 				{
 					"name": "keyword.other.set.cs",
-					"match": "\\b(set)\\b"
+					"match": ""
 				},
 				{
 					"include": "#comment"
@@ -1193,11 +1193,11 @@
 			"patterns": [
 				{
 					"name": "keyword.other.add.cs",
-					"match": "\\b(add)\\b"
+					"match": ""
 				},
 				{
 					"name": "keyword.other.remove.cs",
-					"match": "\\b(remove)\\b"
+					"match": ""
 				},
 				{
 					"include": "#comment"
@@ -1521,7 +1521,7 @@
 				},
 				{
 					"name": "entity.name.label.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				}
 			]
 		},
@@ -2173,7 +2173,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.variable.local.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				},
 				{
 					"include": "#punctuation-comma"
@@ -2207,7 +2207,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.variable.local.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				},
 				{
 					"include": "#punctuation-comma"
@@ -2545,43 +2545,43 @@
 			"patterns": [
 				{
 					"name": "constant.language.boolean.true.cs",
-					"match": "(?<!\\.)\\btrue\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.language.boolean.false.cs",
-					"match": "(?<!\\.)\\bfalse\\b"
+					"match": ""
 				}
 			]
 		},
 		"null-literal": {
 			"name": "constant.language.null.cs",
-			"match": "(?<!\\.)\\bnull\\b"
+			"match": ""
 		},
 		"numeric-literal": {
 			"patterns": [
 				{
 					"name": "constant.numeric.hex.cs",
-					"match": "\\b0(x|X)[0-9a-fA-F_]+(U|u|L|l|UL|Ul|uL|ul|LU|Lu|lU|lu)?\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.binary.cs",
-					"match": "\\b0(b|B)[01_]+(U|u|L|l|UL|Ul|uL|ul|LU|Lu|lU|lu)?\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.decimal.cs",
-					"match": "\\b([0-9_]+)?\\.[0-9_]+((e|E)[0-9]+)?(F|f|D|d|M|m)?\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.decimal.cs",
-					"match": "\\b[0-9_]+(e|E)[0-9_]+(F|f|D|d|M|m)?\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.decimal.cs",
-					"match": "\\b[0-9_]+(F|f|D|d|M|m)\\b"
+					"match": ""
 				},
 				{
 					"name": "constant.numeric.decimal.cs",
-					"match": "\\b[0-9_]+(U|u|L|l|UL|Ul|uL|ul|LU|Lu|lU|lu)?\\b"
+					"match": ""
 				}
 			]
 		},
@@ -2633,7 +2633,7 @@
 		},
 		"string-character-escape": {
 			"name": "constant.character.escape.cs",
-			"match": "\\\\."
+			"match": ""
 		},
 		"verbatim-string-literal": {
 			"name": "string.quoted.double.cs",
@@ -2657,7 +2657,7 @@
 		},
 		"verbatim-string-character-escape": {
 			"name": "constant.character.escape.cs",
-			"match": "\"\""
+			"match": ""
 		},
 		"tuple-literal": {
 			"begin": "(\\()(?=.*[:,])",
@@ -2705,51 +2705,51 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.assignment.compound.cs",
-					"match": "\\*=|/=|%=|\\+=|-="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.compound.bitwise.cs",
-					"match": "\\&=|\\^=|<<=|>>=|\\|="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.bitwise.shift.cs",
-					"match": "<<|>>"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.comparison.cs",
-					"match": "==|!="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.relational.cs",
-					"match": "<=|>=|<|>"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.logical.cs",
-					"match": "\\!|&&|\\|\\|"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.bitwise.cs",
-					"match": "\\&|~|\\^|\\|"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.assignment.cs",
-					"match": "\\="
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.decrement.cs",
-					"match": "--"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.increment.cs",
-					"match": "\\+\\+"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.arithmetic.cs",
-					"match": "%|\\*|/|-|\\+"
+					"match": ""
 				},
 				{
 					"name": "keyword.operator.null-coalescing.cs",
-					"match": "\\?\\?"
+					"match": ""
 				}
 			]
 		},
@@ -2774,7 +2774,7 @@
 		},
 		"await-expression": {
 			"name": "keyword.other.await.cs",
-			"match": "(?!\\.)\\b(await)\\b"
+			"match": ""
 		},
 		"parenthesized-expression": {
 			"begin": "\\(",
@@ -2819,7 +2819,7 @@
 		},
 		"identifier": {
 			"name": "variable.other.readwrite.cs",
-			"match": "[_[:alpha:]][_[:alnum:]]*"
+			"match": ""
 		},
 		"cast-expression": {
 			"match": "",
@@ -3212,7 +3212,7 @@
 			"patterns": [
 				{
 					"name": "storage.modifier.cs",
-					"match": "\\b(ref|out)\\b"
+					"match": ""
 				},
 				{
 					"include": "#declaration-expression-local"
@@ -3633,7 +3633,7 @@
 		},
 		"ref-modifier": {
 			"name": "storage.modifier.cs",
-			"match": "\\b(ref)\\b"
+			"match": ""
 		},
 		"tuple-type": {
 			"begin": "\\(",
@@ -3717,7 +3717,7 @@
 				},
 				{
 					"name": "storage.type.cs",
-					"match": "[_[:alpha:]][_[:alnum:]]*"
+					"match": ""
 				}
 			]
 		},
@@ -3775,19 +3775,19 @@
 		},
 		"operator-assignment": {
 			"name": "keyword.operator.assignment.cs",
-			"match": "(?<!=|!)(=)(?!=)"
+			"match": ""
 		},
 		"punctuation-comma": {
 			"name": "punctuation.separator.comma.cs",
-			"match": "","
+			"match": ""
 		},
 		"punctuation-semicolon": {
 			"name": "punctuation.terminator.statement.cs",
-			"match": ";"
+			"match": ""
 		},
 		"punctuation-accessor": {
 			"name": "punctuation.accessor.cs",
-			"match": "\\."
+			"match": ""
 		},
 		"preprocessor": {
 			"name": "meta.preprocessor.cs",
@@ -4296,7 +4296,7 @@
 				},
 				{
 					"name": "invalid.illegal.bad-ampersand.cs",
-					"match": "&"
+					"match": ""
 				}
 			]
 		},

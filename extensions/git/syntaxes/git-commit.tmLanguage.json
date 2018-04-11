@@ -37,7 +37,7 @@
 											"name": "keyword.other.$2.git-commit"
 										}
 									},
-									"match": "\\G((fixup|squash)!)\\s*"
+									"match": ""
 								},
 								{
 									"match": "",
