@@ -213,7 +213,7 @@ export class BulkEditService implements IBulkEditService {
 		label = label || localize('fileOperation', "File operation");
 		const result = await this._dialogService.confirm({
 			message: localize('areYouSureQuiteBulkEdit', "Are you sure you want to quit? '{0}' is in progress.", label),
-			primaryButton: localize('quit', "Quit")
+			acceptButton: localize('quit', "Quit")
 		});
 
 		return !result.confirmed;

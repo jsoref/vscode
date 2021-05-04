@@ -239,7 +239,7 @@ registerAction2(class extends Action2 {
 		const res = await dialogService.confirm({
 			message: localize('msg.start', "Extension Bisect"),
 			detail: localize('detail.start', "Extension Bisect will use binary search to find an extension that causes a problem. During the process the window reloads repeatedly (~{0} times). Each time you must confirm if you are still seeing problems.", 2 + Math.log2(extensions.length) | 0),
-			primaryButton: localize('msg2', "Start Extension Bisect")
+			acceptButton: localize('msg2', "Start Extension Bisect")
 		});
 
 		if (res.confirmed) {

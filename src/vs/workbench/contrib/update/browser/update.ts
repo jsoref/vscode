@@ -574,7 +574,7 @@ export class SwitchProductQualityContribution extends Disposable implements IWor
 						detail: newQuality === 'insider' ?
 							nls.localize('relaunchDetailInsiders', "Press the reload button to switch to the nightly pre-production version of VSCode.") :
 							nls.localize('relaunchDetailStable', "Press the reload button to switch to the monthly released stable version of VSCode."),
-						primaryButton: nls.localize('reload', "&&Reload")
+						acceptButton: nls.localize('reload', "&&Reload")
 					});
 
 					if (res.confirmed) {

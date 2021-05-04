@@ -413,10 +413,10 @@ export class WorkspaceTrustEditor extends EditorPane {
 			if (showPrompt) {
 				const message = localize('workspaceTrustSettingModificationMessage', "Update Workspace Trust Settings");
 				const detail = localize('workspaceTrustTransitionDetail', "In order to safely complete this action, all affected windows will have to be reloaded. Are you sure you want to proceed with this action?");
-				const primaryButton = localize('workspaceTrustTransitionPrimaryButton', "Yes");
-				const secondaryButton = localize('workspaceTrustTransitionSecondaryButton', "No");
+				const acceptButton = localize('workspaceTrustTransitionPrimaryButton', "Yes");
+				const rejectButton = localize('workspaceTrustTransitionSecondaryButton', "No");
 
-				const result = await this.dialogService.show(Severity.Info, message, [primaryButton, secondaryButton], { cancelId: 1, detail, custom: { icon: Codicon.shield } });
+				const result = await this.dialogService.show(Severity.Info, message, [acceptButton, rejectButton], { cancelId: 1, detail, custom: { icon: Codicon.shield } });
 				if (result.choice !== 0) {
 					return;
 				}

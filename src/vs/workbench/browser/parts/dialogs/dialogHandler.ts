@@ -50,15 +50,15 @@ export class BrowserDialogHandler implements IDialogHandler {
 		this.logService.trace('DialogService#confirm', confirmation.message);
 
 		const buttons: string[] = [];
-		if (confirmation.primaryButton) {
-			buttons.push(confirmation.primaryButton);
+		if (confirmation.acceptButton) {
+			buttons.push(confirmation.acceptButton);
 		} else {
 			buttons.push(localize({ key: 'yesButton', comment: ['&& denotes a mnemonic'] }, "&&Yes"));
 		}
 
-		if (confirmation.secondaryButton) {
-			buttons.push(confirmation.secondaryButton);
-		} else if (typeof confirmation.secondaryButton === 'undefined') {
+		if (confirmation.rejectButton) {
+			buttons.push(confirmation.rejectButton);
+		} else if (typeof confirmation.rejectButton === 'undefined') {
 			buttons.push(localize('cancelButton', "Cancel"));
 		}
 

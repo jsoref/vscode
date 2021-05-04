@@ -424,7 +424,7 @@ class UserDataSyncMachinesViewDataProvider implements ITreeViewDataProvider {
 		const result = await this.dialogService.confirm({
 			type: 'info',
 			message: localize('turn off sync on machine', "Are you sure you want to turn off sync on {0}?", machine.name),
-			primaryButton: localize({ key: 'turn off', comment: ['&& denotes a mnemonic'] }, "&&Turn off"),
+			acceptButton: localize({ key: 'turn off', comment: ['&& denotes a mnemonic'] }, "&&Turn off"),
 		});
 
 		if (!result.confirmed) {

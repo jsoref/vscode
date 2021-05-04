@@ -72,7 +72,7 @@ export class ConfigureLocaleAction extends Action {
 					type: 'info',
 					message: localize('relaunchDisplayLanguageMessage', "A restart is required for the change in display language to take effect."),
 					detail: localize('relaunchDisplayLanguageDetail', "Press the restart button to restart {0} and change the display language.", this.productService.nameLong),
-					primaryButton: localize('restart', "&&Restart")
+					acceptButton: localize('restart', "&&Restart")
 				});
 
 				if (restart.confirmed) {

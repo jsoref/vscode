@@ -52,8 +52,8 @@ export interface IConfirmation {
 	type?: DialogType;
 	message: string;
 	detail?: string;
-	primaryButton?: string;
-	secondaryButton?: string;
+	acceptButton?: string;
+	rejectButton?: string;
 	checkbox?: ICheckbox;
 }
 

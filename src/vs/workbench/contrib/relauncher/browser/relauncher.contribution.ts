@@ -117,9 +117,9 @@ export class SettingsChangeRelauncher extends Disposable implements IWorkbenchCo
 		}
 	}
 
-	private async doConfirm(message: string, detail: string, primaryButton: string, confirmed: () => void): Promise<void> {
+	private async doConfirm(message: string, detail: string, acceptButton: string, confirmed: () => void): Promise<void> {
 		if (this.hostService.hasFocus) {
-			const res = await this.dialogService.confirm({ type: 'info', message, detail, primaryButton });
+			const res = await this.dialogService.confirm({ type: 'info', message, detail, acceptButton });
 			if (res.confirmed) {
 				confirmed();
 			}

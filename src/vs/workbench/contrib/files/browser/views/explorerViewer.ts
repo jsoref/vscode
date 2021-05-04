@@ -736,7 +736,7 @@ function getFileOverwriteConfirm(name: string): IConfirmation {
 	return {
 		message: localize('confirmOverwrite', "A file or folder with the name '{0}' already exists in the destination folder. Do you want to replace it?", name),
 		detail: localize('irreversible', "This action is irreversible!"),
-		primaryButton: localize({ key: 'replaceButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Replace"),
+		acceptButton: localize({ key: 'overwriteButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Overwrite"),
 		type: 'warning'
 	};
 }
@@ -746,7 +746,7 @@ function getMultipleFilesOverwriteConfirm(files: URI[]): IConfirmation {
 		return {
 			message: localize('confirmManyOverwrites', "The following {0} files and/or folders already exist in the destination folder. Do you want to replace them?", files.length),
 			detail: getFileNamesMessage(files) + '\n' + localize('irreversible', "This action is irreversible!"),
-			primaryButton: localize({ key: 'replaceButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Replace"),
+			acceptButton: localize({ key: 'overwriteButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Overwrite"),
 			type: 'warning'
 		};
 	}
@@ -1378,7 +1378,7 @@ export class FileDragAndDrop implements ITreeDragAndDrop<ExplorerItem> {
 					label: localize('doNotAskAgain', "Do not ask me again")
 				},
 				type: 'question',
-				primaryButton: localize({ key: 'moveButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Move")
+				acceptButton: localize({ key: 'moveButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Move")
 			});
 
 			if (!confirmation.confirmed) {

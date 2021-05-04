@@ -85,11 +85,11 @@ async function refreshIfSeparator(value: string, explorerService: IExplorerServi
 }
 
 async function deleteFiles(explorerService: IExplorerService, workingCopyFileService: IWorkingCopyFileService, dialogService: IDialogService, configurationService: IConfigurationService, elements: ExplorerItem[], useTrash: boolean, skipConfirm = false): Promise<void> {
-	let primaryButton: string;
+	let acceptButton: string;
 	if (useTrash) {
-		primaryButton = isWindows ? nls.localize('deleteButtonLabelRecycleBin', "&&Move to Recycle Bin") : nls.localize({ key: 'deleteButtonLabelTrash', comment: ['&& denotes a mnemonic'] }, "&&Move to Trash");
+		acceptButton = isWindows ? nls.localize('deleteButtonLabelRecycleBin', "&&Move to Recycle Bin") : nls.localize({ key: 'deleteButtonLabelTrash', comment: ['&& denotes a mnemonic'] }, "&&Move to Trash");
 	} else {
-		primaryButton = nls.localize({ key: 'deleteButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Delete");
+		acceptButton = nls.localize({ key: 'deleteButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Delete");
 	}
 
 	// Handle dirty
@@ -119,7 +119,7 @@ async function deleteFiles(explorerService: IExplorerService, workingCopyFileSer
 			message,
 			type: 'warning',
 			detail: nls.localize('dirtyWarning', "Your changes will be lost if you don't save them."),
-			primaryButton
+			acceptButton
 		});
 
 		if (!response.confirmed) {
@@ -157,7 +157,7 @@ async function deleteFiles(explorerService: IExplorerService, workingCopyFileSer
 		confirmation = await dialogService.confirm({
 			message,
 			detail,
-			primaryButton,
+			acceptButton,
 			checkbox: {
 				label: nls.localize('doNotAskAgain', "Do not ask me again")
 			},
@@ -173,7 +173,7 @@ async function deleteFiles(explorerService: IExplorerService, workingCopyFileSer
 		confirmation = await dialogService.confirm({
 			message,
 			detail,
-			primaryButton,
+			acceptButton,
 			type: 'warning'
 		});
 	}
@@ -201,21 +201,21 @@ async function deleteFiles(explorerService: IExplorerService, workingCopyFileSer
 		// Handle error to delete file(s) from a modal confirmation dialog
 		let errorMessage: string;
 		let detailMessage: string | undefined;
-		let primaryButton: string;
+		let acceptButton: string;
 		if (useTrash) {
 			errorMessage = isWindows ? nls.localize('binFailed', "Failed to delete using the Recycle Bin. Do you want to permanently delete instead?") : nls.localize('trashFailed', "Failed to delete using the Trash. Do you want to permanently delete instead?");
 			detailMessage = deleteDetail;
-			primaryButton = nls.localize({ key: 'deletePermanentlyButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Delete Permanently");
+			acceptButton = nls.localize({ key: 'deletePermanentlyButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Delete Permanently");
 		} else {
 			errorMessage = toErrorMessage(error, false);
-			primaryButton = nls.localize({ key: 'retryButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Retry");
+			acceptButton = nls.localize({ key: 'retryButtonLabel', comment: ['&& denotes a mnemonic'] }, "&&Retry");
 		}
 
 		const res = await dialogService.confirm({
 			message: errorMessage,
 			detail: detailMessage,
 			type: 'warning',
-			primaryButton
+			acceptButton
 		});
 
 		if (res.confirmed) {

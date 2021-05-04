@@ -638,7 +638,7 @@ export class UserDataSyncWorkbenchContribution extends Disposable implements IWo
 			type: 'info',
 			message: localize('turn off sync confirmation', "Do you want to turn off sync?"),
 			detail: localize('turn off sync detail', "Your settings, keybindings, extensions, snippets and UI State will no longer be synced."),
-			primaryButton: localize({ key: 'turn off', comment: ['&& denotes a mnemonic'] }, "&&Turn off"),
+			acceptButton: localize({ key: 'turn off', comment: ['&& denotes a mnemonic'] }, "&&Turn off"),
 			checkbox: this.userDataSyncWorkbenchService.accountStatus === AccountStatus.Available ? {
 				label: localize('turn off sync everywhere', "Turn off sync on all your devices and clear the data from the cloud.")
 			} : undefined
@@ -1301,7 +1301,7 @@ class AcceptChangesContribution extends Disposable implements IEditorContributio
 						message: isRemote
 							? localize('confirm replace and overwrite local', "Would you like to accept remote {0} and replace local {1}?", syncAreaLabel.toLowerCase(), syncAreaLabel.toLowerCase())
 							: localize('confirm replace and overwrite remote', "Would you like to accept merges and replace remote {0}?", syncAreaLabel.toLowerCase()),
-						primaryButton: isRemote ? acceptRemoteButtonLabel : acceptMergesButtonLabel
+						acceptButton: isRemote ? acceptRemoteButtonLabel : acceptMergesButtonLabel
 					});
 					if (result.confirmed) {
 						try {
